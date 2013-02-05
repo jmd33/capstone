@@ -8,7 +8,7 @@ import android.util.Log;
 public class PlayFrequency {
 	// The code for this class is based off of
 	// http://stackoverflow.com/questions/2413426/playing-an-arbitrary-tone-with-android
-	
+
 	private static int duration; // seconds
 	private static int sampleRate;
 	private static int numSamples;
@@ -68,7 +68,7 @@ public class PlayFrequency {
 			generatedSnd[idx++] = (byte) ((val & 0xff00) >>> 8);
 		}
 
-		// -----------------------without ramping------
+		// -----without ramping------
 		// int idx = 0;
 		// for (final double dVal : sample) {
 		// // scale to maximum amplitude
@@ -80,15 +80,41 @@ public class PlayFrequency {
 	}
 
 	/**
-	 * @Pre Must call {@link genTone(dur, freq)} first.
-	 * @Post Out puts the sound generated in {@link genTone(dur, freq)}.
+	 * @pre Must call {@link genTone(dur, freq)} first.
+	 * @post Outputs the sound generated in {@link genTone(dur, freq)} to both
+	 *       the left and right channels.
 	 */
 	public static void playSound() {
+		playSound(true, true);
+	}
+
+	/**
+	 * @pre Must call {@link genTone(dur, freq)} first.
+	 * @post Outputs the sound generated in {@link genTone(dur, freq)} to the
+	 *       channels specified by the params.
+	 * @param left Boolean. True outputs to left channel. False, no output to left channel
+	 * @param right Boolean. True outputs to right channel. False, no output to right channel
+	 */
+	public static void playSound(boolean left, boolean right) {
 		final AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
 				sampleRate, AudioFormat.CHANNEL_CONFIGURATION_MONO,
 				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
 				AudioTrack.MODE_STATIC);
+		Float leftVolume;
+		Float rightVolume;
+
+		if (left)
+			leftVolume = AudioTrack.getMaxVolume();
+		else
+			leftVolume = AudioTrack.getMinVolume();
+
+		if (right)
+			rightVolume = AudioTrack.getMaxVolume();
+		else
+			rightVolume = AudioTrack.getMinVolume();
+
 		audioTrack.write(generatedSnd, 0, generatedSnd.length);
+		audioTrack.setStereoVolume(leftVolume, rightVolume);
 		audioTrack.play();
 		Log.d("Main", "played");
 	}

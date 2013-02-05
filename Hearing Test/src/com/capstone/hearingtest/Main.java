@@ -26,6 +26,7 @@ public class Main extends Activity{
 		b.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
 				PlayFrequency.playSound();
+				Log.d("Main", "button pressed");//this shows up in the LogCat. Helpful for debugging.
 			}
 		});
 		
