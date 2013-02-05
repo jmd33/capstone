@@ -6,10 +6,7 @@ import android.media.AudioTrack;
 import android.util.Log;
 
 public class PlayFrequency {
-//	The code for this class is based off of 
-//	http://stackoverflow.com/questions/2413426/playing-an-arbitrary-tone-with-android
-//	Some other examples ramp the amplification so that you don't get pops at the beginning or end.
-//	That is something we should consider adding.
+	
 	private static int duration; // seconds
 	private static int sampleRate;
 	private static int numSamples;
