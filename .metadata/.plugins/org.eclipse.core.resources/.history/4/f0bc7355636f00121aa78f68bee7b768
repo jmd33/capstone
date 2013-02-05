@@ -12,16 +12,13 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:textSize="50dp"
-        android:textColor="#FFFFFF"
+        android:textColor="white"
 
 />
     <Button
-        android:id="@+id/BTN_play"
-        android:layout_margin="40dp"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
-        android:height="140dp"
-        android:width="200dp"
         android:layout_height="wrap_content"
-        android:text="Play Sound" />
+        android:text="Button" />
 
 </LinearLayout>

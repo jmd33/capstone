@@ -21,7 +21,7 @@ public class Main extends Activity{
 		PlayFrequency.genTone(3, 1200);
 //		PlayFrequency.playSound();
 		
-//		Plays the sound every time the button is pressed.
+//		Plays the sound everytime the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
 		b.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
