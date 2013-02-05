@@ -1,0 +1,226 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/secondary_text_holo_dark.xml",1360040987029
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987032
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/secondary_text_holo_dark.xml",1360040987046
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_up_btn.xml",1360040987207
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_input.xml",1360040987222
+error,log,,,"palette: Failed to configure parser for /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_light.xml",1360040987224
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987225
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_down_btn.xml",1360040987243
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987246
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_up_btn.xml",1360040987249
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_input.xml",1360040987250
+error,log,,,"palette: Failed to configure parser for /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_light.xml",1360040987252
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987253
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_down_btn.xml",1360040987271
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987274
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/btn_default_holo_dark.xml",1360040987276
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987277
+error,log,,,"palette: Failed to configure parser for /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_light_nodisable.xml",1360040987298
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987301
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_up_btn.xml",1360040987310
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_input.xml",1360040987312
+error,log,,,"palette: Failed to configure parser for /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_light.xml",1360040987315
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987316
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_down_btn.xml",1360040987318
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987321
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_up_btn.xml",1360040987324
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_input.xml",1360040987326
+error,log,,,"palette: Failed to configure parser for /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_light.xml",1360040987327
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987328
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_down_btn.xml",1360040987330
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987333
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_up_btn.xml",1360040987335
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_input.xml",1360040987337
+error,log,,,"palette: Failed to configure parser for /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_light.xml",1360040987339
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987340
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/numberpicker_down_btn.xml",1360040987342
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987345
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987348
+error,log,,,"palette: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987351
+error,log,,,"helloworld.xml: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/secondary_text_holo_dark.xml",1360040987494
+error,log,,,"helloworld.xml: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/stat_sys_battery_charge.xml",1360040987498
+error,log,,,"helloworld.xml: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/color/primary_text_holo_dark.xml",1360040987508
+error,log,,,"helloworld.xml: Failed to parse file /Users/wazo/Documents/Adobe/android-sdk-mac_x86/platforms/android-16/data/res/drawable/screen_background_selector_dark.xml",1360040987511
+error,log,,,"helloworld.xml: Failed to find style 'textViewStyle' in current theme",1360040987798
+error,log,,,"helloworld.xml: Failed to find style 'textViewStyle' in current theme",1360040987799
+error,log,,,"helloworld.xml: android.content.res.Resources$NotFoundException",1360040987804
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1360041012764
+opened,editor,com.android.ide.eclipse.adt,20.0.3.v201208082019-427395,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1360041015266
+started,bundle,org.eclipse.m2e.editor.xml,1.0.200.20111228-1245,"org.eclipse.m2e.editor.xml",1360041015410
+activated,editor,com.android.ide.eclipse.adt,20.0.3.v201208082019-427395,"com.android.ide.eclipse.editors.manifest.ManifestEditor",1360041015609
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041024180
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041123326
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360041125476
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1360041180946
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1360041181249
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1360041181401
+started,bundle,org.eclipse.mylyn.java.ui,3.6.0.v20110608-1400,"org.eclipse.mylyn.java.ui",1360041230851
+started,bundle,org.eclipse.mylyn.ide.ui,3.6.0.v20110608-1400,"org.eclipse.mylyn.ide.ui",1360041230947
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360041321094
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360041333195
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360041336783
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1360041337638
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041345617
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041559462
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041561231
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041870607
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360041874127
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041891683
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041897608
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360041901480
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1360041904755
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1360041907028
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1360041909359
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1360041912696
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041918469
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041927307
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041933068
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041933218
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041942271
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041970570
+started,bundle,org.eclipse.mylyn.java.tasks,3.6.0.v20110608-1400,"org.eclipse.mylyn.java.tasks",1360041975707
+started,bundle,org.tigris.subversion.clientadapter.javahl,1.6.17,"org.tigris.subversion.clientadapter.javahl",1360041975885
+started,bundle,org.tigris.subversion.clientadapter.svnkit,1.6.15,"org.tigris.subversion.clientadapter.svnkit",1360041975895
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041978442
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360041982547
+started,bundle,org.tmatesoft.svnkit,1.3.5.7406,"org.tmatesoft.svnkit",1360041982925
+started,bundle,com.sun.jna,3.2.7,"com.sun.jna",1360041983596
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1360042005721
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042016665
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042149015
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360042159297
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042163089
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042166052
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1360042166242
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1360042188150
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1360042188740
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042191185
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042350406
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360042352871
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042369008
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042381043
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360042393488
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360042402116
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360042478525
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042529420
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042730949
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360042751523
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1360042805870
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1360042806046
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1360042806309
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1360042807198
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1360042807513
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360042811451
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042970534
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360042971926
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360043078297
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043078749
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043086539
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1360043091154
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043094864
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043096287
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043097383
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043104087
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043104438
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1360043106790
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043109457
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043119734
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043153989
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043154388
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1360043198957
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043206624
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043213133
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043262310
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043262494
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043262647
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043262791
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043263024
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043263278
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043263486
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043263678
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360043265662
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043271475
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043278181
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1360043279253
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360043280034
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043282586
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043293921
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043309701
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043326522
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043326703
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043333530
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043349524
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043349727
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1360043354153
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043386325
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043391759
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043416881
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043434143
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360043434378
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043438537
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043537745
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043628252
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043644561
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043647251
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360043779060
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043780523
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1360043783448
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1360043783902
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043788929
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043793454
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043794213
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043794929
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043796023
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043802229
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043813330
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043824606
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043825299
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043827006
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043830039
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360043869368
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043872514
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043874277
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1360043877631
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1360043877855
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043879016
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043879223
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043879351
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043879619
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043879951
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360043880635
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360043886438
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1360043888694
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360043890219
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1360043892238
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1360043897916
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043898459
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043950438
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360043957586
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360044012344
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360044012728
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1360044056683
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360044065988
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360044086175
+opened,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044086641
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044086882
+executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1360044125343
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360044143250
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1360044143681
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044145857
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.selectAll",1360044147977
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1360044153746
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044156200
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1360044160400
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360044175948
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1360044176084
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1360044177643
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1360044179566
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1360044180299
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360044258539
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044260293
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044294855
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1360044306766
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1360044307397
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1360044321039
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1360044322703

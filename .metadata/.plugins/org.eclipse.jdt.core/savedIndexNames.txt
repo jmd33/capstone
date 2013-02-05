@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+/Users/wazo/Documents/UW/capstone/capstone/.metadata/.plugins/org.eclipse.jdt.core
+952544035.index
+4126291403.index
+3051306758.index
