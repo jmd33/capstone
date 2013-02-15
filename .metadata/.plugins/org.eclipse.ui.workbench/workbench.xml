@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="29" version="2.0">
+<workbench progressCount="34" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1249" x="14" y="32">
 <fastViewData fastViewLocation="1024"/>
@@ -43,9 +43,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/Main.java" title="Main.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Main.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/Main.java" title="Main.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Main.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="548" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="916" selectionTopPixel="0"/>
 </editor>
 <editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="helloworld.xml" partName="helloworld.xml" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/res/layout/helloworld.xml" title="helloworld.xml" tooltip="Hearing Test/res/layout/helloworld.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/res/layout/helloworld.xml"/>
@@ -53,9 +53,9 @@
 <editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="Hearing Test Manifest" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/AndroidManifest.xml" title="Hearing Test Manifest" tooltip="Hearing Test/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/AndroidManifest.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayFrequency.java" partName="PlayFrequency.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java" title="PlayFrequency.java" tooltip="Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayFrequency.java" partName="PlayFrequency.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java" title="PlayFrequency.java" tooltip="Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="826" selectionTopPixel="97"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3501" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -65,7 +65,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings (9 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -290,52 +290,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/helloworld.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/Hearing Test/res/layout/helloworld.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Hearing Test/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/helloworld.xml"/>
 </editors>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="559" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="908" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="908" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="846" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="444" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="647" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
 <item historyLabel="PlayFrequency.java" index="1">
 <position info="not_deleted" x="635" y="0"/>
 </item>
@@ -438,8 +396,41 @@
 <item historyLabel="PlayFrequency.java" index="1">
 <position info="not_deleted" x="826" y="0"/>
 </item>
-<item active="true" historyLabel="Main.java" index="0">
+<item historyLabel="Main.java" index="0">
 <position info="not_deleted" x="621" y="0"/>
+</item>
+<item historyLabel="PlayFrequency.java" index="4">
+<position info="not_deleted" x="825" y="0"/>
+</item>
+<item historyLabel="PlayFrequency.java" index="4">
+<position/>
+</item>
+<item historyLabel="PlayFrequency.java" index="4">
+<position info="not_deleted" x="2857" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="557" y="0"/>
+</item>
+<item historyLabel="PlayFrequency.java" index="4">
+<position info="not_deleted" x="3501" y="0"/>
+</item>
+<item historyLabel="Hearing Test Manifest" index="5"/>
+<item historyLabel="helloworld.xml" index="6"/>
+<item historyLabel="Hearing Test Manifest" index="5"/>
+<item historyLabel="helloworld.xml" index="6"/>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="557" y="0"/>
+</item>
+<item historyLabel="Main.java" index="0">
+<position info="not_deleted" x="916" y="0"/>
+</item>
+<item historyLabel="helloworld.xml" index="6"/>
+<item historyLabel="Hearing Test Manifest" index="5"/>
+<item historyLabel="PlayFrequency.java" index="4">
+<position info="not_deleted" x="3501" y="0"/>
+</item>
+<item active="true" historyLabel="PlayFrequency.java" index="4">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

@@ -15,6 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int BTN_play=0x7f060001;
+        public static final int ET_frequency=0x7f060002;
         public static final int textView1=0x7f060000;
     }
     public static final class layout {

@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class Main extends Activity{
     
@@ -18,15 +19,22 @@ public class Main extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.helloworld);
 
-		PlayFrequency.genTone(3, 1200);
+//		PlayFrequency.genTone(3, 1200);
 //		PlayFrequency.playSound();
 		
 //		Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
 		b.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
-				PlayFrequency.playSound();
 				Log.d("Main", "button pressed");//this shows up in the LogCat. Helpful for debugging.
+				int input = 0;
+				EditText et = (EditText) findViewById(R.id.ET_frequency);
+				String s = et.getText().toString();
+				input = Integer.parseInt(s);//retrieve the input and parse as INT
+				Log.d("Main", "freq"+input);//this shows up in the LogCat. Helpful for debugging.
+
+				PlayFrequency.genTone(3, input);
+				PlayFrequency.playSound();
 			}
 		});
 		

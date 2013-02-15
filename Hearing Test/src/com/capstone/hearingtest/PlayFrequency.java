@@ -133,7 +133,7 @@ public class PlayFrequency {
 		sampleRate = 8000;
 		numSamples = duration * sampleRate;
 		sample = new double[numSamples];
-		freqOfTone = 1440; // hz
+		freqOfTone = f; // hz
 		generatedSnd = new byte[2 * numSamples];
 	}
 }
