@@ -1,0 +1,71 @@
+package com.capstone.hearingtest;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
+import android.util.Log;
+
+public class PushToDB extends AsyncTask<String, Integer, Long> { 
+	private static final String KEY_161 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/create-user.php";
+//	    private SharedPreferences user_info; 
+
+		@Override
+		protected Long doInBackground(String... params) {
+			
+			if(params[0].equalsIgnoreCase("testresult")){
+				String user_id = params[1];
+				String frequency = params[2];
+				String volume = params[3];
+
+				addResult(user_id, frequency, volume);
+				
+			}
+//			else if(params[0].equalsIgnoreCase("adduser")){
+				
+//			}
+			return null;
+		}
+	
+	
+		public static SharedPreferences getSharedPreferences (Context ctxt) {
+			   return ctxt.getSharedPreferences("uLikes", 0);
+
+			}
+	
+		protected void addResult(String user_id, String frequency, String volume){
+			 HttpClient httpclient = new DefaultHttpClient();
+	         HttpPost httppost = new HttpPost(KEY_161);
+			    try{
+			    	ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+				    nameValuePairs.add(new BasicNameValuePair("user_id", user_id));
+				    nameValuePairs.add(new BasicNameValuePair("frequency", frequency));
+				    nameValuePairs.add(new BasicNameValuePair("volume", volume));
+
+					httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+			    	
+		            HttpResponse response = httpclient.execute(httppost);
+//		            HttpEntity entity = response.getEntity();
+//		            is = entity.getContent();
+			    }catch(Exception e){
+			            Log.e("log_tag", "Error in http connection "+e.toString());
+			    }
+		}
+		
+	}
+

@@ -1,0 +1,162 @@
+package com.capstone.hearingtest;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.SocketException;
+import java.net.URI;
+import java.util.ArrayList;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class Main extends Activity{
+    private static final String KEY_121 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/create-user.php";
+
+
+
+	//test again and again
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.helloworld);
+
+//		PlayFrequency.genTone(3, 1200);
+//		PlayFrequency.playSound();
+		
+//		Plays the sound every time the button is pressed.
+		Button b = (Button) findViewById(R.id.BTN_play);
+		b.setOnClickListener(new OnClickListener(){
+			public void onClick(View arg0) {
+				Log.d("Main", "button pressed");//this shows up in the LogCat. Helpful for debugging.
+				int input = 0;
+				EditText et = (EditText) findViewById(R.id.ET_frequency);
+				String s = et.getText().toString();
+				input = Integer.parseInt(s);//retrieve the input and parse as INT
+				Log.d("Main", "freq"+input);//this shows up in the LogCat. Helpful for debugging.
+
+				PlayFrequency.genTone(3, input);
+				PlayFrequency.playSound();
+			}
+		});
+		
+	}
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    private String getServerData(String returnString) {
+
+		InputStream is = null;
+		String result = "";
+
+		HttpClient httpclient = new DefaultHttpClient();
+		HttpPost httppost = new HttpPost(KEY_121);
+
+		// http post
+		try {
+			ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+			nameValuePairs.add(new BasicNameValuePair("age", "55"));
+			nameValuePairs.add(new BasicNameValuePair("gender", "1"));
+			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+			HttpResponse response = httpclient.execute(httppost);
+			HttpEntity entity = response.getEntity();
+			is = entity.getContent();
+			
+			returnString = parseJsonData(
+							responseToString(is, result), 
+								returnString);
+			is.close();
+			return returnString;
+		} catch (SocketException e) {
+			Log.e("log_tag", "Socket error in http connection " + e.toString());
+		}
+		// catch(UnknownHostException e){
+		// Log.e("log_tag", "Host error in http connection "+e.toString());
+		// }
+		catch (Exception e) {
+			Log.e("log_tag", " error in connection" + e.toString());
+		}
+		return "";
+	}
+
+	public String responseToString(InputStream is, String result) {
+		try {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(
+					is, "iso-8859-1"), 8);
+			StringBuilder sb = new StringBuilder();
+			String line = null;
+			while ((line = reader.readLine()) != null) {
+				sb.append(line + "\n");
+			}
+			is.close();
+			result = sb.toString();
+			return result;
+		} catch (Exception e) {
+			Log.e("log_tag", "Error converting result " + e.toString());
+			return "";
+		}
+	}
+
+	public String parseJsonData(String result, String returnString) {
+		try {
+			JSONArray jArray = new JSONArray(result);
+			int length = jArray.length();
+			for (int i = 0; i < length; i++) {
+				JSONObject json_data = jArray.getJSONObject(i);
+//				Log.i("ExtraHours", "name: " + json_data.get("place_id") + ", "
+//						+ prevClose + ":" + json_data.getInt(prevClose) + ", "
+//						+ dbOpen + ":" + json_data.getInt(dbOpen) + ", "
+//						+ dbClose + ":" + json_data.getInt(dbClose));
+			}
+		}catch(Exception e){
+			
+		}
+		return returnString;
+	}
+    
+    
+    
+    private class pullData extends AsyncTask<String, Integer, Long> {
+
+		@Override
+		protected Long doInBackground(String... arg0) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+    	
+    }
+    
+    
+    
+}
