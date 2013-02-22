@@ -60,8 +60,7 @@ public class Main extends Activity{
 				PlayFrequency.playSound();
 			}
 		});
-//		this is an example of how to push a test result to our db. 
-//		new PushToDB().execute("testresult","1", "880", "4");//this pushed test result to the db.
+//		new PushToDB().execute("testresult","1", "440", "8");//this pushed test result to the db.
 	}
 
     @Override

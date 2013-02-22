@@ -22,16 +22,16 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
 /**
+ * @author Joe
+ * 
  * This class pushes data to our database asynchronously. It can be expanded to push other data if 
  * need be. It can take any number of parameters. The following parameters are what's needed to
  * push a test result. 
- * 
  * @param 0 (needs to be 'testresult')
  * @param user_id
  * @param frequency
  * @param volume 
  *
- * * @author Joe
  */
 public class PushToDB extends AsyncTask<String, Integer, Long> {
 	private static final String KEY_161 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/add-test-result.php";

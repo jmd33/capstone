@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="36" version="2.0">
+<workbench progressCount="34" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1249" x="14" y="32">
 <fastViewData fastViewLocation="1024"/>
@@ -39,6 +39,7 @@
 <part id="0"/>
 <part id="1"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -53,9 +54,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="33" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/Main.java" title="Main.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Main.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/Main.java" title="Main.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Main.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="437" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2119" selectionTopPixel="116"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PushToDB.java" partName="PushToDB.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/PushToDB.java" title="PushToDB.java" tooltip="Hearing Test/src/com/capstone/hearingtest/PushToDB.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/PushToDB.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="953" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -242,8 +247,8 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.8521739" ratioLeft="588" ratioRight="102" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.73913044" ratioLeft="510" ratioRight="180" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -288,10 +293,6 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/helloworld.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/Hearing Test/res/layout/helloworld.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/PlayFrequency.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Hearing Test/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/helloworld.xml"/>
@@ -301,136 +302,142 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/helloworld.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Hearing Test/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/PushToDB.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Hearing Test/AndroidManifest.xml"/>
 </editors>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="558" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="323" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="826" y="0"/>
-</item>
-<item historyLabel="helloworld.xml" index="2">
-<position info="not_deleted" x="273" y="240"/>
-</item>
-<item historyLabel="helloworld.xml" index="3">
-<position info="not_deleted" x="262" y="0"/>
-</item>
-<item historyLabel="helloworld.xml" index="3">
-<position info="not_deleted" x="273" y="242"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="323" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="826" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="621" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="1">
-<position info="not_deleted" x="826" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="621" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="4">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="4">
-<position/>
-</item>
-<item historyLabel="PlayFrequency.java" index="4">
-<position info="not_deleted" x="2857" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="557" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="4">
+<item historyLabel="helloworld.xml" index="2"/>
+<item historyLabel="Hearing Test Manifest" index="1"/>
+<item historyLabel="PlayFrequency.java" index="0">
 <position info="not_deleted" x="3501" y="0"/>
 </item>
-<item historyLabel="Hearing Test Manifest" index="5"/>
-<item historyLabel="helloworld.xml" index="6"/>
-<item historyLabel="Hearing Test Manifest" index="5"/>
-<item historyLabel="helloworld.xml" index="6"/>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="557" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="916" y="0"/>
-</item>
-<item historyLabel="helloworld.xml" index="6"/>
-<item historyLabel="Hearing Test Manifest" index="5"/>
-<item historyLabel="PlayFrequency.java" index="4">
-<position info="not_deleted" x="3501" y="0"/>
-</item>
-<item historyLabel="PlayFrequency.java" index="4">
+<item historyLabel="PlayFrequency.java" index="0">
 <position/>
 </item>
-<item historyLabel="helloworld.xml" index="7">
+<item historyLabel="helloworld.xml" index="3">
 <position info="not_deleted" x="1055" y="269"/>
 </item>
-<item historyLabel="PlayFrequency.java" index="4">
+<item historyLabel="PlayFrequency.java" index="0">
 <position info="not_deleted" x="3501" y="0"/>
 </item>
-<item historyLabel="Main.java" index="8">
+<item historyLabel="Main.java" index="4">
 <position info="not_deleted" x="1265" y="0"/>
 </item>
-<item historyLabel="Main.java" index="8">
+<item historyLabel="Main.java" index="4">
 <position/>
 </item>
-<item historyLabel="helloworld.xml" index="7"/>
-<item historyLabel="PlayFrequency.java" index="4">
+<item historyLabel="helloworld.xml" index="3"/>
+<item historyLabel="PlayFrequency.java" index="0">
 <position info="not_deleted" x="799" y="0"/>
 </item>
-<item historyLabel="Main.java" index="8">
+<item historyLabel="Main.java" index="4">
 <position info="not_deleted" x="628" y="0"/>
 </item>
-<item historyLabel="helloworld.xml" index="7"/>
-<item historyLabel="Main.java" index="8">
+<item historyLabel="helloworld.xml" index="3"/>
+<item historyLabel="Main.java" index="4">
 <position info="not_deleted" x="1030" y="0"/>
 </item>
-<item historyLabel="PlayFrequency.java" index="9">
+<item historyLabel="PlayFrequency.java" index="5">
 <position info="not_deleted" x="1353" y="0"/>
 </item>
-<item historyLabel="helloworld.xml" index="10"/>
-<item historyLabel="PlayFrequency.java" index="9">
+<item historyLabel="helloworld.xml" index="6"/>
+<item historyLabel="PlayFrequency.java" index="5">
 <position info="not_deleted" x="1353" y="0"/>
 </item>
-<item historyLabel="Hearing Test Manifest" index="11"/>
-<item historyLabel="Main.java" index="12">
+<item historyLabel="Hearing Test Manifest" index="7"/>
+<item historyLabel="Main.java" index="8">
 <position/>
 </item>
-<item historyLabel="PlayFrequency.java" index="9">
+<item historyLabel="PlayFrequency.java" index="5">
 <position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="Main.java" index="12">
+<item historyLabel="Main.java" index="8">
 <position/>
 </item>
-<item historyLabel="PlayFrequency.java" index="9">
+<item historyLabel="PlayFrequency.java" index="5">
 <position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="Main.java" index="12">
+<item historyLabel="Main.java" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="PlayFrequency.java" index="9">
+<item historyLabel="PlayFrequency.java" index="5">
 <position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="Main.java" index="12">
+<item historyLabel="Main.java" index="8">
 <position info="not_deleted" x="1372" y="0"/>
 </item>
-<item historyLabel="Main.java" index="12">
+<item historyLabel="Main.java" index="8">
 <position info="not_deleted" x="1372" y="0"/>
 </item>
-<item active="true" historyLabel="Main.java" index="12">
+<item historyLabel="Main.java" index="8">
 <position info="not_deleted" x="455" y="8"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="1078" y="1"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="1009" y="0"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="1036" y="116"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="1009" y="0"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="1071" y="10"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="1036" y="116"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="1069" y="10"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="1036" y="116"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="2039" y="0"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="2039" y="0"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="1069" y="10"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="2014" y="0"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item historyLabel="Hearing Test Manifest" index="10"/>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="1221" y="0"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="2071" y="0"/>
+</item>
+<item historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="2132" y="0"/>
+</item>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="2071" y="0"/>
+</item>
+<item historyLabel="Hearing Test Manifest" index="10"/>
+<item historyLabel="Main.java" index="8">
+<position info="not_deleted" x="2119" y="0"/>
+</item>
+<item active="true" historyLabel="PushToDB.java" index="9">
+<position info="not_deleted" x="2132" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -451,6 +458,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PushToDB.java" tooltip="Hearing Test/src/com/capstone/hearingtest/PushToDB.java">
+<persistable path="/Hearing Test/src/com/capstone/hearingtest/PushToDB.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Main.java">
 <persistable path="/Hearing Test/src/com/capstone/hearingtest/Main.java"/>
 </file>
