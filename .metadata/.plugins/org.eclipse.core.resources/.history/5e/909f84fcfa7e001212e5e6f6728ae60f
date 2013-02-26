@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.capstone.hearingtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <SeekBar android:id="@+id/seekbar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:max="100"
+		android:minWidth="250px"  />
+
+    
+</manifest>

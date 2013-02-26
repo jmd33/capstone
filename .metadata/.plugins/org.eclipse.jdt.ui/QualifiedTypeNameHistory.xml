@@ -4,9 +4,10 @@
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.PlayFrequency"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
 <fullyQualifiedTypeName name="android.os.AsyncTask"/>
 <fullyQualifiedTypeName name="org.apache.http.client.entity.UrlEncodedFormEntity"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.apache.http.NameValuePair"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
 </qualifiedTypeNameHistroy>

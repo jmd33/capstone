@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="@string/a" 
+	android:textIsSelectable="true" />
+	
+	<SeekBar android:id="@+id/seekbar"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:max="100"
+	android:minWidth="150dp"  />
+	
+	<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnAlert"
+    android:text="Click"
+    />
+	
+	<TextView  android:id="@+id/textview"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:height="30dp"
+	android:width="40dp"
+	/>
+	
+</LinearLayout>

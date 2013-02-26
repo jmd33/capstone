@@ -1,5 +1,8 @@
-INDEX VERSION 1.126+/Users/wazo/Documents/UW/capstone/capstone/.metadata/.plugins/org.eclipse.jdt.core
-952544035.index
-4126291403.index
-3051306758.index
-2034432366.index
+INDEX VERSION 1.126+C:\Users\Gobias\My Documents\workspace\capstone\.metadata\.plugins\org.eclipse.jdt.core
+1296764017.index
+1253870155.index
+3352491446.index
+4073465217.index
+1105725124.index
+383545601.index
+3178677356.index

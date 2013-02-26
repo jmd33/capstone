@@ -1,0 +1,50 @@
+package com.example.seekbar_test;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
+
+public class SeekBarExample extends Activity
+{
+	SeekBar seekbar;
+	TextView value;
+	
+	public void onCreate(Bundle savedInstanceState)
+	{
+	
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	        
+		value = (TextView) findViewById(R.id.textviews);
+
+		seekbar = (SeekBar) findViewById(R.id.seekbar);
+		
+	        
+		seekbar.setOnSeekBarChangeListener( new OnSeekBarChangeListener()
+		{
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser)
+			{
+				// TODO Auto-generated method stub
+				try {
+					value.setText("SeekBar value is " +progress);
+				} catch (Exception e) {
+					e.printStackTrace();
+					value.setText(e.getMessage());
+				}
+		        
+			}
+		
+			public void onStartTrackingTouch(SeekBar seekBar)
+			{
+		         // TODO Auto-generated method stub
+			}
+		
+		    public void onStopTrackingTouch(SeekBar seekBar)
+		    {
+		         // TODO Auto-generated method stub
+		    }
+		});
+	}
+}

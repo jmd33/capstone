@@ -1,0 +1,17 @@
+package com.example.seekbar_test;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
+
+public class SeekBarExample extends Activity
+{
+	SeekBar seekbar;
+	TextView value;
+	
+	
+	
+	
+}
