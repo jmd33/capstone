@@ -10,6 +10,8 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        layout_marginLeft="10dip"
+		layout_marginRight="10dip"	
         android:text="Hearing Test"
         android:textColor="#FFFFFF"
         android:textSize="50dp" />
@@ -54,7 +56,7 @@
     	<Button
     	    android:id="@+id/BTN_submit"
     	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"	   
+    	    android:layout_height="wrap_content"
     	    android:layout_margin="40dp"
     	    android:height="60dp"
     	    android:text="Submit"

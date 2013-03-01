@@ -54,8 +54,9 @@
     	<Button
     	    android:id="@+id/BTN_submit"
     	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"	   
+    	    android:layout_height="wrap_content"
     	    android:layout_margin="40dp"
+       	    android:layout_marginleft="80dp"
     	    android:height="60dp"
     	    android:text="Submit"
     	    android:width="100dp" />

@@ -78,7 +78,7 @@ public class Main extends Activity{
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser)
 			{
 				num = (float)progress / 1000;
-				value.setText("Volume is at" + progress + "%");
+				value.setText("SeekBar value is " + progress +" , Volume is " + progress + "%");
 			}
 
 		    public void onStartTrackingTouch(SeekBar seekBar)
