@@ -1,0 +1,100 @@
+package com.capstone.hearingtest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.accounts.Account;
+import android.accounts.AccountManager;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.TextView;
+
+public class CreateAccount extends Activity {
+    private SharedPreferences user_info;
+    Context ctx = this;
+    
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.create_account);
+		user_info = getSharedPreferences("user_info", MODE_PRIVATE);
+		// if(user_info.contains("account")){//already created an account. So
+		// maybe we need to check the db
+
+		// }else{//get new account from AccountManager. Ask them age and gender.
+		// Push to db.
+
+		// Create an ArrayAdapter using the string array and a default spinner layout
+//		int[] ages = new int[99]; 
+		
+		final CharSequence[] x = new CharSequence[50];
+
+		 List<String> ages =  new ArrayList<String>();
+		 for(int i = 0; i < 98; i++)
+				ages.add(i+"");
+//		    SpinnerArray.add("what ever it is you want");
+//		    SpinnerArray.add("what ever it is you want");
+
+		    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, ages);
+		    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		    Spinner spinner_age = (Spinner) findViewById(R.id.spinner_age);
+		    spinner_age.setAdapter(adapter);
+		
+		AccountManager am = AccountManager.get(this); // "this" references the
+														// current Context
+		
+		Account[] accounts = am.getAccountsByType("com.google");
+		int len = accounts.length;
+		
+
+		 if(len > 1){//user needs to choose an account
+			 showAccountAlert(accounts);
+		 }else{
+			 TextView tv_account = (TextView) findViewById(R.id.tv_account);
+			 tv_account.setText(accounts[0].name);
+			 setAccountPref(accounts[0].name);
+		 }
+		for (int i = 0; i < len; i++)
+			Log.d("ACCOUNTS", accounts[i].toString());
+
+		// }
+
+	}
+	protected void showAccountAlert(Account[] accounts){
+		int len = accounts.length;
+		final CharSequence[] accs = new CharSequence[len];
+		for (int i = 0; i < len; i++)
+			accs[i] = accounts[i].name;
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setItems(accs, new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				switch (which) {
+				case 0:
+					TextView tv_account = (TextView) findViewById(R.id.tv_account);
+					tv_account.setText(accs[which].toString());
+					setAccountPref(accs[which].toString());
+					break;
+				}
+				dialog.dismiss();
+			}
+		});
+		AlertDialog dialog = builder.create();
+		dialog.setTitle("Choose an account");
+		dialog.show();
+	}
+	protected void setAccountPref(String account_name) {
+		SharedPreferences.Editor prefEditor = user_info.edit();
+		prefEditor.putString("account", account_name);
+		prefEditor.commit();
+		Log.d("MAIN",
+				"user_info account = "
+						+ user_info.getString("account", "error"));
+	}
+}

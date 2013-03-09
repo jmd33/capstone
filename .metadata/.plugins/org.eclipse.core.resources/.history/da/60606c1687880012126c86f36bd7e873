@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hearing Test</string>
+    <string name="welcome">Welcome to us. We about to test your hearing!</string>
+</resources>
