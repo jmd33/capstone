@@ -37,12 +37,12 @@ public class HearingTest extends Activity{
 			public void onClick(View arg0) {
 				Log.d("Main", "button pressed");//this shows up in the LogCat. Helpful for debugging.
 				int input = 0;
-//				EditText et = (EditText) findViewById(R.id.ET_frequency);
-//				String s = et.getText().toString();
-//				input = Integer.parseInt(s);//retrieve the input and parse as INT
-//				Log.d("Main", "freq"+input);//this shows up in the LogCat. Helpful for debugging.
+				EditText et = (EditText) findViewById(R.id.ET_frequency);
+				String s = et.getText().toString();
+				input = Integer.parseInt(s);//retrieve the input and parse as INT
+				Log.d("Main", "freq"+input);//this shows up in the LogCat. Helpful for debugging.
 
-				PlayFrequency.genTone(3, 3300);
+				PlayFrequency.genTone(3, input);
 				PlayFrequency.playSound((float)num, (float)num);
 			}
 		});

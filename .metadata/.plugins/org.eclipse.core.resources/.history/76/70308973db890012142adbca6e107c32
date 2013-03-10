@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/textView1"
@@ -11,6 +11,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:text="Current"
+        android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
     <TextView
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:text="Frequency"
+        android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
     <TextView
@@ -27,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:text="20k HZ"
+        android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
     <TextView
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
         android:text="Volume."
+        android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <SeekBar
@@ -51,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:height="20dp"
+        
         android:text="Play"
         android:width="100dp" />
 
@@ -68,6 +73,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:height="30dp"
+        android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:width="40dp" />
 
