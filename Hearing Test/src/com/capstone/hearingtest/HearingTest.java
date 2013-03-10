@@ -1,7 +1,5 @@
 package com.capstone.hearingtest;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;

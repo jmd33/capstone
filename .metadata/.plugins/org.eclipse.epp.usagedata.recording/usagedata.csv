@@ -1,51 +1,26 @@
 what,kind,bundleId,bundleVersion,description,time
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362816520832
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1362816541631
-executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.add.import",1362816547253
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816575744
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816580812
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1362816603045
-executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1362816603806
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362816606423
-executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1362816608440
-executed,command,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.edit.text.java.toggle.comment",1362816609616
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362816617162
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362816617875
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816627712
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816627816
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816651940
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816660483
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816666942
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816668290
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1362816749402
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1362816750181
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362816754320
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362816756552
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1362816757637
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362816758592
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1362816759694
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362816760080
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362816762406
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362816763568
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816766183
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1362816769549
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362816798038
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816854174
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816875429
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816875717
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816877512
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362816879218
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1362816880634
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362816881524
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816890849
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816906175
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362816915031
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1362816917241
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362816918168
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362816921133
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362816922362
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816923554
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362816924696
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1362816935323
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1362816946059
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1362816947728
+error,log,,,"create_account.xml: Failed to find style 'buttonStyle' in current theme",1362951813069
+error,log,,,"create_account.xml: Failed to find style 'buttonStyle' in current theme",1362951813071
+error,log,,,"create_account.xml: Failed to find style 'buttonStyle' in current theme",1362951813073
+error,log,,,"create_account.xml: Failed to find style 'textViewStyle' in current theme",1362951813082
+error,log,,,"create_account.xml: Failed to find style 'textViewStyle' in current theme",1362951813084
+error,log,,,"create_account.xml: android.content.res.Resources$NotFoundException",1362951813091
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362951813131
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362951898898
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362951964700
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362951965446
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952128646
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1362952152534
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952158490
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952350158
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362952352251
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952404079
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952493863
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362952513370
+activated,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1362952576768
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952581042
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952656168
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362952659046
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952663647
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.findReplace",1362952663677
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362952739965

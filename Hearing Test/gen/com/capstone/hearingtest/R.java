@@ -35,13 +35,14 @@ public final class R {
         public static final int create_account=0x7f030000;
         public static final int helloworld=0x7f030001;
         public static final int main=0x7f030002;
-        public static final int welcome=0x7f030003;
+        public static final int test_tone=0x7f030003;
+        public static final int welcome=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
         public static final int welcome=0x7f050001;
     }
     public static final class style {
-        public static final int AppTheme=0x7f060000;
+        public static final int ThemeLight=0x7f060000;
     }
 }

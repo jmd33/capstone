@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.help,3.5.100.v20110426,"org.eclipse.help",1362948557455
+started,bundle,org.eclipse.jdt.apt.core,3.3.500.v20110420-1015,"org.eclipse.jdt.apt.core",1362948557456
+started,bundle,org.eclipse.jsch.core,1.1.300.I20110514-0800,"org.eclipse.jsch.core",1362948557456
+started,bundle,org.eclipse.mylyn.commons.ui,3.6.1.v20110720-0100,"org.eclipse.mylyn.commons.ui",1362948557456
+started,bundle,org.eclipse.mylyn.context.core,3.6.1.v20110720-0100,"org.eclipse.mylyn.context.core",1362948557458
+started,bundle,org.eclipse.mylyn.team.ui,3.6.1.v20110825-0100,"org.eclipse.mylyn.team.ui",1362948557459
+started,bundle,org.eclipse.team.core,3.6.0.I20110525-0800,"org.eclipse.team.core",1362948557459
+started,bundle,org.eclipse.team.cvs.core,3.3.400.I20110510-0800,"org.eclipse.team.cvs.core",1362948557460
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1362948557461
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.200.v20110815-1438,"org.eclipse.equinox.simpleconfigurator",1362948557463
+started,bundle,com.ibm.icu,4.4.2.v20110823,"com.ibm.icu",1362948557464
+started,bundle,org.eclipse.core.filebuffers,3.5.200.v20110928-1504,"org.eclipse.core.filebuffers",1362948557465
+started,bundle,org.eclipse.core.jobs,3.5.101.v20120113-1953,"org.eclipse.core.jobs",1362948557465
+started,bundle,org.eclipse.core.resources,3.7.101.v20120125-1505,"org.eclipse.core.resources",1362948557466
+started,bundle,org.eclipse.core.variables,3.2.500.v20110928-1503,"org.eclipse.core.variables",1362948557466
+started,bundle,org.eclipse.debug.core,3.7.1.v20111129-2031,"org.eclipse.debug.core",1362948557467
+started,bundle,org.eclipse.egit.core,1.3.0.201202151440-r,"org.eclipse.egit.core",1362948557467
+started,bundle,org.eclipse.egit.ui,1.3.0.201202151440-r,"org.eclipse.egit.ui",1362948557511
+started,bundle,org.eclipse.equinox.p2.core,2.1.1.v20120113-1346,"org.eclipse.equinox.p2.core",1362948557512
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.300.v20110815-1419,"org.eclipse.equinox.p2.directorywatcher",1362948557513
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.1.100.v20110815-1419,"org.eclipse.equinox.p2.reconciler.dropins",1362948557515
+started,bundle,org.eclipse.equinox.preferences,3.4.2.v20120111-2020,"org.eclipse.equinox.preferences",1362948557515
+started,bundle,org.eclipse.jdt.core,3.7.3.v20120119-1537,"org.eclipse.jdt.core",1362948557516
+started,bundle,org.eclipse.jdt.core.manipulation,1.4.0.v20110928-1453,"org.eclipse.jdt.core.manipulation",1362948557517
+started,bundle,org.eclipse.jdt.launching,3.6.1.v20111006_r372,"org.eclipse.jdt.launching",1362948557518
+started,bundle,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui",1362948557518
+started,bundle,org.eclipse.jface,3.7.0.v20110928-1505,"org.eclipse.jface",1362948557519
+started,bundle,org.eclipse.jgit,1.3.0.201202151440-r,"org.eclipse.jgit",1362948557519
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.201.r372_v20111101-0700,"org.eclipse.ltk.core.refactoring",1362948557520
+started,bundle,org.eclipse.ltk.ui.refactoring,3.6.0.v20110928-1453,"org.eclipse.ltk.ui.refactoring",1362948557521
+started,bundle,org.eclipse.m2e.logback.configuration,1.0.200.20111228-1245,"org.eclipse.m2e.logback.configuration",1362948557522
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.6.5.v20120123-0100,"org.eclipse.mylyn.bugzilla.core",1362948557522
+started,bundle,org.eclipse.mylyn.context.ui,3.6.1.v20120112-0100,"org.eclipse.mylyn.context.ui",1362948557543
+started,bundle,org.eclipse.mylyn.tasks.ui,3.6.5.v20120215-0100,"org.eclipse.mylyn.tasks.ui",1362948557587
+started,bundle,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search",1362948557588
+started,bundle,org.eclipse.team.cvs.ui,3.3.401.v20120126-1227,"org.eclipse.team.cvs.ui",1362948557589
+started,bundle,org.eclipse.team.ui,3.6.101.R37x_v20111109-0800,"org.eclipse.team.ui",1362948557591
+started,bundle,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui",1362948557592
+started,bundle,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console",1362948557596
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.editors",1362948557596
+started,bundle,org.eclipse.ui.forms,3.5.101.v20111011-1919,"org.eclipse.ui.forms",1362948557601
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.ide",1362948557602
+started,bundle,org.eclipse.ui.net,1.2.100.v20111208-1155,"org.eclipse.ui.net",1362948557603
+started,bundle,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views",1362948557604
+started,bundle,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"org.eclipse.ui.workbench",1362948557605
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.workbench.texteditor",1362948557606
+started,bundle,org.eclipse.wb.core,1.3.0.r37x201202052311,"org.eclipse.wb.core",1362948557637
+started,bundle,org.eclipse.wb.core.lib,1.3.0.r37x201202052311,"org.eclipse.wb.core.lib",1362948557743
+started,bundle,org.tigris.subversion.clientadapter,1.6.12,"org.tigris.subversion.clientadapter",1362948557743
+started,bundle,org.tigris.subversion.subclipse.core,1.6.18,"org.tigris.subversion.subclipse.core",1362948557744
+started,bundle,org.tigris.subversion.subclipse.mylyn,3.0.0,"org.tigris.subversion.subclipse.mylyn",1362948557744
+started,bundle,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.adt",1362948557744
+started,bundle,com.android.ide.eclipse.base,21.1.0.v201302060044-569685,"com.android.ide.eclipse.base",1362948557745
+started,bundle,com.android.ide.eclipse.ddms,21.1.0.v201302060044-569685,"com.android.ide.eclipse.ddms",1362948557745
+started,bundle,com.android.ide.eclipse.traceview,21.1.0.v201302060044-569685,"com.android.ide.eclipse.traceview",1362948557746
+started,bundle,com.google.appengine.eclipse.core,3.2.0.v201302131858-rel-r37,"com.google.appengine.eclipse.core",1362948557746
+started,bundle,com.google.gdt.eclipse.appengine.rpc,3.2.0.v201302131858-rel-r37,"com.google.gdt.eclipse.appengine.rpc",1362948557747
+started,bundle,com.google.gdt.eclipse.core,3.2.0.v201302131858-rel-r37,"com.google.gdt.eclipse.core",1362948557747
+started,bundle,com.google.gdt.eclipse.login,3.2.0.v201302131858-rel-r37,"com.google.gdt.eclipse.login",1362948557748
+started,bundle,com.google.gdt.eclipse.managedapis,3.2.0.v201302131858-rel-r37,"com.google.gdt.eclipse.managedapis",1362948557748
+started,bundle,com.google.gdt.eclipse.platform.e37,3.2.0.v201302131858-rel-r37,"com.google.gdt.eclipse.platform.e37",1362948557748
+started,bundle,com.google.gdt.eclipse.suite.ext,3.2.0.v201302131858-rel-r37,"com.google.gdt.eclipse.suite.ext",1362948557749
+started,bundle,com.google.gwt.eclipse.core,3.2.0.v201302131858-rel-r37,"com.google.gwt.eclipse.core",1362948557798
+os,sysinfo,,,"macosx",1362948557802
+arch,sysinfo,,,"x86_64",1362948557802
+ws,sysinfo,,,"cocoa",1362948557802
+locale,sysinfo,,,"en_US",1362948557802
+processors,sysinfo,,,"2",1362948557803
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1362948557803
+java.runtime.version,sysinfo,,,"1.6.0_37-b06-434-10M3909",1362948557803
+java.specification.name,sysinfo,,,"Java Platform API Specification",1362948557803
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1362948557803
+java.specification.version,sysinfo,,,"1.6",1362948557803
+java.vendor,sysinfo,,,"Apple Inc.",1362948557803
+java.version,sysinfo,,,"1.6.0_37",1362948557803
+java.vm.info,sysinfo,,,"mixed mode",1362948557803
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1362948557803
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1362948557803
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1362948557803
+java.vm.specification.version,sysinfo,,,"1.0",1362948557803
+java.vm.vendor,sysinfo,,,"Apple Inc.",1362948557803
+java.vm.version,sysinfo,,,"20.12-b01-434",1362948557803
+started,bundle,org.eclipse.m2e.usagedata,1.0.200.20111228-1245,"org.eclipse.m2e.usagedata",1362948557824
+started,bundle,org.eclipse.equinox.p2.operations,2.1.1.R37x_v20111111,"org.eclipse.equinox.p2.operations",1362948557965
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1362948557973
+started,bundle,org.eclipse.equinox.p2.engine,2.1.1.R37x_v20111003,"org.eclipse.equinox.p2.engine",1362948558086
+started,bundle,org.eclipse.equinox.p2.metadata,2.1.0.v20110815-1419,"org.eclipse.equinox.p2.metadata",1362948558187
+started,bundle,org.eclipse.equinox.p2.repository,2.1.1.v20120113-1346,"org.eclipse.equinox.p2.repository",1362948558205
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.2.0.v20110815-1419,"org.eclipse.equinox.p2.metadata.repository",1362948558251
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.100.v20110815-1419,"org.eclipse.equinox.p2.ui.sdk.scheduler",1362948558328
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.200.v20110815-1419,"org.eclipse.equinox.p2.updatechecker",1362948558377
+started,bundle,com.collabnet.subversion.merge,2.2.4,"com.collabnet.subversion.merge",1362948558402
+started,bundle,org.eclipse.wb.discovery.core,1.3.0.r37x201202052340,"org.eclipse.wb.discovery.core",1362948558528
+started,bundle,org.eclipse.wb.discovery.ui,1.3.0.r37x201202052340,"org.eclipse.wb.discovery.ui",1362948558801
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1362948558807
+started,bundle,org.tigris.subversion.subclipse.tools.usage,1.0.1,"org.tigris.subversion.subclipse.tools.usage",1362948559068
+started,bundle,org.tigris.subversion.subclipse.ui,1.6.18,"org.tigris.subversion.subclipse.ui",1362948559103
+started,bundle,com.questoid.sqlitemanager,1.0.0,"com.questoid.sqlitemanager",1362948559626
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1362948559653
+started,bundle,org.eclipse.equinox.p2.extensionlocation,1.2.100.v20110815-1419,"org.eclipse.equinox.p2.extensionlocation",1362948560234
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.1.101.v20110815-1419,"org.eclipse.equinox.p2.artifact.repository",1362948560398
+started,bundle,org.eclipse.equinox.p2.publisher,1.2.0.v20110815-1419,"org.eclipse.equinox.p2.publisher",1362948560496
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.201.v201201101553,"org.eclipse.wst.common.project.facet.core",1362948560507
+started,bundle,org.eclipse.equinox.p2.touchpoint.eclipse,2.1.1.v20110815-1419,"org.eclipse.equinox.p2.touchpoint.eclipse",1362948560526
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.200.v201103170302,"org.eclipse.jst.common.project.facet.core",1362948560640
+started,bundle,org.eclipse.jpt.common.core,1.0.2.v201111103010,"org.eclipse.jpt.common.core",1362948560736
+stopped,bundle,org.eclipse.jpt.jpa.core,3.0.2.v201201243020,"org.eclipse.jpt.jpa.core",1362948560807
+error,log,,,"An error occurred while automatically activating bundle org.eclipse.jpt.jpa.core (878).",1362948560884
+error,log,,,"Could not create content describer for org.eclipse.jpt.jpa.core.content.baseJpaContent. Content type has been disabled.",1362948560886
+started,bundle,org.eclipse.wst.sse.core,1.1.602.v201112071516,"org.eclipse.wst.sse.core",1362948561021
+started,bundle,org.eclipse.equinox.p2.transport.ecf,1.0.0.v20111128-0624,"org.eclipse.equinox.p2.transport.ecf",1362948561061
+started,bundle,org.eclipse.ecf.filetransfer,5.0.0.v20110531-2218,"org.eclipse.ecf.filetransfer",1362948561136
+started,bundle,org.eclipse.ecf.identity,3.1.100.v20110531-2218,"org.eclipse.ecf.identity",1362948561153
+started,bundle,org.eclipse.ecf,3.1.300.v20110531-2218,"org.eclipse.ecf",1362948561306
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,4.0.0.v20110531-2218,"org.eclipse.ecf.provider.filetransfer.httpclient",1362948561387
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.2.0.v20110531-2218,"org.eclipse.ecf.provider.filetransfer",1362948561402
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.300.v20110815-1419,"org.eclipse.equinox.p2.updatesite",1362948582567
+started,bundle,org.eclipse.equinox.p2.publisher.eclipse,1.0.0.v20110815-1438,"org.eclipse.equinox.p2.publisher.eclipse",1362948583011
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948591684
+started,bundle,org.eclipse.equinox.p2.director,2.1.1.v20111126-0211,"org.eclipse.equinox.p2.director",1362948595796
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.garbagecollector",1362948595821
+started,bundle,org.eclipse.wst.xml.core,1.1.602.v201201091944,"org.eclipse.wst.xml.core",1362948629974
+started,bundle,org.eclipse.wst.common.uriresolver,1.1.401.v201004280700,"org.eclipse.wst.common.uriresolver",1362948630067
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948630259
+started,bundle,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui",1362948630396
+started,bundle,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui",1362948630403
+started,bundle,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui",1362948632448
+started,bundle,org.eclipse.wst.validation,1.2.303.v201202090300,"org.eclipse.wst.validation",1362948632823
+started,bundle,org.eclipse.wst.dtd.ui,1.0.600.v201103171359,"org.eclipse.wst.dtd.ui",1362948632942
+started,bundle,org.eclipse.emf.common,2.7.0.v20120127-1122,"org.eclipse.emf.common",1362948632991
+opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362948633371
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362948634279
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948676119
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948707692
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1362948707718
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948708259
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948715484
+opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362948719179
+started,bundle,org.eclipse.m2e.editor.xml,1.0.200.20111228-1245,"org.eclipse.m2e.editor.xml",1362948719235
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362948719680
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.selectAll",1362948726582
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1362948727374
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1362948729190
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.selectAll",1362948732214
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362948733268
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948740639
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948741960
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948742823
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948745225
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362948771009
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362948771208
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362948771950
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362948772330
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1362948788790
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362948801995
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362948808342
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948812228
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948817837
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948833259
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836034
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362948836096
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836186
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836336
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836580
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836753
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836862
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948836979
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837139
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837244
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837359
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837456
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837574
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837681
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837803
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948837932
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838038
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838152
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838253
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838372
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838470
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838577
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838670
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838794
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948838905
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839003
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839202
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839317
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839445
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839561
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839676
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839785
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948839881
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840028
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840158
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840313
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840420
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840539
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840648
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948840743
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948842667
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948850310
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948851433
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948852734
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362948857556
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362948865541
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1362948873482
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362948874567
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362948876627
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948880744
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948881956
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948887689
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948900776
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362948900832
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948900994
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948901247
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948901483
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948901619
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948901780
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948901917
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948902079
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948902215
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362948902375
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948902479
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948902631
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948902783
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948902935
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948903103
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948903261
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948903431
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948903579
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948903728
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948903881
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904036
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904186
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904328
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904510
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904662
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904816
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948904978
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948905140
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948905299
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948905466
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948905618
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948905813
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948906027
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948906263
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948906497
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948906733
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948906968
+error,log,,,"test_tone.xml: Dimension ""20"" in attribute ""height"" is missing unit!",1362948907196
