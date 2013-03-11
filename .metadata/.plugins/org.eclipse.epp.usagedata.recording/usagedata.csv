@@ -1,51 +1,51 @@
 what,kind,bundleId,bundleVersion,description,time
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505192
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505192
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505193
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505193
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505194
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505194
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505194
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505195
-error,log,,,"test_tone.xml: Failed to find style 'seekBarStyle' in current theme",1362961505195
-error,log,,,"test_tone.xml: Failed to find style 'seekBarStyle' in current theme",1362961505196
-error,log,,,"test_tone.xml: Failed to find style 'seekBarStyle' in current theme",1362961505198
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505199
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505199
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505199
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505200
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505200
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505201
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505201
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505201
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505202
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505202
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505202
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505203
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505370
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505371
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505371
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505371
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505372
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505372
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505373
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505373
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505374
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505374
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505374
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505375
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505375
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505376
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505376
-error,log,,,"test_tone.xml: Failed to find style 'textViewStyle' in current theme",1362961505377
-error,log,,,"test_tone.xml: Failed to find style 'seekBarStyle' in current theme",1362961505377
-error,log,,,"test_tone.xml: Failed to find style 'seekBarStyle' in current theme",1362961505378
-error,log,,,"test_tone.xml: Failed to find style 'seekBarStyle' in current theme",1362961505378
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505379
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505380
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505380
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505380
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505381
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505381
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505381
-error,log,,,"test_tone.xml: Failed to find style 'buttonStyle' in current theme",1362961505382
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972817786
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972818138
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972818482
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972819217
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362972822913
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362972825661
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362972826204
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.cleanAction",1362972826267
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362972827293
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1362972828696
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1362972841498
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972849954
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972850194
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972850369
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1362972851430
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362972853134
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362972866161
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362972889053
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972892168
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972892511
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972892734
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972893098
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1362972894794
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972907251
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1362972909133
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972911701
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972911877
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972912037
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972912173
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972912389
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972912645
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972912861
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972913037
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972913381
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1362972921061
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362972922933
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1362972923761
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972927830
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1362972932557
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362972942140
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362972942307
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362972942476
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362972942724
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1362972942972
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1362972943420
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972956017
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1362972956310
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972964939
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972965083
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1362972965251

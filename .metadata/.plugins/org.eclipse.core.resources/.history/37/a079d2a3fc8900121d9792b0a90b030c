@@ -43,12 +43,12 @@ public class CreateAccount extends Activity {
 											// inputed and probably send it to
 											// the db and then start the next
 											// activity
+//				TODO: sdfadf
 				String account = tv_account.getText().toString();
 				Spinner sp_gender = (Spinner) findViewById(R.id.spinner_gender);
 				String gender = sp_gender.getSelectedItem().toString();
 				Spinner sp_age =  (Spinner) findViewById(R.id.spinner_age);
 				int age = Integer.parseInt(sp_age.getSelectedItem().toString());
-				
 				setAccountPref(account, gender, age);
 
 				Intent intent = new Intent(ctx, HearingTest.class);
@@ -112,10 +112,7 @@ public class CreateAccount extends Activity {
 
 		prefEditor.commit();
 		Log.d("MAIN",
-				"user_info account = " + user_info.getString("account", "error"));
-		Log.d("MAIN",
-				"user_info gender = " + user_info.getString("gender", "error"));
-		Log.d("MAIN",
-				"user_info age = " + user_info.getInt("age", -1));
+				"user_info account = "
+						+ user_info.getString("account", "error"));
 	}
 }

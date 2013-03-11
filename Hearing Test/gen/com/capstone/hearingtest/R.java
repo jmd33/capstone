@@ -23,8 +23,8 @@ public final class R {
         public static final int btn_create_account=0x7f070006;
         public static final int btn_getstarted=0x7f07000c;
         public static final int seekbar=0x7f070009;
-        public static final int spinner1=0x7f070003;
         public static final int spinner_age=0x7f070005;
+        public static final int spinner_gender=0x7f070003;
         public static final int textView1=0x7f070000;
         public static final int textView2=0x7f070002;
         public static final int textView3=0x7f070004;

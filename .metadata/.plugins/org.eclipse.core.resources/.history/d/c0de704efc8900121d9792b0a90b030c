@@ -29,8 +29,6 @@ public class CreateAccount extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.create_account);
 		user_info = getSharedPreferences("user_info", MODE_PRIVATE);
-		final TextView tv_account = (TextView) findViewById(R.id.tv_account);
-
 		// if(user_info.contains("account")){//already created an account. So
 		// maybe we need to check the db
 
@@ -43,14 +41,6 @@ public class CreateAccount extends Activity {
 											// inputed and probably send it to
 											// the db and then start the next
 											// activity
-				String account = tv_account.getText().toString();
-				Spinner sp_gender = (Spinner) findViewById(R.id.spinner_gender);
-				String gender = sp_gender.getSelectedItem().toString();
-				Spinner sp_age =  (Spinner) findViewById(R.id.spinner_age);
-				int age = Integer.parseInt(sp_age.getSelectedItem().toString());
-				
-				setAccountPref(account, gender, age);
-
 				Intent intent = new Intent(ctx, HearingTest.class);
 				ctx.startActivity(intent);
 			}
@@ -73,7 +63,9 @@ public class CreateAccount extends Activity {
 		if (len > 1) {// user needs to choose an account
 			showAccountAlert(accounts);
 		} else {
+			TextView tv_account = (TextView) findViewById(R.id.tv_account);
 			tv_account.setText(accounts[0].name);
+			setAccountPref(accounts[0].name);
 		}
 		for (int i = 0; i < len; i++)
 			Log.d("ACCOUNTS", accounts[i].toString());
@@ -94,6 +86,7 @@ public class CreateAccount extends Activity {
 				case 0:
 					TextView tv_account = (TextView) findViewById(R.id.tv_account);
 					tv_account.setText(accs[which].toString());
+					setAccountPref(accs[which].toString());
 					break;
 				}
 				dialog.dismiss();
@@ -104,18 +97,12 @@ public class CreateAccount extends Activity {
 		dialog.show();
 	}
 
-	protected void setAccountPref(String account_name, String gender, int age) {
+	protected void setAccountPref(String account_name) {
 		SharedPreferences.Editor prefEditor = user_info.edit();
 		prefEditor.putString("account", account_name);
-		prefEditor.putString("gender", gender);
-		prefEditor.putInt("age", age);
-
 		prefEditor.commit();
 		Log.d("MAIN",
-				"user_info account = " + user_info.getString("account", "error"));
-		Log.d("MAIN",
-				"user_info gender = " + user_info.getString("gender", "error"));
-		Log.d("MAIN",
-				"user_info age = " + user_info.getInt("age", -1));
+				"user_info account = "
+						+ user_info.getString("account", "error"));
 	}
 }

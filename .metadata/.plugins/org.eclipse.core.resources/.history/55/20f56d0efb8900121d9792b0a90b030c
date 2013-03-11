@@ -21,18 +21,17 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.util.Log;
-
 /**
- * This class pushes data to our database asynchronously. It can be expanded to
- * push other data if need be. It can take any number of parameters. The
- * following parameters are what's needed to push a test result.
+ * This class pushes data to our database asynchronously. It can be expanded to push other data if 
+ * need be. It can take any number of parameters. The following parameters are what's needed to
+ * push a test result. 
  * 
  * @param 0 (needs to be 'testresult')
  * @param user_id
  * @param frequency
- * @param volume
- * 
- *            * @author Joe
+ * @param volume 
+ *
+ * * @author Joe
  */
 public class PushToDB extends AsyncTask<String, Integer, Long> {
 	private static final String KEY_161 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/add-test-result.php";
@@ -48,24 +47,15 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 			String volume = params[3];
 
 			addResult(user_id, frequency, volume);
-		} else if (params[0].equalsIgnoreCase("adduser")) {
-			String user_id = params[1];
-			String gender = params[2];
-			String age = params[3];
-
-			addUser(user_id, gender, age);
 		}
+		// else if(params[0].equalsIgnoreCase("adduser")){
+		// }
 		return null;
 	}
 
-	private void addUser(String user_id, String gender, String age) {
-		// TODO write method to push new user to db.
-
-	}
-
-	// public static SharedPreferences getSharedPreferences(Context ctxt) {
-	// return ctxt.getSharedPreferences("user_info", 0);
-	// }
+//	public static SharedPreferences getSharedPreferences(Context ctxt) {
+//		return ctxt.getSharedPreferences("user_info", 0);
+//	}
 
 	protected void addResult(String user_id, String frequency, String volume) {
 		HttpClient httpclient = new DefaultHttpClient();
@@ -79,13 +69,13 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
 			HttpResponse response = httpclient.execute(httppost);
-			// HttpEntity entity = response.getEntity();
+//			 HttpEntity entity = response.getEntity();
 			// is = entity.getContent();
 			Log.d("PushToDB", "Pushed Result");
 
 		} catch (Exception e) {
 			Log.e("PushToDB", "Error in http connection " + e.toString());
-
+		
 		}
 	}
 

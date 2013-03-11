@@ -112,10 +112,7 @@ public class CreateAccount extends Activity {
 
 		prefEditor.commit();
 		Log.d("MAIN",
-				"user_info account = " + user_info.getString("account", "error"));
-		Log.d("MAIN",
-				"user_info gender = " + user_info.getString("gender", "error"));
-		Log.d("MAIN",
-				"user_info age = " + user_info.getInt("age", -1));
+				"user_info account = "
+						+ user_info.getString("account", "error"));
 	}
 }
