@@ -133,7 +133,7 @@ public class PlayFrequency {
 	 */
 	private static void setVars(int d, int f) {
 		duration = d; // seconds
-		sampleRate = 44100;
+		sampleRate = 8000;
 		numSamples = duration * sampleRate;
 		sample = new double[numSamples];
 		freqOfTone = f; // hz

@@ -33,8 +33,7 @@ public class PlayFrequency {
 
 		// fill out the array
 		for (int i = 0; i < numSamples; ++i) {
-//			sample[i] = Math.sin(2 * Math.PI * i / (sampleRate / freqOfTone));
-			sample[i] = Math.sin(freqOfTone * (2 * Math.PI) * i / sampleRate);
+			sample[i] = Math.sin(2 * Math.PI * i / (sampleRate / freqOfTone));
 		}
 		// convert to 16 bit pcm sound array
 		// assumes the sample buffer is normalized.
@@ -133,7 +132,7 @@ public class PlayFrequency {
 	 */
 	private static void setVars(int d, int f) {
 		duration = d; // seconds
-		sampleRate = 44100;
+		sampleRate = 8000;
 		numSamples = duration * sampleRate;
 		sample = new double[numSamples];
 		freqOfTone = f; // hz
