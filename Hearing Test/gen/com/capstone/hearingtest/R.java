@@ -9,6 +9,7 @@ package com.capstone.hearingtest;
 
 public final class R {
     public static final class array {
+        public static final int frequencies=0x7f040001;
         public static final int gender=0x7f040000;
     }
     public static final class attr {
@@ -30,6 +31,7 @@ public final class R {
         public static final int textView3=0x7f070004;
         public static final int textview=0x7f07000b;
         public static final int tv_account=0x7f070001;
+        public static final int tv_freq=0x7f07000d;
     }
     public static final class layout {
         public static final int create_account=0x7f030000;

@@ -46,14 +46,14 @@ public class HearingTest extends Activity{
 //				input = Integer.parseInt(s);//retrieve the input and parse as INT
 //				Log.d("Main", "freq"+input);//this shows up in the LogCat. Helpful for debugging.
 
-				PlayFrequency.genTone(3, freqs[pointer]);
+				PlayFrequency.genTone(3, 3300);
 				PlayFrequency.playSound((float)num, (float)num);
 			}
 		});
 		Button btn_submit = (Button) findViewById(R.id.BTN_submit);
 		btn_submit.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
-				if(pointer < freqs.length-1)
+				if(pointer < freqs.length)
 					pointer++;
 				tv_freq.setText(freqs[pointer]+"");
 				Log.d("Main", "submit btn pressed");//this shows up in the LogCat. Helpful for debugging.

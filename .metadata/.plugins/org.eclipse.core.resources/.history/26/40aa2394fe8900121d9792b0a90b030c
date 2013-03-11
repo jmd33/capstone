@@ -15,25 +15,21 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 public class HearingTest extends Activity{
 	  private static final String KEY_121 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/create-user.php";
 	  private SharedPreferences user_info;
-	  private SeekBar seekbar;
-	  private double num;
-	  private TextView value;
-	  private int[] freqs;
-	  private int pointer = 0;
-	  
+
+	  SeekBar seekbar;
+	  double num;
+	  TextView value;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.test_tone);
-		freqs = getResources().getIntArray(R.array.frequencies);
+
 		value = (TextView) findViewById(R.id.textview);
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
 		num = 0;
-		final TextView tv_freq = (TextView) findViewById(R.id.tv_freq);
-		tv_freq.setText(freqs[pointer]+"");
 //		PlayFrequency.genTone(3, 1200);
 //		PlayFrequency.playSound();
-//		int x = getResources().
 		
 //		Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
@@ -46,17 +42,8 @@ public class HearingTest extends Activity{
 //				input = Integer.parseInt(s);//retrieve the input and parse as INT
 //				Log.d("Main", "freq"+input);//this shows up in the LogCat. Helpful for debugging.
 
-				PlayFrequency.genTone(3, freqs[pointer]);
+				PlayFrequency.genTone(3, 3300);
 				PlayFrequency.playSound((float)num, (float)num);
-			}
-		});
-		Button btn_submit = (Button) findViewById(R.id.BTN_submit);
-		btn_submit.setOnClickListener(new OnClickListener(){
-			public void onClick(View arg0) {
-				if(pointer < freqs.length-1)
-					pointer++;
-				tv_freq.setText(freqs[pointer]+"");
-				Log.d("Main", "submit btn pressed");//this shows up in the LogCat. Helpful for debugging.
 			}
 		});
 //		this is an example of how to push a test result to our db. 

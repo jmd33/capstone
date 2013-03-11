@@ -53,7 +53,7 @@ public class HearingTest extends Activity{
 		Button btn_submit = (Button) findViewById(R.id.BTN_submit);
 		btn_submit.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
-				if(pointer < freqs.length-1)
+				if(pointer < freqs.length)
 					pointer++;
 				tv_freq.setText(freqs[pointer]+"");
 				Log.d("Main", "submit btn pressed");//this shows up in the LogCat. Helpful for debugging.

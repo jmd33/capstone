@@ -4,5 +4,14 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
-    
+    <integer-array name="frequencies">
+        <item>220</item>
+        <item>440</item>
+        <item>880</item>
+        <item>1760</item>
+        <item>3620</item>
+        <item>7240</item>
+        <item>14480</item>
+        <item>22440</item>
+    </integer-array>
 </resources>
