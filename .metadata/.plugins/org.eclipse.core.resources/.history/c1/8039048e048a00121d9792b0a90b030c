@@ -30,7 +30,7 @@ public class HearingTest extends Activity{
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
 		seekbar.setProgress(75);
 		num = 0;
-		num = .75;
+		num = 75/1000;
 		final TextView tv_freq = (TextView) findViewById(R.id.tv_freq);
 		tv_freq.setText(freqs[pointer]+"");
 //		PlayFrequency.genTone(3, 1200);

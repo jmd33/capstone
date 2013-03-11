@@ -28,9 +28,7 @@ public class HearingTest extends Activity{
 		freqs = getResources().getIntArray(R.array.frequencies);
 		value = (TextView) findViewById(R.id.textview);
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
-		seekbar.setProgress(75);
 		num = 0;
-		num = .75;
 		final TextView tv_freq = (TextView) findViewById(R.id.tv_freq);
 		tv_freq.setText(freqs[pointer]+"");
 //		PlayFrequency.genTone(3, 1200);
