@@ -9,7 +9,8 @@
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.widget.Spinner"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.array"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
 </qualifiedTypeNameHistroy>

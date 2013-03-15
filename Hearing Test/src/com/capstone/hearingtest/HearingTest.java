@@ -1,6 +1,8 @@
 package com.capstone.hearingtest;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +22,7 @@ public class HearingTest extends Activity{
 	  private TextView value;
 	  private int[] freqs;
 	  private int pointer = 0;
-	  
+	  private Context ctx = this;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -57,6 +59,10 @@ public class HearingTest extends Activity{
 			public void onClick(View arg0) {
 				if(pointer < freqs.length-1)
 					pointer++;
+				else if(pointer == freqs.length-1){
+					Intent intent = new Intent(ctx, HearingAidMain.class);
+				ctx.startActivity(intent);
+				}
 				tv_freq.setText(freqs[pointer]+"");
 				Log.d("Main", "submit btn pressed");//this shows up in the LogCat. Helpful for debugging.
 			}

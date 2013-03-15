@@ -30,15 +30,17 @@ public final class R {
         public static final int textView2=0x7f070002;
         public static final int textView3=0x7f070004;
         public static final int textview=0x7f07000b;
+        public static final int toggleButton1=0x7f07000d;
         public static final int tv_account=0x7f070001;
-        public static final int tv_freq=0x7f07000d;
+        public static final int tv_freq=0x7f07000e;
     }
     public static final class layout {
         public static final int create_account=0x7f030000;
         public static final int helloworld=0x7f030001;
         public static final int main=0x7f030002;
-        public static final int test_tone=0x7f030003;
-        public static final int welcome=0x7f030004;
+        public static final int record=0x7f030003;
+        public static final int test_tone=0x7f030004;
+        public static final int welcome=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
