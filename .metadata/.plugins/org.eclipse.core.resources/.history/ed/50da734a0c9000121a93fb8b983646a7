@@ -58,7 +58,7 @@ public class HearingTest extends Activity{
 		btn_submit.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
 				
-//				new PushToDB().execute("testresult", user_info.getString("account", "error"), freqs[pointer]+"", num+"");//this pushed test result to the db.
+				new PushToDB().execute("testresult", user_info.getString("account", "error"), freqs[pointer]+"", num+"");//this pushed test result to the db.
 
 				if(pointer < freqs.length-1)
 					pointer++;

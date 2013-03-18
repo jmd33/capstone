@@ -36,7 +36,6 @@ import android.util.Log;
  */
 public class PushToDB extends AsyncTask<String, Integer, Long> {
 	private static final String KEY_161 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/add-test-result.php";
-	private static final String KEY_171 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/create-user.php";
 
 	// private SharedPreferences user_info;
 
@@ -50,35 +49,17 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 
 			addResult(email, frequency, volume);
 		} else if (params[0].equalsIgnoreCase("adduser")) {
-			String email = params[1];
+			String user_id = params[1];
 			String gender = params[2];
 			String age = params[3];
 
-			addUser(email, gender, age);
+			addUser(user_id, gender, age);
 		}
 		return null;
 	}
 
-	private void addUser(String email, String gender, String age) {
+	private void addUser(String user_id, String gender, String age) {
 		// TODO write method to push new user to db.
-		HttpClient httpclient = new DefaultHttpClient();
-		HttpPost httppost = new HttpPost(KEY_171);
-		try {
-			ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-			nameValuePairs.add(new BasicNameValuePair("email", email));
-			nameValuePairs.add(new BasicNameValuePair("gender", gender));
-			nameValuePairs.add(new BasicNameValuePair("age", age));
-
-			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-			HttpResponse response = httpclient.execute(httppost);
-			// HttpEntity entity = response.getEntity();
-			// is = entity.getContent();
-			Log.d("PushToDB", "Pushed new user");
-			
-		} catch (Exception e) {
-			Log.e("PushToDB", "addUser. Error in http connection " + e.toString());
-
-		}
 
 	}
 
@@ -103,7 +84,7 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 			Log.d("PushToDB", "Pushed Result");
 
 		} catch (Exception e) {
-			Log.e("PushToDB", "addResult. Error in http connection " + e.toString());
+			Log.e("PushToDB", "Error in http connection " + e.toString());
 
 		}
 	}

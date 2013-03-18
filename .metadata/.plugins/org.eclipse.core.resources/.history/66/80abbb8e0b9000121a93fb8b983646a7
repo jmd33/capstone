@@ -50,7 +50,7 @@ public class CreateAccount extends Activity {
 				int age = Integer.parseInt(sp_age.getSelectedItem().toString());
 				
 				setAccountPref(account, gender, age);
-//				new PushToDB().execute("adduser", account, gender+"", age+"");//this pushed test result to the db.
+				new PushToDB().execute("testresult", account, gender+"", age+"");//this pushed test result to the db.
 				Intent intent = new Intent(ctx, HearingTest.class);
 				ctx.startActivity(intent);
 			}

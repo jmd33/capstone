@@ -50,11 +50,11 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 
 			addResult(email, frequency, volume);
 		} else if (params[0].equalsIgnoreCase("adduser")) {
-			String email = params[1];
+			String user_id = params[1];
 			String gender = params[2];
 			String age = params[3];
 
-			addUser(email, gender, age);
+			addUser(user_id, gender, age);
 		}
 		return null;
 	}
@@ -70,13 +70,14 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 			nameValuePairs.add(new BasicNameValuePair("age", age));
 
 			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
 			HttpResponse response = httpclient.execute(httppost);
 			// HttpEntity entity = response.getEntity();
 			// is = entity.getContent();
 			Log.d("PushToDB", "Pushed new user");
-			
+
 		} catch (Exception e) {
-			Log.e("PushToDB", "addUser. Error in http connection " + e.toString());
+			Log.e("PushToDB", "Error in http connection " + e.toString());
 
 		}
 
@@ -103,7 +104,7 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 			Log.d("PushToDB", "Pushed Result");
 
 		} catch (Exception e) {
-			Log.e("PushToDB", "addResult. Error in http connection " + e.toString());
+			Log.e("PushToDB", "Error in http connection " + e.toString());
 
 		}
 	}

@@ -50,11 +50,11 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 
 			addResult(email, frequency, volume);
 		} else if (params[0].equalsIgnoreCase("adduser")) {
-			String email = params[1];
+			String user_id = params[1];
 			String gender = params[2];
 			String age = params[3];
 
-			addUser(email, gender, age);
+			addUser(user_id, gender, age);
 		}
 		return null;
 	}
