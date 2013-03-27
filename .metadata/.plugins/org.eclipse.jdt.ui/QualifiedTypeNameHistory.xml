@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.array"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
 </qualifiedTypeNameHistroy>
