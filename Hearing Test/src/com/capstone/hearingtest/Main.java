@@ -58,7 +58,7 @@ public class Main extends Activity{
 
 			public void onClick(View arg0) {
 				Intent intent = new Intent(ctx, CreateAccount.class);
-//				Intent intent = new Intent(ctx, AudioFxDemo.class);
+//				Intent intent = new Intent(ctx, HearingAidMain.class);
 
 				ctx.startActivity(intent);
 			}

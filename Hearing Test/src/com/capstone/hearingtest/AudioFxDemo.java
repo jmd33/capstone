@@ -31,6 +31,7 @@ import android.media.audiofx.Equalizer;
 import android.media.audiofx.Visualizer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -68,8 +69,30 @@ public class AudioFxDemo extends Activity {
 
         setContentView(mLinearLayout);
 
+        String mFileName = "";
+		mFileName = Environment.getExternalStorageDirectory().getAbsolutePath();
+		mFileName += "/audiorecordtest.3gp";
+
         // Create the MediaPlayer
-        mMediaPlayer = MediaPlayer.create(this, R.raw.test_cbr);
+        mMediaPlayer = new MediaPlayer();// MediaPlayer.this, R.raw.test_cbr);
+		try {
+			mMediaPlayer.setDataSource(mFileName);
+	        mMediaPlayer.prepare();
+ 
+		} catch (IllegalArgumentException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (SecurityException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IllegalStateException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
         Log.d(TAG, "MediaPlayer audio session ID: " + mMediaPlayer.getAudioSessionId());
 //        mMediaPlayer.start();
 
@@ -96,7 +119,6 @@ public class AudioFxDemo extends Activity {
                 mVisualizer.setEnabled(false);
             }
         });
-
         mMediaPlayer.start();
         mStatusTextView.setText("Playing audio...");
         
