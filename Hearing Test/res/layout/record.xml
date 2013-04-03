@@ -13,8 +13,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_gravity="center"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <ToggleButton
@@ -27,6 +26,7 @@
             android:textOff="Record"
             android:textOn="Stop"
             android:textSize="30sp" />
+
         <ToggleButton
             android:id="@+id/tbtn_play"
             android:layout_width="150dp"
@@ -37,6 +37,13 @@
             android:textOff="Play"
             android:textOn="Stop"
             android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_EQ"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
     </LinearLayout>
 
 </LinearLayout>

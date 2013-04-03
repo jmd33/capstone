@@ -23,6 +23,7 @@ public final class R {
         public static final int ET_frequency=0x7f080008;
         public static final int btn_create_account=0x7f080006;
         public static final int btn_getstarted=0x7f08000c;
+        public static final int ll_EQ=0x7f08000f;
         public static final int seekbar=0x7f080009;
         public static final int spinner_age=0x7f080005;
         public static final int spinner_gender=0x7f080003;
@@ -33,7 +34,7 @@ public final class R {
         public static final int textView3=0x7f080004;
         public static final int textview=0x7f08000b;
         public static final int tv_account=0x7f080001;
-        public static final int tv_freq=0x7f08000f;
+        public static final int tv_freq=0x7f080010;
     }
     public static final class layout {
         public static final int create_account=0x7f030000;
