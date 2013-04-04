@@ -145,9 +145,7 @@ public class AudioTrackTest extends Activity {
 				while (isRecording) {
 					try {
 						audioRecord.read(buffer, 0, bufferSize);
-//						Log.i(LOG_TAG, "READ");
-						audioTrack.write(buffer, 0, buffer.length);
-//						Log.i(LOG_TAG, "       WRITE");
+//						audioTrack.write(buffer, 0, buffer.length);
 
 					} catch (Throwable t) {
 						Log.e("Error", "Read write failed");
@@ -157,13 +155,12 @@ public class AudioTrackTest extends Activity {
 			}
 		});
 //		might need to read and write on different threads to get better performance
-	/*	Wthread = new Thread(new Runnable() {
+		Wthread = new Thread(new Runnable() {
 			public void run() {
 				while (isRecording) {
 					try {
 //						audioRecord.read(buffer, 0, bufferSize);
 						audioTrack.write(buffer, 0, buffer.length);
-						Log.i(LOG_TAG, "       WRITE");
 
 					} catch (Throwable t) {
 						Log.e("Error", "Read write failed");
@@ -172,10 +169,8 @@ public class AudioTrackTest extends Activity {
 				}
 			}
 		});
-		*/
 		Rthread.start();
-//		Wthread.start();
-		
+		Wthread.start();
 	}
 	
 	
