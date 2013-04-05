@@ -45,7 +45,7 @@ import java.io.IOException;
 public class AudioFxDemo extends Activity {
     private static final String TAG = "AudioFxDemo";
 
-    private static final float VISUALIZER_HEIGHT_DIP = 120f;
+    private static final float VISUALIZER_HEIGHT_DIP = 50f;
 
     private MediaPlayer mMediaPlayer;
     private Visualizer mVisualizer;
@@ -272,24 +272,14 @@ class VisualizerView extends View {
         mRect.set(0, 0, getWidth(), getHeight());
 
         for (int i = 0; i < mBytes.length - 1; i++) {
-            mPoints[i * 4] = mRect.width() * i / (mBytes.length - 1);
-           
+            mPoints[i * 4] = mRect.width() * i / (mBytes.length - 1) *2;
             mPoints[i * 4 + 1] = mRect.height() / 2
                     + ((byte) (mBytes[i] + 128)) * (mRect.height() / 2) / 128;
-           
-            mPoints[i * 4 + 2] = mRect.width() * (i + 1) / (mBytes.length - 1);
-           
+            mPoints[i * 4 + 2] = mRect.width() * (i + 1) / (mBytes.length - 1)*2;
             mPoints[i * 4 + 3] = mRect.height() / 2
                     + ((byte) (mBytes[i + 1] + 128)) * (mRect.height() / 2) / 128;
-            
         }
+
         canvas.drawLines(mPoints, mForePaint);
-//        canvas.drawRect(mRect.width() * i / (mBytes.length - 1),//left
-//        		mRect.height() / 2
-//        		+ ((byte) (mBytes[i] + 128)) * (mRect.height() / 2) / 128, //top
-//        		mRect.width() * (i + 1) / (mBytes.length - 1), //right
-//        		mRect.height() / 2
-//        		+ ((byte) (mBytes[i + 1] + 128)) * (mRect.height() / 2) / 128, //bottom
-//        		mForePaint);
     }
 }

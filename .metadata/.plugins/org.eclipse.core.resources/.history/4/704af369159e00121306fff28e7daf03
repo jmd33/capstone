@@ -81,16 +81,15 @@ public class AudioTrackTest extends Activity {
 				Log.d(LOG_TAG, mRecordButton.isChecked() + " rec btn");
 				// onRecord(mRecordButton.isChecked());
 				if (isRecording == null) {
-					isRecording = true;
 					Start();
 				} else if (isRecording) {
 					isRecording = false;
-//					Rthread.interrupt();
+					Rthread.interrupt();
 					// audioTrack.stop();
 				} else {
 					isRecording = true;
 					// Rthread.notify();
-//					Rthread.start();// = null;
+					Rthread.start();// = null;
 					// Start();
 					// audioTrack.play();
 				}

@@ -283,7 +283,7 @@ class VisualizerView extends View {
                     + ((byte) (mBytes[i + 1] + 128)) * (mRect.height() / 2) / 128;
             
         }
-        canvas.drawLines(mPoints, mForePaint);
+//        canvas.drawLines(mPoints, mForePaint);
 //        canvas.drawRect(mRect.width() * i / (mBytes.length - 1),//left
 //        		mRect.height() / 2
 //        		+ ((byte) (mBytes[i] + 128)) * (mRect.height() / 2) / 128, //top
