@@ -18,23 +18,24 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int BTN_play=0x7f080007;
-        public static final int BTN_submit=0x7f08000a;
-        public static final int ET_frequency=0x7f080008;
-        public static final int btn_create_account=0x7f080006;
-        public static final int btn_getstarted=0x7f08000c;
-        public static final int ll_EQ=0x7f08000f;
-        public static final int seekbar=0x7f080009;
-        public static final int spinner_age=0x7f080005;
-        public static final int spinner_gender=0x7f080003;
-        public static final int tbtn_play=0x7f08000e;
-        public static final int tbtn_record=0x7f08000d;
-        public static final int textView1=0x7f080000;
-        public static final int textView2=0x7f080002;
-        public static final int textView3=0x7f080004;
-        public static final int textview=0x7f08000b;
-        public static final int tv_account=0x7f080001;
-        public static final int tv_freq=0x7f080010;
+        public static final int BTN_play=0x7f080008;
+        public static final int BTN_submit=0x7f08000b;
+        public static final int ET_frequency=0x7f080009;
+        public static final int btn_create_account=0x7f080007;
+        public static final int btn_getstarted=0x7f08000d;
+        public static final int ll_EQ=0x7f080010;
+        public static final int mySimpleXYPlot=0x7f080000;
+        public static final int seekbar=0x7f08000a;
+        public static final int spinner_age=0x7f080006;
+        public static final int spinner_gender=0x7f080004;
+        public static final int tbtn_play=0x7f08000f;
+        public static final int tbtn_record=0x7f08000e;
+        public static final int textView1=0x7f080001;
+        public static final int textView2=0x7f080003;
+        public static final int textView3=0x7f080005;
+        public static final int textview=0x7f08000c;
+        public static final int tv_account=0x7f080002;
+        public static final int tv_freq=0x7f080011;
     }
     public static final class layout {
         public static final int audiogram=0x7f030000;

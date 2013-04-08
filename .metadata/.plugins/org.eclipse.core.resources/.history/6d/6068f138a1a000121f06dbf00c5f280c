@@ -45,8 +45,8 @@ public class AudioGram extends Activity {
 		mySimpleXYPlot.setDomainBoundaries(125, 8000, BoundaryMode.FIXED);
 		mySimpleXYPlot.setRangeBoundaries(0,10, BoundaryMode.FIXED);
 
-		Number[] series1Numbers = { 300, 2, 1000, 4, 3000, 6, 5000, 6, 7000, 3 };
-		Number[] series2Numbers = { 300, 4, 1000, 5, 3000, 5, 5000, 4, 7000, 2 };
+		Number[] series1Numbers = { 300, 2, 1000, 4, 3000, 6 };
+		Number[] series2Numbers = { 300, 4, 1000, 5, 3000, 5 };
 
 		// Turn the above arrays into XYSeries':
 		XYSeries series1 = new SimpleXYSeries(Arrays.asList(series1Numbers), // SimpleXYSeries
