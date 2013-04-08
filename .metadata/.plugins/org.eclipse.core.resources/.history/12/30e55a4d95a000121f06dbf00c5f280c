@@ -1,0 +1,26 @@
+package com.capstone.hearingtest;
+
+import android.R.color;
+import android.app.Activity;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.os.Bundle;
+
+public class AudioGram extends Activity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.audiogram);
+		Canvas c = new Canvas();
+		Paint p = new Paint();
+        p.setStrokeWidth(4f);
+        p.setAntiAlias(true);
+		p.setColor(color.holo_blue_bright);
+		c.drawCircle(100, 100, 75, p);
+		
+		
+		
+	}
+	
+}
