@@ -20,4 +20,12 @@
 <fullyQualifiedTypeName name="android.media.AudioManager"/>
 <fullyQualifiedTypeName name="android.media.audiofx.PresetReverb"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
+<fullyQualifiedTypeName name="android.graphics.Canvas"/>
+<fullyQualifiedTypeName name="android.R.color"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="com.androidplot.xy.XYPlot"/>
+<fullyQualifiedTypeName name="com.androidplot.xy.SimpleXYSeries"/>
+<fullyQualifiedTypeName name="com.androidplot.xy.LineAndPointFormatter"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.androidplot.xy.BoundaryMode"/>
 </qualifiedTypeNameHistroy>

@@ -1,46 +1,16 @@
 package com.capstone.hearingtest;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.SocketException;
-import java.net.URI;
-import java.util.ArrayList;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import android.accounts.Account;
-import android.accounts.AccountManager;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.AudioFormat;
-import android.media.AudioManager;
-import android.media.AudioTrack;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
-
-import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.SeekBar.OnSeekBarChangeListener;
 
 public class Main extends Activity{
     private static final String KEY_121 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/create-user.php";
@@ -72,6 +42,41 @@ public class Main extends Activity{
     protected void onResume() {
         super.onResume();
     }
-    
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// generate menu
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.main_menu, menu);
+	    return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle menu item selection
+	    switch (item.getItemId()) {
+	        case R.id.audiogram:
+				Intent intent = new Intent(ctx, AudioGram.class);
+				ctx.startActivity(intent);
+	            return true;
+	        case R.id.help:
+
+	        	return true;
+	        case R.id.share:
+	        	share();
+	        	return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
+	
+	protected void share(){
+		// pop up selector for how to share
+		Intent i = new Intent(android.content.Intent.ACTION_SEND);
+			i.setType("text/plain");
+			i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.share_subject));
+			i.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text));
+		startActivity(Intent.createChooser(i, getString(R.string.share_chooser_text)));
+	}
       
 }
