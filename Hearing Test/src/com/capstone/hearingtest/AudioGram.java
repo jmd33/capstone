@@ -44,7 +44,17 @@ public class AudioGram extends Activity {
 		mySimpleXYPlot.setDomainLabel("Frequency Hz");
 		mySimpleXYPlot.setDomainBoundaries(125, 8000, BoundaryMode.FIXED);
 		mySimpleXYPlot.setRangeBoundaries(0,10, BoundaryMode.FIXED);
+	    mySimpleXYPlot.getBackgroundPaint().setColor(Color.WHITE);
+//	    mySimpleXYPlot.setBorderStyle(XYPlot.BorderStyle.NONE, null, null);
+	    mySimpleXYPlot.getGraphWidget().getBackgroundPaint().setColor(Color.WHITE);
+	    mySimpleXYPlot.getGraphWidget().getGridBackgroundPaint().setColor(Color.WHITE);
+//		mySimpleXYPlot.getGraphWidget().set
+	    mySimpleXYPlot.getGraphWidget().getDomainLabelPaint().setColor(Color.BLACK);
+	    mySimpleXYPlot.getGraphWidget().getRangeLabelPaint().setColor(Color.BLACK);
 
+	    mySimpleXYPlot.getGraphWidget().getDomainOriginLabelPaint().setColor(Color.BLACK);
+	    mySimpleXYPlot.getGraphWidget().getDomainOriginLinePaint().setColor(Color.BLACK);
+	    mySimpleXYPlot.getTitleWidget().getLabelPaint().setColor(Color.BLACK);
 		Number[] series1Numbers = { 300, 2, 1000, 4, 3000, 6, 5000, 6, 7000, 3 };
 		Number[] series2Numbers = { 300, 4, 1000, 5, 3000, 5, 5000, 4, 7000, 2 };
 
@@ -73,8 +83,8 @@ public class AudioGram extends Activity {
 		// Create a formatter to use for drawing a series using
 		// LineAndPointRenderer:
 		LineAndPointFormatter series1Format = new LineAndPointFormatter(
-				Color.rgb(0, 200, 0), // line color
-				Color.rgb(0, 100, 0), // point color
+				Color.rgb(58,170,207), // line color
+				Color.rgb(6,121,159), // point color
 				null); // fill color (none)
 
 		// add a new series' to the xyplot:
@@ -88,7 +98,7 @@ public class AudioGram extends Activity {
 
 		// reduce the number of range labels
 		mySimpleXYPlot.setTicksPerRangeLabel(3);
-
+		
 		// by default, AndroidPlot displays developer guides to aid in laying
 		// out your plot.
 		// To get rid of them call disableAllMarkup():

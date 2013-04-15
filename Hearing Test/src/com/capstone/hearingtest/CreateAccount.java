@@ -11,6 +11,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -50,7 +52,17 @@ public class CreateAccount extends Activity {
 				int age = Integer.parseInt(sp_age.getSelectedItem().toString());
 				
 				setAccountPref(account, gender, age);
-				new PushToDB().execute("adduser", account, gender+"", age+"");//this pushed test result to the db.
+			    ConnectivityManager connMgr = (ConnectivityManager) 
+			            getSystemService(Context.CONNECTIVITY_SERVICE);
+			        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+			        if (networkInfo != null && networkInfo.isConnected()) {
+			            // push data
+						new PushToDB().execute("adduser", account, gender+"", age+"");//this pushed test result to the db.
+			        } else {
+			            // display error
+			        	Log.e("CreateAccount", "network connectivity error");
+			        }
+
 				Intent intent = new Intent(ctx, HearingTest.class);
 				ctx.startActivity(intent);
 			}

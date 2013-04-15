@@ -58,9 +58,14 @@ public class PushToDB extends AsyncTask<String, Integer, Long> {
 		}
 		return null;
 	}
-
+/**
+ * push new user to db
+ * @param email
+ * @param gender
+ * @param age
+ */
 	private void addUser(String email, String gender, String age) {
-		// TODO write method to push new user to db.
+		
 		HttpClient httpclient = new DefaultHttpClient();
 		HttpPost httppost = new HttpPost(KEY_171);
 		if(gender.equalsIgnoreCase("male"))// convert gender to int for db.
