@@ -29,8 +29,8 @@ public class Main extends Activity{
 			public void onClick(View arg0) {
 //				Intent intent = new Intent(ctx, CreateAccount.class);
 //				Intent intent = new Intent(ctx, HearingAidMain.class);
-//				Intent intent = new Intent(ctx, AudioTrackTest.class);
-				Intent intent = new Intent(ctx, AudioGram.class);
+				Intent intent = new Intent(ctx, AudioTrackTest.class);
+//				Intent intent = new Intent(ctx, AudioGram.class);
 
 				
 				ctx.startActivity(intent);
@@ -54,13 +54,15 @@ public class Main extends Activity{
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle menu item selection
+		Intent intent;
 	    switch (item.getItemId()) {
-	        case R.id.audiogram:
-				Intent intent = new Intent(ctx, AudioGram.class);
+	    	case R.id.audiogram:
+				intent = new Intent(ctx, AudioGram.class);
 				ctx.startActivity(intent);
 	            return true;
 	        case R.id.help:
-
+				 intent = new Intent(ctx, CreateAccount.class);
+				ctx.startActivity(intent);
 	        	return true;
 	        case R.id.share:
 	        	share();

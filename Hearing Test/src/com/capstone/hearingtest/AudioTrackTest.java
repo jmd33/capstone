@@ -22,6 +22,7 @@ import android.media.AudioTrack;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.media.audiofx.Equalizer;
+import android.media.audiofx.NoiseSuppressor;
 import android.media.audiofx.PresetReverb;
 import android.os.Bundle;
 import android.os.Environment;
@@ -55,7 +56,7 @@ public class AudioTrackTest extends Activity {
 	private AudioTrack audioTrack = null;
 	byte[] buffer = new byte[freq];
 	public static final int AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
-
+	
 	// The different audio codecs
 	// int AAC AAC Low Complexity (AAC-LC) audio codec
 	// int AAC_ELD Enhanced Low Delay AAC (AAC-ELD) audio codec
@@ -75,7 +76,9 @@ public class AudioTrackTest extends Activity {
 		// mFileName =
 		// Environment.getExternalStorageDirectory().getAbsolutePath();
 		// mFileName += "/audiorecordtest.3gp";
-
+	
+		//= create();
+		
 		mRecordButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Log.d(LOG_TAG, mRecordButton.isChecked() + " rec btn");
@@ -121,6 +124,14 @@ public class AudioTrackTest extends Activity {
 
 		audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, freq,
 				AudioFormat.CHANNEL_IN_MONO, AudioCodec, bufferSize);
+		Log.i("AudioTrackTest", "NoiseSuppressor.isAvailable() = "+NoiseSuppressor.isAvailable());
+		if(NoiseSuppressor.isAvailable()){
+			try{
+//			NoiseSuppressor.create(audioRecord.getAudioSessionId()); 
+			}catch(Exception e){
+				Log.e("AudioTrackTest", "NS error: "+e.toString());
+			}
+		}
 		// ENCODING_PCM_16BIT
 		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, freq,
 				AudioFormat.CHANNEL_OUT_MONO, AudioCodec, bufferSize,
