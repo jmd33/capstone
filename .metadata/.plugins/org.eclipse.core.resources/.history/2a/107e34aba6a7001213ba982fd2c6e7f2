@@ -36,6 +36,7 @@ public class HearingTest extends Activity {
 		if (savedInstanceState != null) {
 			pointer = savedInstanceState.getInt("pointer");
 		}
+
 		freqs = getResources().getIntArray(R.array.frequencies);
 		value = (TextView) findViewById(R.id.textview);
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
@@ -122,6 +123,8 @@ public class HearingTest extends Activity {
 		Intent intent;
 		switch (item.getItemId()) {
 		case R.id.help:
+			intent = new Intent(ctx, CreateAccount.class);
+			ctx.startActivity(intent);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);

@@ -122,6 +122,8 @@ public class HearingTest extends Activity {
 		Intent intent;
 		switch (item.getItemId()) {
 		case R.id.help:
+			intent = new Intent(ctx, CreateAccount.class);
+			ctx.startActivity(intent);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);

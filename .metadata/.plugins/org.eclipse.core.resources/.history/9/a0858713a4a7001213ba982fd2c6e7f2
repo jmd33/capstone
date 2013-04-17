@@ -7,9 +7,6 @@ import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -36,14 +33,15 @@ public class HearingTest extends Activity {
 		if (savedInstanceState != null) {
 			pointer = savedInstanceState.getInt("pointer");
 		}
+
 		freqs = getResources().getIntArray(R.array.frequencies);
 		value = (TextView) findViewById(R.id.textview);
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
 		seekbar.setProgress(75);
 		num = 0;
 		num = .07;
-		// final TextView tv_freq = (TextView) findViewById(R.id.tv_freq);
-		// tv_freq.setText(freqs[pointer] + "");
+//		final TextView tv_freq = (TextView) findViewById(R.id.tv_freq);
+//		tv_freq.setText(freqs[pointer] + "");
 		user_info = getSharedPreferences("user_info", MODE_PRIVATE);
 		// PlayFrequency.genTone(3, 1200);
 		// PlayFrequency.playSound();
@@ -68,19 +66,18 @@ public class HearingTest extends Activity {
 			public void onClick(View arg0) {
 				int num_int = (int) (num * 100);
 				Log.d("HearingTest", "num = " + num + "  num_int = " + num_int);
-				// TODO: Decide if we are still wanting to push results to the
-				// db
-				// new PushToDB().execute("testresult",
-				// user_info.getString("account", "error"), freqs[pointer]
-				// + "", num_int + "");// this pushed test result
-				// to the db.
+//				TODO: Decide if we are still wanting to push results to the db
+//				new PushToDB().execute("testresult",
+//						user_info.getString("account", "error"), freqs[pointer]
+//								+ "", num_int + "");// this pushed test result
+													// to the db.
 				if (pointer < freqs.length - 1) {
 					pointer++;
 				} else if (pointer == freqs.length - 1) {
 					Intent intent = new Intent(ctx, HearingAidMain.class);
 					ctx.startActivity(intent);
 				}
-				// tv_freq.setText(freqs[pointer] + "");
+//				tv_freq.setText(freqs[pointer] + "");
 				Log.d("Main", "submit btn pressed");// this shows up in the
 													// LogCat. Helpful for
 													// debugging.
@@ -106,26 +103,6 @@ public class HearingTest extends Activity {
 			}
 		});
 
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// generate menu
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.hearing_test_menu, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle menu item selection
-		Intent intent;
-		switch (item.getItemId()) {
-		case R.id.help:
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
 	}
 
 	@Override
