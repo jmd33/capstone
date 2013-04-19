@@ -17,7 +17,12 @@ public class PlayFrequency {
 	private static double sample[];
 	private static double freqOfTone; // hz
 	private static byte[] generatedSnd;
-
+	
+	public static final int LEFT_EAR_ONLY = 1;
+	public static final int RIGHT_EAR_ONLY = 2;
+	public static final int BOTH_EARS = 3;
+	public static AudioTrack audioTrack = null; 
+	
 	/**
 	 * Generates the necessary byte array in preparation to be played. Must call
 	 * {@link playSound()} to output the tone.
@@ -80,6 +85,10 @@ public class PlayFrequency {
 		// generatedSnd[idx++] = (byte) (val & 0x00ff);
 		// generatedSnd[idx++] = (byte) ((val & 0xff00) >>> 8);
 		// }
+		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+				sampleRate, AudioFormat.CHANNEL_OUT_STEREO,
+				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
+				AudioTrack.MODE_STATIC);
 	}
 
 	/**
@@ -95,14 +104,14 @@ public class PlayFrequency {
 	 * @pre Must call {@link genTone(dur, freq)} first.
 	 * @post Outputs the sound generated in {@link genTone(dur, freq)} to the
 	 *       channels specified by the params.
-	 * @param left Boolean. True outputs to left channel. False, no output to left channel
-	 * @param right Boolean. True outputs to right channel. False, no output to right channel
+	 * @param left Float. Sets volume level for left ear. 0 = no output. 
+	 * @param right Float. Sets volume level for right ear. 0 = no output. 
 	 */
 	public static void playSound(float left, float right) {
-		final AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
-				sampleRate, AudioFormat.CHANNEL_CONFIGURATION_MONO,
-				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
-				AudioTrack.MODE_STATIC);
+//		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+//				sampleRate, AudioFormat.CHANNEL_OUT_STEREO,
+//				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
+//				AudioTrack.MODE_STATIC);
 		Float leftVolume = left;
 		Float rightVolume = right;
 
@@ -121,7 +130,30 @@ public class PlayFrequency {
 		audioTrack.play();
 		Log.d("Main", "played");
 	}
+	/**
+	 * 
+	 *  @pre Must call {@link genTone(dur, freq)} first.
+	 * @post Outputs the sound generated in {@link genTone(dur, freq)} to the
+	 *       channels specified by the params.
+	 * @param left Float. Sets volume level for left ear. 0 = no output. 
+	 * @param right Float. Sets volume level for right ear. 0 = no output. 
+	 * @param whichEar INT. LEFT_EAR_ONLY. RIGHT_EAR_ONLY. BOTH_EARS.
+	 */
+	public static void playSound(float left, float right, int whichEar) {
+		switch(whichEar){
+		case LEFT_EAR_ONLY: 
+			playSound(left, 0);
+			break;
+		case RIGHT_EAR_ONLY: 
+			playSound(0, right);
+			break;
+		case BOTH_EARS: 
+			playSound(left, right);
+			break;
 
+		}
+	}
+	
 	/**
 	 * Sets all necessary fields. Should only be called from {@link genTone(dur,
 	 * freq)}

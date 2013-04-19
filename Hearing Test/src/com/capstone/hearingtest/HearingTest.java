@@ -4,16 +4,26 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.audiofx.Equalizer;
+import android.media.audiofx.Visualizer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -28,6 +38,17 @@ public class HearingTest extends Activity {
 	private int[] freqs;
 	private int pointer = 0;
 	private Context ctx = this;
+	private PlayFrequency pf = null;
+
+	private static final float VISUALIZER_HEIGHT_DIP = 50f;
+
+	private MediaPlayer mMediaPlayer;
+	private Visualizer mVisualizer;
+	private Equalizer mEqualizer;
+
+	private LinearLayout mLinearLayout;
+	private VisualizerView mVisualizerView;
+	private TextView mStatusTextView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +63,17 @@ public class HearingTest extends Activity {
 		seekbar.setProgress(75);
 		num = 0;
 		num = .07;
+		final ProgressBar test_progress = (ProgressBar) findViewById(R.id.PB_test_progress);
 		// final TextView tv_freq = (TextView) findViewById(R.id.tv_freq);
 		// tv_freq.setText(freqs[pointer] + "");
 		user_info = getSharedPreferences("user_info", MODE_PRIVATE);
 		// PlayFrequency.genTone(3, 1200);
 		// PlayFrequency.playSound();
 		// int x = getResources().
+		pf = new PlayFrequency(3);
+		setupVisualizerLayout();
+		setupVisualizer();
+		mVisualizer.setEnabled(true);
 
 		// Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
@@ -56,11 +82,15 @@ public class HearingTest extends Activity {
 				Log.d("Main", "button pressed");// this shows up in the LogCat.
 												// Helpful for debugging.
 				Log.i("Main", "frequency: " + freqs[pointer]);
-				PlayFrequency.genTone(3, freqs[pointer]);
-				PlayFrequency.playSound((float) num, (float) num);
+//				pf = new PlayFrequency(3);
+//				setupVisualizerLayout();
+//				setupVisualizer();
+//				mVisualizer.setEnabled(true);
+				pf.genTone(3, freqs[pointer]);
+				pf.playSound((float) num, (float) num);
+
 				// PlayFrequency.playSound((float)num, (float)num,
 				// PlayFrequency.LEFT_EAR_ONLY);
-
 			}
 		});
 		Button btn_submit = (Button) findViewById(R.id.BTN_submit);
@@ -76,6 +106,7 @@ public class HearingTest extends Activity {
 				// to the db.
 				if (pointer < freqs.length - 1) {
 					pointer++;
+					test_progress.setProgress(pointer * 10);
 				} else if (pointer == freqs.length - 1) {
 					Intent intent = new Intent(ctx, HearingAidMain.class);
 					ctx.startActivity(intent);
@@ -98,11 +129,9 @@ public class HearingTest extends Activity {
 			}
 
 			public void onStartTrackingTouch(SeekBar seekBar) {
-				// TODO Auto-generated method stub
 			}
 
 			public void onStopTrackingTouch(SeekBar seekBar) {
-				// TODO Auto-generated method stub
 			}
 		});
 
@@ -132,6 +161,11 @@ public class HearingTest extends Activity {
 	protected void onResume() {
 		super.onResume();
 	}
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		pf.audioTrack.release();
+	}
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -139,4 +173,94 @@ public class HearingTest extends Activity {
 		super.onSaveInstanceState(savedInstanceState);
 	}
 
+	private void setupVisualizerLayout() {
+		// Create a VisualizerView (defined below), which will render the
+		// simplified audio
+		// wave form to a Canvas.
+		mLinearLayout = (LinearLayout) findViewById(R.id.LL_vis);
+		mVisualizerView = new VisualizerView(this);
+		mVisualizerView.setLayoutParams(new ViewGroup.LayoutParams(
+				ViewGroup.LayoutParams.MATCH_PARENT,
+				(int) (VISUALIZER_HEIGHT_DIP * getResources()
+						.getDisplayMetrics().density)));
+		mLinearLayout.addView(mVisualizerView);
+
+	}
+
+	private void setupVisualizer() {
+		mLinearLayout.removeAllViews();
+		mLinearLayout.addView(mVisualizerView);
+		// Create the Visualizer object and attach it to our media player.
+		mVisualizer = new Visualizer(pf.audioTrack.getAudioSessionId());
+		mVisualizer.setCaptureSize(Visualizer.getCaptureSizeRange()[1]);
+		mVisualizer.setDataCaptureListener(
+				new Visualizer.OnDataCaptureListener() {
+					public void onWaveFormDataCapture(Visualizer visualizer,
+							byte[] bytes, int samplingRate) {
+						mVisualizerView.updateVisualizer(bytes);
+					}
+
+					public void onFftDataCapture(Visualizer visualizer,
+							byte[] bytes, int samplingRate) {
+					}
+				}, Visualizer.getMaxCaptureRate() / 2, true, false);
+	}
+
+	class VisualizerView extends View {
+		private byte[] mBytes;
+		private float[] mPoints;
+		private Rect mRect = new Rect();
+
+		private Paint mForePaint = new Paint();
+
+		public VisualizerView(Context context) {
+			super(context);
+			init();
+		}
+
+		private void init() {
+			mBytes = null;
+
+			mForePaint.setStrokeWidth(4f);
+			mForePaint.setAntiAlias(true);
+			mForePaint.setColor(Color.parseColor("#33b5e5"));
+		}
+
+		public void updateVisualizer(byte[] bytes) {
+			mBytes = bytes;
+			invalidate();
+		}
+
+		@Override
+		protected void onDraw(Canvas canvas) {
+			super.onDraw(canvas);
+
+			if (mBytes == null) {
+				return;
+			}
+
+			if (mPoints == null || mPoints.length < mBytes.length * 4) {
+				mPoints = new float[mBytes.length * 4];
+			}
+
+			mRect.set(0, 0, getWidth(), getHeight());
+
+			for (int i = 0; i < mBytes.length - 1; i++) {
+				mPoints[i * 4] = mRect.width() * i / (mBytes.length - 1);
+
+				mPoints[i * 4 + 1] = mRect.height() / 2
+						+ ((byte) (mBytes[i] + 128)) * (mRect.height() / 2)
+						/ 128;
+
+				mPoints[i * 4 + 2] = mRect.width() * (i + 1)
+						/ (mBytes.length - 1);
+
+				mPoints[i * 4 + 3] = mRect.height() / 2
+						+ ((byte) (mBytes[i + 1] + 128)) * (mRect.height() / 2)
+						/ 128;
+
+			}
+			canvas.drawLines(mPoints, mForePaint);
+		}
+	}
 }

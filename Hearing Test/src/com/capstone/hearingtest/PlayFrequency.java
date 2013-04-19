@@ -4,8 +4,6 @@ import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.util.Log;
-import android.widget.TextView;
-import android.view.View;
 
 public class PlayFrequency {
 	// The code for this class is based off of
@@ -21,6 +19,17 @@ public class PlayFrequency {
 	public static final int LEFT_EAR_ONLY = 1;
 	public static final int RIGHT_EAR_ONLY = 2;
 	public static final int BOTH_EARS = 3;
+	public AudioTrack audioTrack = null; 
+	
+	public  PlayFrequency(int duration){
+		setVars(duration, 0);
+		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, 
+				sampleRate, 
+				AudioFormat.CHANNEL_OUT_STEREO, 
+				AudioFormat.ENCODING_PCM_16BIT, 
+				generatedSnd.length,
+				AudioTrack.MODE_STREAM);
+	}
 	
 	/**
 	 * Generates the necessary byte array in preparation to be played. Must call
@@ -31,10 +40,10 @@ public class PlayFrequency {
 	 * @param freq
 	 *            Frequency of sound
 	 */
-	public static void genTone(int dur, int freq) {
+	public void genTone(int dur, int freq) {
 
-		setVars(dur, freq);
-
+//		setVars(dur, freq);
+		freqOfTone = freq;
 		// fill out the array
 		for (int i = 0; i < numSamples; ++i) {
 //			sample[i] = Math.sin(2 * Math.PI * i / (sampleRate / freqOfTone));
@@ -84,6 +93,12 @@ public class PlayFrequency {
 		// generatedSnd[idx++] = (byte) (val & 0x00ff);
 		// generatedSnd[idx++] = (byte) ((val & 0xff00) >>> 8);
 		// }
+//			audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+//				sampleRate, AudioFormat.CHANNEL_OUT_STEREO,
+//				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
+//				AudioTrack.MODE_STATIC);
+			
+			
 	}
 
 	/**
@@ -91,7 +106,7 @@ public class PlayFrequency {
 	 * @post Outputs the sound generated in {@link genTone(dur, freq)} to both
 	 *       the left and right channels.
 	 */
-	public static void playSound() {
+	public  void playSound() {
 		playSound(1f, 1f);
 	}
 
@@ -102,14 +117,13 @@ public class PlayFrequency {
 	 * @param left Float. Sets volume level for left ear. 0 = no output. 
 	 * @param right Float. Sets volume level for right ear. 0 = no output. 
 	 */
-	public static void playSound(float left, float right) {
-		final AudioTrack audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
-				sampleRate, AudioFormat.CHANNEL_OUT_STEREO,
-				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
-				AudioTrack.MODE_STATIC);
+	public void playSound(float left, float right) {
+//		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
+//				sampleRate, AudioFormat.CHANNEL_OUT_STEREO,
+//				AudioFormat.ENCODING_PCM_16BIT, generatedSnd.length,
+//				AudioTrack.MODE_STATIC);
 		Float leftVolume = left;
 		Float rightVolume = right;
-
 //		if (left)
 //			leftVolume = AudioTrack.getMaxVolume();
 //		else
@@ -134,7 +148,7 @@ public class PlayFrequency {
 	 * @param right Float. Sets volume level for right ear. 0 = no output. 
 	 * @param whichEar INT. LEFT_EAR_ONLY. RIGHT_EAR_ONLY. BOTH_EARS.
 	 */
-	public static void playSound(float left, float right, int whichEar) {
+	public  void playSound(float left, float right, int whichEar) {
 		switch(whichEar){
 		case LEFT_EAR_ONLY: 
 			playSound(left, 0);

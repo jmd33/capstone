@@ -41,7 +41,6 @@ public class AudioTrackTest extends Activity {
 	// private static String mFileName = null;
 	private Context ctx = this;
 	private ToggleButton mRecordButton = null;
-	private ToggleButton mPlayButton = null;
 	private MediaPlayer mPlayer = null;
 	private Boolean isRecording = null;
 	private Equalizer mEqualizer;
@@ -69,9 +68,8 @@ public class AudioTrackTest extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.record);
+		setContentView(R.layout.listen);
 		mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
-		mPlayButton = (ToggleButton) findViewById(R.id.tbtn_play);
 		mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
 		// mFileName =
 		// Environment.getExternalStorageDirectory().getAbsolutePath();
@@ -99,7 +97,6 @@ public class AudioTrackTest extends Activity {
 				}
 			}
 		});
-		mPlayButton.setVisibility(mPlayButton.GONE);
 		/*
 		 * .setOnClickListener(new OnClickListener() { public void onClick(View
 		 * v) { Log.d(LOG_TAG, mRecordButton.isChecked() + " play btn"); //

@@ -27,9 +27,9 @@ public class Main extends Activity{
 		b.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View arg0) {
-//				Intent intent = new Intent(ctx, CreateAccount.class);
+				Intent intent = new Intent(ctx, CreateAccount.class);
 //				Intent intent = new Intent(ctx, HearingAidMain.class);
-				Intent intent = new Intent(ctx, AudioTrackTest.class);
+//				Intent intent = new Intent(ctx, AudioTrackTest.class);
 //				Intent intent = new Intent(ctx, AudioGram.class);
 
 				
@@ -61,7 +61,7 @@ public class Main extends Activity{
 				ctx.startActivity(intent);
 	            return true;
 	        case R.id.help:
-				 intent = new Intent(ctx, CreateAccount.class);
+				intent = new Intent(ctx, AudioTrackTest.class);
 				ctx.startActivity(intent);
 	        	return true;
 	        case R.id.share:

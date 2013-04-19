@@ -57,7 +57,7 @@ public class CreateAccount extends Activity {
 			        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 			        if (networkInfo != null && networkInfo.isConnected()) {
 			            // push data
-						new PushToDB().execute("adduser", account, gender+"", age+"");//this pushed test result to the db.
+//						new PushToDB().execute("adduser", account, gender+"", age+"");//this pushed test result to the db.
 			        } else {
 			            // display error
 			        	Log.e("CreateAccount", "network connectivity error");
