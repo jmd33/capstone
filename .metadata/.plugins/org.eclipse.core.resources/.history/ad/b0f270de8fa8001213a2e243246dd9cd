@@ -82,10 +82,10 @@ public class HearingTest extends Activity {
 				Log.d("Main", "button pressed");// this shows up in the LogCat.
 												// Helpful for debugging.
 				Log.i("Main", "frequency: " + freqs[pointer]);
-				// pf = new PlayFrequency(3);
-				// setupVisualizerLayout();
-				// setupVisualizer();
-				// mVisualizer.setEnabled(true);
+//				pf = new PlayFrequency(3);
+//				setupVisualizerLayout();
+//				setupVisualizer();
+//				mVisualizer.setEnabled(true);
 				pf.genTone(3, freqs[pointer]);
 				pf.playSound((float) num, (float) num);
 
@@ -124,16 +124,8 @@ public class HearingTest extends Activity {
 		seekbar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-//				TODO: might want to do something like this
-				// instead of the current way because it will adjust the volume
-				// in real time
-				
-				// AudioManager am = (AudioManager)
-				// ctx.getSystemService(Context.AUDIO_SERVICE);
-				// am.adjustStreamVolume(am.STREAM_MUSIC, am.ADJUST_LOWER,
-				// am.FLAG_VIBRATE);
-
-				
+				AudioManager am = (AudioManager) ctx.getSystemService(Context.AUDIO_SERVICE); 
+				am.adjustStreamVolume(am.STREAM_MUSIC, am.ADJUST_LOWER, am.FLAG_VIBRATE);
 				num = (float) progress / 1000;
 				value.setText("Volume is at" + progress + "%");
 			}
@@ -171,7 +163,6 @@ public class HearingTest extends Activity {
 	protected void onResume() {
 		super.onResume();
 	}
-
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();

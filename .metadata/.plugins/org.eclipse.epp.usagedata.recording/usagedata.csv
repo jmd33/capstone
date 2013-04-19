@@ -1,176 +1,226 @@
 what,kind,bundleId,bundleVersion,description,time
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366317102964
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317201037
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317201953
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366317224757
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366317226753
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1366317257966
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366317268018
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366317269397
-executed,command,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui.format.document",1366317270699
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317308942
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317380530
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317381386
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317494892
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366317502447
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366317508806
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317518185
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317524234
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366317559280
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366317579164
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317579696
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317619563
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317623496
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317685791
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366317751478
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366317751881
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366317762349
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366317768906
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366317769345
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366317769883
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366317770743
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366317779895
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366317806299
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317810621
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317811922
-activated,view,com.android.ide.eclipse.ddms,21.1.0.v201302060044-569685,"com.android.ide.eclipse.ddms.views.LogCatView",1366317813974
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366317878400
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366317889397
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366317892038
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366317914627
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317917913
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366317919220
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366318062323
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366320837075
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366320847264
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366320861179
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366320933633
-opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320986163
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320986358
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366320990230
-opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320990663
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320990704
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366320991938
-opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320993269
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320993309
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320996770
-closed,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320996770
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320998733
-closed,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366320998733
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366321000666
-closed,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321000667
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321003953
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321035329
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321036991
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321037175
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321037319
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321037543
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321037719
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321038070
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321038294
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321038486
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321040010
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321041080
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321041367
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321053587
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321070930
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1366321076317
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1366321076517
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321078325
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1366321080412
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366321085897
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321092447
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321094925
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321128040
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321131599
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321133634
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366321134388
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321137987
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321139275
-activated,view,com.android.ide.eclipse.ddms,21.1.0.v201302060044-569685,"com.android.ide.eclipse.ddms.views.LogCatView",1366321141270
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366321222632
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366321237100
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321238931
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321245316
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321245493
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321245647
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366321246298
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1366321247258
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1366321247834
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321248834
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321277477
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321307926
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366321331943
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321336373
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321337781
-activated,view,com.android.ide.eclipse.ddms,21.1.0.v201302060044-569685,"com.android.ide.eclipse.ddms.views.LogCatView",1366321339763
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366321453278
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366321457090
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366321459572
-opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321472163
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321472264
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321509706
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321514353
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321543367
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366321545128
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321558827
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321566510
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366321571334
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321574124
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366321676245
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366321683905
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366321684404
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366321684487
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366321684571
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366321684655
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366321684738
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321685432
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321685760
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366321686083
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366321687128
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321688944
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321706670
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366321708463
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366321711146
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366321712187
-executed,command,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui.format.document",1366321725723
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366321744329
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366321745343
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366321784025
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366321784507
-executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366321848189
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366321861621
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366321872597
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321876113
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366321878059
-activated,view,com.android.ide.eclipse.ddms,21.1.0.v201302060044-569685,"com.android.ide.eclipse.ddms.views.LogCatView",1366321879993
-opened,view,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui.DebugView",1366321990304
-opened,view,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui.VariableView",1366321992718
-opened,view,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views.ContentOutline",1366321993163
-activated,perspective,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui.DebugPerspective",1366321993302
-activated,perspective,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.JavaPerspective",1366321993658
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366321993683
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366322015066
-opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366322016221
-started,bundle,org.eclipse.m2e.editor.xml,1.0.200.20111228-1245,"org.eclipse.m2e.editor.xml",1366322016476
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366322016588
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.selectAll",1366322018121
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366322018885
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366322054161
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366322062422
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366322070028
-opened,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366322070591
-activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366322070640
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.selectAll",1366322077413
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366322078451
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366322142027
-activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366322157181
-opened,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366322158412
-activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366322158552
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366322188944
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1366322190119
-executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366322201937
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366322205110
-activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366322205864
-executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.cleanAction",1366322205934
-deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366322207065
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333006148
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333006152
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333006421
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333006424
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333006769
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333006772
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333007048
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333007052
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333007382
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333007385
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333007658
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333007662
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333007925
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333007929
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333008219
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333008223
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333008489
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333008492
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333008822
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333008825
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333009091
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333009095
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333009456
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333009459
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333009721
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333009765
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333010116
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333010138
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333010426
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333010437
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333010704
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333010708
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333011026
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333011046
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333011319
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333011323
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333011698
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333011706
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333012011
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333012082
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333012444
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333012488
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333012923
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333012949
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333013413
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333013431
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333013774
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333013783
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333014088
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333014098
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333031305
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333033700
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333034738
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333046750
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333059514
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333063134
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333064026
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333099546
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333099576
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333099747
+executed,command,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui.add.block.comment",1366333118416
+executed,command,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui.add.block.comment",1366333123843
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333127057
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.navigate.backwardHistory",1366333128781
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333130279
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333133461
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333134979
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333174346
+error,log,,,"audiogram.xml: Paint.setShadowLayer is not supported.",1366333207706
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333207733
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333222906
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333236604
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333239353
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333243049
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333246929
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333249144
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333269088
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordPrevious",1366333276499
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333278223
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333279492
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333279863
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333280153
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333280448
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333280737
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333281094
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333281366
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333286033
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333295627
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.findReplace",1366333295659
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333316615
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333318711
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333352837
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333399095
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333399591
+executed,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.project.cleanAction",1366333399729
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333400829
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333401136
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333401641
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333417773
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333425203
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333425778
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333426700
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333426809
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.navigate.backwardHistory",1366333426818
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1366333444147
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366333446385
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333447522
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333460962
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333467164
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1366333468634
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333469361
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333471459
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333473558
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333475385
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333481919
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333482154
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333482296
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333482369
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333482867
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333482960
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333483043
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333483129
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333483208
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineUp",1366333483471
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333485274
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333488605
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333492063
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333493094
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333518203
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.navigate.backwardHistory",1366333518205
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333527890
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333529491
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333531045
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333533083
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333551701
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333554980
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555475
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555576
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555648
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555733
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555816
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555892
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333555986
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.moveLineDown",1366333556112
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333558143
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333559860
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333561665
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333562587
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333582596
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333595377
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333598963
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333601311
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333603001
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333633545
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.navigate.backwardHistory",1366333633547
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333657375
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366333658691
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333660395
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333661449
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333724565
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333874787
+activated,editor,com.android.ide.eclipse.adt,21.1.0.v201302060044-569685,"com.android.ide.eclipse.editors.CommonXmlEditor",1366333876702
+executed,command,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui.format.document",1366333884226
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366333890234
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333892612
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333892838
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333893005
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333893121
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333893601
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333893685
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333893769
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333893852
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333894829
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333895037
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333895189
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333895346
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333895517
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333895789
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333895957
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333896114
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366333896278
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.delete.line",1366333899552
+executed,command,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui.format.document",1366333910592
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366333912738
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1366333926051
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366333927405
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333931763
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333931911
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333957916
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333972028
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333975144
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366333978479
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366333995138
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366334001260
+error,log,,,"com.androidplot.xy.XYPlot failed to instantiate.",1366334010199
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366334035808
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366334041647
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366334041831
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366334042000
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1366334058198
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366334062739
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334067809
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334075642
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334133782
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334312756
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1366334316624
+opened,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366334316995
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1366334317175
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366334332551
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordPrevious",1366334360345
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.deletePreviousWord",1366334361050
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334363383
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334390798
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366334392615
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1366334393900
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334402119
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334402242
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334416432
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334416607
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334431679
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334443372
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1366334448147
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.select.wordNext",1366334448643
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334484646
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1366334495522

@@ -18,17 +18,10 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Your Results"
-                android:textColor="#111111"
-                android:textSize="30dp" />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="The results of from your hearing test are plotted on the graph below."
+                android:text="adsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml dsfhasd;fjao;dsfj;adsf asdf asuh sfasdf sajkdbflaksd fn aslkfkljasbdfkljbadsfml "
                 android:textColor="#111111"
                 android:textSize="20dp" />
-            
+
             <com.androidplot.xy.XYPlot
                 android:id="@+id/mySimpleXYPlot"
                 android:layout_width="fill_parent"
