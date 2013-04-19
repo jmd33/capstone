@@ -12,7 +12,6 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.audiofx.Equalizer;
 import android.media.audiofx.Visualizer;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -73,7 +72,8 @@ public class HearingTest extends Activity {
 		// int x = getResources().
 		pf = new PlayFrequency(3);
 		setupVisualizerLayout();
-//		setupVisualizer();
+		setupVisualizer();
+		mVisualizer.setEnabled(true);
 
 		// Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
@@ -188,8 +188,6 @@ public class HearingTest extends Activity {
 		// Create a VisualizerView (defined below), which will render the
 		// simplified audio
 		// wave form to a Canvas.
-		if(Build.VERSION.SDK_INT > 8){
-
 		mLinearLayout = (LinearLayout) findViewById(R.id.LL_vis);
 		mVisualizerView = new VisualizerView(this);
 		mVisualizerView.setLayoutParams(new ViewGroup.LayoutParams(
@@ -198,9 +196,9 @@ public class HearingTest extends Activity {
 						.getDisplayMetrics().density)));
 		mLinearLayout.addView(mVisualizerView);
 
-//	}
-//
-//	private void setupVisualizer() {			
+	}
+
+	private void setupVisualizer() {
 		mLinearLayout.removeAllViews();
 		mLinearLayout.addView(mVisualizerView);
 		// Create the Visualizer object and attach it to our media player.
@@ -217,9 +215,6 @@ public class HearingTest extends Activity {
 							byte[] bytes, int samplingRate) {
 					}
 				}, Visualizer.getMaxCaptureRate() / 2, true, false);
-		mVisualizer.setEnabled(true);
-
-		}
 	}
 
 	class VisualizerView extends View {

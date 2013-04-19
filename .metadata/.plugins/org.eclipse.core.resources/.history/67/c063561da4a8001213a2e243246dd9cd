@@ -74,8 +74,8 @@ public class AudioTrackTest extends Activity {
 		mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
 		if(Build.VERSION.SDK_INT < 10)
 			AudioCodec = MediaRecorder.AudioEncoder.AMR_NB;
-//		else if(Build.VERSION.SDK_INT >= 16)
-//			AudioCodec = MediaRecorder.AudioEncoder.HE_AAC;
+		else if(Build.VERSION.SDK_INT >= 16)
+			AudioCodec = MediaRecorder.AudioEncoder.HE_AAC;
 
 		// mFileName =
 		// Environment.getExternalStorageDirectory().getAbsolutePath();
@@ -134,7 +134,7 @@ public class AudioTrackTest extends Activity {
 //			}catch(Exception e){
 //				Log.e("AudioTrackTest", "NS error: "+e.toString());
 //			}
-//		}
+		}
 		// ENCODING_PCM_16BIT
 		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, freq,
 				AudioFormat.CHANNEL_OUT_MONO, AudioCodec, bufferSize,

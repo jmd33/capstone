@@ -73,7 +73,8 @@ public class HearingTest extends Activity {
 		// int x = getResources().
 		pf = new PlayFrequency(3);
 		setupVisualizerLayout();
-//		setupVisualizer();
+		setupVisualizer();
+		mVisualizer.setEnabled(true);
 
 		// Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
@@ -217,8 +218,6 @@ public class HearingTest extends Activity {
 							byte[] bytes, int samplingRate) {
 					}
 				}, Visualizer.getMaxCaptureRate() / 2, true, false);
-		mVisualizer.setEnabled(true);
-
 		}
 	}
 

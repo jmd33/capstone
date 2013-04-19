@@ -74,8 +74,8 @@ public class AudioTrackTest extends Activity {
 		mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
 		if(Build.VERSION.SDK_INT < 10)
 			AudioCodec = MediaRecorder.AudioEncoder.AMR_NB;
-//		else if(Build.VERSION.SDK_INT >= 16)
-//			AudioCodec = MediaRecorder.AudioEncoder.HE_AAC;
+		else if(Build.VERSION.SDK_INT >= 16)
+			AudioCodec = MediaRecorder.AudioEncoder.HE_AAC;
 
 		// mFileName =
 		// Environment.getExternalStorageDirectory().getAbsolutePath();
