@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="10" key="selection"/>
+		<item value="PlayFre" key="selection"/>
 		<list key="findhistory">
-			<item value="10"/>
-			<item value="1"/>
-			<item value="13"/>
-			<item value="play"/>
-			<item value="audio"/>
-			<item value="push"/>
-			<item value="pointer"/>
-			<item value="backgro"/>
+			<item value="playfre"/>
+			<item value="equ"/>
+			<item value="noise"/>
+			<item value="layout"/>
+			<item value="linear"/>
+			<item value="view"/>
+			<item value="pause"/>
+			<item value="freqOfTone"/>
 		</list>
 		<list key="replacehistory">
 			<item value="sp"/>
