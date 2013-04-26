@@ -20,6 +20,7 @@ import android.media.audiofx.Visualizer;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -53,11 +54,15 @@ public class HearingTest extends Activity {
 	private LinearLayout mLinearLayout;
 	private VisualizerView mVisualizerView;
 	private TextView mStatusTextView;
+	private int max_volume = 0;
+	private Boolean sound_playing = false;
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hearing_test);
+		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		if (savedInstanceState != null) {
 			pointer = savedInstanceState.getInt("pointer");
 		}
@@ -74,24 +79,25 @@ public class HearingTest extends Activity {
 		// PlayFrequency.genTone(3, 1200);
 		// PlayFrequency.playSound();
 		// int x = getResources().
-		pf = new PlayFrequency(3);
+		pf = new PlayFrequency(6);
 		setupVisualizerLayout();
 //		setupVisualizer();
-
 		// Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
 		b.setOnClickListener(new OnClickListener() {
 			public void onClick(View arg0) {
-				Log.d("Main", "button pressed");// this shows up in the LogCat.
-												// Helpful for debugging.
+				Log.d("Main", "button pressed");
 				Log.i("Main", "frequency: " + freqs[pointer]);
-				// pf = new PlayFrequency(3);
-				// setupVisualizerLayout();
-				// setupVisualizer();
-				// mVisualizer.setEnabled(true);
-				pf.genTone(3, freqs[pointer]);
-				pf.playSound((float) num, (float) num);
-
+//				pf.playSound((float) num, (float) num);
+//				if(sound_playing){
+//					sound_playing = false;
+//					pf.stop();
+//				}else{
+//					sound_playing = true;
+					pf.genTone(6, freqs[pointer]);
+					pf.playSound();
+//					pf.start();
+//				}
 				// PlayFrequency.playSound((float)num, (float)num,
 				// PlayFrequency.LEFT_EAR_ONLY);
 			}
@@ -136,25 +142,30 @@ public class HearingTest extends Activity {
 		// this is an example of how to push a test result to our db.
 		// new PushToDB().execute("testresult","1", "880", "4");//this pushed
 		// test result to the db.
-
+//		int max_volume = 0;
+		final AudioManager am = (AudioManager)
+		ctx.getSystemService(Context.AUDIO_SERVICE);
+		max_volume = am.getStreamMaxVolume(am.STREAM_MUSIC);
+		am.setStreamVolume(am.STREAM_MUSIC, 1, am.FLAG_VIBRATE);
+		am.setStreamVolume(am.STREAM_MUSIC, max_volume / 4, am.FLAG_VIBRATE);
+		seekbar.setProgress(25);
+		Log.d("HearingTest", "max stream: " + am.getStreamMaxVolume(am.STREAM_MUSIC));
+//				TODO: listen for valume buttons and change progress bar accordingly
+//				am.registerMediaButtonEventReceiver(new )
 		seekbar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
-			public void onProgressChanged(SeekBar seekBar, int progress,
-					boolean fromUser) {
-//				TODO: might want to do something like this
-				// instead of the current way because it will adjust the volume
-				// in real time
-				
-				// AudioManager am = (AudioManager)
-				// ctx.getSystemService(Context.AUDIO_SERVICE);
-				// am.adjustStreamVolume(am.STREAM_MUSIC, am.ADJUST_LOWER,
-				// am.FLAG_VIBRATE);
-
-				
+			int start_level = 0;
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+				if(start_level != seekbar.getProgress() / (100/max_volume)){
+					am.setStreamVolume(am.STREAM_MUSIC, seekbar.getProgress() / (100/max_volume), am.FLAG_VIBRATE);
+					Log.d("HearingTest", "start_level = "+start_level+"  vol set = "+seekbar.getProgress() / (100/max_volume));
+					start_level = seekbar.getProgress() / (100/max_volume);
+				}
 				num = (float) progress / 1000;
-				value.setText("Volume is at" + progress + "%");
+				value.setText("Volume is at " + progress + "%");
 			}
 
 			public void onStartTrackingTouch(SeekBar seekBar) {
+				start_level = seekbar.getProgress() / (100/max_volume);
 			}
 
 			public void onStopTrackingTouch(SeekBar seekBar) {
@@ -186,6 +197,9 @@ public class HearingTest extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
+		AudioManager am = (AudioManager)
+		ctx.getSystemService(Context.AUDIO_SERVICE);
+		seekbar.setProgress(100*(am.getStreamVolume(am.STREAM_MUSIC))/max_volume);
 	}
 
 	@Override
@@ -199,7 +213,26 @@ public class HearingTest extends Activity {
 		savedInstanceState.putInt("pointer", pointer);
 		super.onSaveInstanceState(savedInstanceState);
 	}
-
+	
+	@Override
+	public boolean dispatchKeyEvent(KeyEvent event) {
+	    int action = event.getAction();
+	    int keyCode = event.getKeyCode();
+	        switch (keyCode) {
+	        case KeyEvent.KEYCODE_VOLUME_UP:
+	            if (action == KeyEvent.ACTION_UP) {
+	            	seekbar.setProgress(seekbar.getProgress()+(100/max_volume));
+	            }
+	            return true;
+	        case KeyEvent.KEYCODE_VOLUME_DOWN:
+	            if (action == KeyEvent.ACTION_DOWN) {
+	            	seekbar.setProgress(seekbar.getProgress()-(100/max_volume));
+	            }
+	            return true;
+	        default:
+	            return super.dispatchKeyEvent(event);
+	        }
+	    }
 	private void setupVisualizerLayout() {
 		// Create a VisualizerView (defined below), which will render the
 		// simplified audio

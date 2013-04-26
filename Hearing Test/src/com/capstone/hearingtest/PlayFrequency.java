@@ -41,7 +41,6 @@ public class PlayFrequency {
 	 *            Frequency of sound
 	 */
 	public void genTone(int dur, int freq) {
-
 //		setVars(dur, freq);
 		freqOfTone = freq;
 		// fill out the array
@@ -136,6 +135,7 @@ public class PlayFrequency {
 		
 		audioTrack.write(generatedSnd, 0, generatedSnd.length);
 		audioTrack.setStereoVolume(leftVolume, rightVolume);
+//		audioTrack.setLoopPoints(0, 66150, -1);
 		audioTrack.play();
 		Log.d("Main", "played");
 	}
@@ -161,6 +161,14 @@ public class PlayFrequency {
 			break;
 
 		}
+	}
+	
+	public void start(){
+		audioTrack.play();
+	}
+	
+	public void stop(){
+		audioTrack.stop();
 	}
 	
 	/**
