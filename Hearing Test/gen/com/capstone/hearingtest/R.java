@@ -16,10 +16,11 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_action_about=0x7f020000;
-        public static final int ic_action_help=0x7f020001;
-        public static final int ic_action_microphone=0x7f020002;
-        public static final int ic_action_share=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
+        public static final int ic_action_exit=0x7f020001;
+        public static final int ic_action_help=0x7f020002;
+        public static final int ic_action_microphone=0x7f020003;
+        public static final int ic_action_share=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
     }
     public static final class id {
         public static final int BTN_play=0x7f09000c;
@@ -27,18 +28,21 @@ public final class R {
         public static final int ET_frequency=0x7f090010;
         public static final int LL_vis=0x7f090009;
         public static final int PB_test_progress=0x7f09000f;
-        public static final int audiogram=0x7f090016;
+        public static final int audiogram=0x7f090018;
         public static final int btn_create_account=0x7f090008;
         public static final int btn_getstarted=0x7f090013;
-        public static final int help=0x7f090015;
+        public static final int btn_hearing_aid=0x7f090014;
+        public static final int btn_retake_test=0x7f090015;
+        public static final int exit=0x7f09001a;
+        public static final int help=0x7f090017;
         public static final int ll_EQ=0x7f090012;
         public static final int mySimpleXYPlot=0x7f090001;
         public static final int scrollView1=0x7f090000;
         public static final int seekbar=0x7f09000a;
-        public static final int share=0x7f090017;
+        public static final int share=0x7f090019;
         public static final int spinner_age=0x7f090007;
         public static final int spinner_gender=0x7f090005;
-        public static final int tbtn_play=0x7f090014;
+        public static final int tbtn_play=0x7f090016;
         public static final int tbtn_record=0x7f090011;
         public static final int textView1=0x7f090002;
         public static final int textView2=0x7f090004;
@@ -54,8 +58,10 @@ public final class R {
         public static final int helloworld=0x7f030003;
         public static final int listen=0x7f030004;
         public static final int main=0x7f030005;
-        public static final int record=0x7f030006;
-        public static final int welcome=0x7f030007;
+        public static final int main_no_account=0x7f030006;
+        public static final int main_with_account=0x7f030007;
+        public static final int record=0x7f030008;
+        public static final int welcome=0x7f030009;
     }
     public static final class menu {
         public static final int hearing_test_menu=0x7f080000;

@@ -1,6 +1,10 @@
 package com.capstone.hearingtest;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,7 +16,6 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ToggleButton;
 
 public class HearingAidMain extends Activity {
@@ -33,7 +36,14 @@ public class HearingAidMain extends Activity {
 		mPlayButton = (ToggleButton) findViewById(R.id.tbtn_play);
 
 		mFileName = Environment.getExternalStorageDirectory().getAbsolutePath();
-		mFileName += "/audiorecordtest.3gp";
+		Calendar c = Calendar.getInstance(); 
+		int seconds = c.get(Calendar.SECOND);
+		mFileName += "/hear_rite/" + seconds + "audiorecordtest.3gp";
+//		mFileName += "/audiorecordtest.3gp";
+		
+//		File filez = new File(Environment.getExternalStorageDirectory() + ConstantCodes.FILE_SEPARATOR +  "/hear_rite");
+		
+//		 Log.i("Ze File", filez + " name");
 
 		mRecordButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
@@ -50,10 +60,21 @@ public class HearingAidMain extends Activity {
 				ctx.startActivity(intent);
 			}
 		});
-		
-		
-		
-		
+	}
+	
+	private List<File> getListFiles(File parentDir) {
+	    ArrayList<File> inFiles = new ArrayList<File>();
+	    File[] files = parentDir.listFiles();
+	    for (File file : files) {
+	        if (file.isDirectory()) {
+	            inFiles.addAll(getListFiles(file));
+	        } else {
+	            if(file.getName().endsWith(".csv")){
+	                inFiles.add(file);
+	            }
+	        }
+	    }
+	    return inFiles;
 	}
 
 	private void onRecord(boolean start) {

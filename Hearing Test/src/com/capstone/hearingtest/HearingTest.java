@@ -1,5 +1,11 @@
 package com.capstone.hearingtest;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -8,7 +14,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.audiofx.Equalizer;
 import android.media.audiofx.Visualizer;
@@ -19,16 +24,14 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.SeekBar.OnSeekBarChangeListener;
-import android.widget.Toast;
+import android.widget.TextView;
 
 public class HearingTest extends Activity {
 	private static final String KEY_121 = "http://webhost.ischool.uw.edu/~jcz530/capstone/android/create-user.php";
@@ -104,10 +107,23 @@ public class HearingTest extends Activity {
 				// user_info.getString("account", "error"), freqs[pointer]
 				// + "", num_int + "");// this pushed test result
 				// to the db.
+				
+				try {
+			        FileOutputStream fos = ctx.openFileOutput("temp_data.txt",Context.MODE_APPEND);
+			        Writer out = new OutputStreamWriter(fos);
+			        out.write(freqs[pointer] + "\n");
+			        out.close();
+			    } catch (IOException e) {
+			        e.printStackTrace();
+			    }
+				
 				if (pointer < freqs.length - 1) {
 					pointer++;
 					test_progress.setProgress(pointer * 10);
 				} else if (pointer == freqs.length - 1) {
+					File file = getApplicationContext().getFileStreamPath("account_data.txt");
+					File temp = getApplicationContext().getFileStreamPath("temp_data.txt");
+			        temp.renameTo(file);
 					Intent intent = new Intent(ctx, HearingAidMain.class);
 					ctx.startActivity(intent);
 				}

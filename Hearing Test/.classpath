@@ -4,6 +4,5 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry kind="lib" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/libs/androidplot-core-0.5.1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

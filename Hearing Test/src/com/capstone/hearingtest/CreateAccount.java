@@ -1,5 +1,9 @@
 package com.capstone.hearingtest;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,21 +80,7 @@ public class CreateAccount extends Activity {
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		Spinner spinner_age = (Spinner) findViewById(R.id.spinner_age);
 		spinner_age.setAdapter(adapter);
-		AccountManager am = AccountManager.get(this); // "this" references the
-														// current Context
 
-		Account[] accounts = am.getAccountsByType("com.google");
-		int len = accounts.length;
-
-		if (len > 1) {// user needs to choose an account
-			showAccountAlert(accounts);
-		} else {
-			tv_account.setText(accounts[0].name);
-		}
-		for (int i = 0; i < len; i++)
-			Log.d("ACCOUNTS", accounts[i].toString());
-
-		// }
 
 	}
 
@@ -123,6 +113,17 @@ public class CreateAccount extends Activity {
 		prefEditor.putInt("age", age);
 
 		prefEditor.commit();
+		
+		try {
+	        FileOutputStream fos = ctx.openFileOutput("temp_data"+".txt",Context.MODE_PRIVATE);
+	        Writer out = new OutputStreamWriter(fos);
+	        out.write(user_info.getString("gender", "error") + "\n");
+	        out.write(user_info.getInt("age", -1) + "\n");
+	        out.close();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+		
 		Log.d("MAIN",
 				"user_info account = " + user_info.getString("account", "error"));
 		Log.d("MAIN",
