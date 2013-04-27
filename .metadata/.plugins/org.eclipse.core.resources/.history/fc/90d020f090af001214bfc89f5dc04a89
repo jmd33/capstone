@@ -58,7 +58,7 @@ public class Main extends Activity{
 	    }
 		
 		// If count is not 11 then retake hearing test, otherwise show main menu
-        if (count < 18) {
+        if (count != 11) {
         	setContentView(R.layout.main_no_account);
     		Button b = (Button) findViewById(R.id.btn_getstarted);
     		b.setOnClickListener(new OnClickListener(){

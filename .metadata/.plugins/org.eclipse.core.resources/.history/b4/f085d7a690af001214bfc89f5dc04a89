@@ -56,10 +56,12 @@ public class AudioGram extends Activity {
 				.setColor(Color.WHITE);
 		mySimpleXYPlot.getGraphWidget().getGridBackgroundPaint()
 				.setColor(Color.WHITE);
+		// mySimpleXYPlot.getGraphWidget().set
 		mySimpleXYPlot.getGraphWidget().getDomainLabelPaint()
 				.setColor(Color.BLACK);
 		mySimpleXYPlot.getGraphWidget().getRangeLabelPaint()
 				.setColor(Color.BLACK);
+
 		mySimpleXYPlot.getGraphWidget().getDomainOriginLabelPaint()
 				.setColor(Color.BLACK);
 		mySimpleXYPlot.getGraphWidget().getDomainOriginLinePaint()
@@ -140,17 +142,20 @@ public class AudioGram extends Activity {
 					// the element index as
 					// the x value
 					"Left Ear"); // Set the display title of the series
+
 			// same as above
 			XYSeries series2 = new SimpleXYSeries(
 					Arrays.asList(series2Numbers),
 					SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,// Y_VALS_ONLY,
 					"Right Ear");
+
 			// Create a formatter to use for drawing a series using
 			// LineAndPointRenderer:
 			LineAndPointFormatter series1Format = new LineAndPointFormatter(
 					Color.rgb(58, 170, 207), // line color
 					Color.rgb(6, 121, 159), // point color
 					null); // fill color (none)
+
 			// add a new series' to the xyplot:
 			mySimpleXYPlot.addSeries(series1, series1Format);
 
