@@ -133,7 +133,7 @@ public class AudioTrackTest extends Activity {
 		btn_preset_2.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (btn_preset_2.isChecked())
+				if (btn_preset_1.isChecked())
 					resetEQ();
 				else {
 					short bands = mEqualizer.getNumberOfBands();
@@ -191,7 +191,7 @@ public class AudioTrackTest extends Activity {
 		audioTrack.setPlaybackRate(freq);
 		final byte[] buffer = new byte[bufferSize];
 		setupEqualizerFxAndUI();
-		resetEQ();
+
 		audioRecord.startRecording();
 		Log.i(LOG_TAG, "Audio Recording started");
 		audioTrack.setStereoVolume(AudioTrack.getMaxVolume(),

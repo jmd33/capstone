@@ -56,7 +56,7 @@ public class AudioTrackTest extends Activity {
 	private AudioTrack audioTrack = null;
 	byte[] buffer = new byte[freq];
 	public static final int AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
-
+	
 	// The different audio codecs
 	// int AAC AAC Low Complexity (AAC-LC) audio codec
 	// int AAC_ELD Enhanced Low Delay AAC (AAC-ELD) audio codec
@@ -71,18 +71,18 @@ public class AudioTrackTest extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.listen);
 		mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
-		// mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
-		if (Build.VERSION.SDK_INT < 10)
+//		mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
+		if(Build.VERSION.SDK_INT < 10)
 			AudioCodec = MediaRecorder.AudioEncoder.AMR_NB;
-		// else if(Build.VERSION.SDK_INT >= 16)
-		// AudioCodec = MediaRecorder.AudioEncoder.HE_AAC;
+//		else if(Build.VERSION.SDK_INT >= 16)
+//			AudioCodec = MediaRecorder.AudioEncoder.HE_AAC;
 
 		// mFileName =
 		// Environment.getExternalStorageDirectory().getAbsolutePath();
 		// mFileName += "/audiorecordtest.3gp";
-
-		// = create();
-
+	
+		//= create();
+		
 		mRecordButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Log.d(LOG_TAG, mRecordButton.isChecked() + " rec btn");
@@ -92,72 +92,17 @@ public class AudioTrackTest extends Activity {
 					Start();
 				} else if (isRecording) {
 					isRecording = false;
-					// Rthread.interrupt();
+//					Rthread.interrupt();
 					// audioTrack.stop();
 				} else {
 					isRecording = true;
 					// Rthread.notify();
-					// Rthread.start();// = null;
+//					Rthread.start();// = null;
 					// Start();
 					// audioTrack.play();
 				}
 			}
 		});
-
-		final ToggleButton btn_preset_1 = (ToggleButton) findViewById(R.id.btn_preset_1);
-		final ToggleButton btn_preset_2 = (ToggleButton) findViewById(R.id.btn_preset_2);
-		final ToggleButton btn_preset_3 = (ToggleButton) findViewById(R.id.btn_preset_3);
-
-		btn_preset_1.setOnClickListener(new OnClickListener() {
-
-			public void onClick(View v) {
-				if (btn_preset_1.isChecked())
-					resetEQ();
-				else {
-					short bands = mEqualizer.getNumberOfBands();
-					final short minEQLevel = mEqualizer.getBandLevelRange()[0];
-					final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-					Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
-					Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
-
-					for (short i = 0; i < bands; i++) {
-						final short band = i;
-						Log.d("AFX", "band: " + band + "");
-
-						mEqualizer.setBandLevel(band,
-								(short) (maxEQLevel * (1.00)));
-					}
-				}
-			}
-		});
-		btn_preset_2.setOnClickListener(new OnClickListener() {
-
-			public void onClick(View v) {
-				if (btn_preset_2.isChecked())
-					resetEQ();
-				else {
-					short bands = mEqualizer.getNumberOfBands();
-					final short minEQLevel = mEqualizer.getBandLevelRange()[0];
-					final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-					for (short i = 0; i < bands; i++) {
-						final short band = i;
-						mEqualizer.setBandLevel(band,
-								(short) (maxEQLevel * (0.00)));
-					}
-				}
-			}
-		});
-
-	}
-
-	private void resetEQ() {
-		short bands = mEqualizer.getNumberOfBands();
-		final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-		for (short i = 0; i < bands; i++) {
-			final short band = i;
-			Log.d("AFX", "band: " + band + "");
-			mEqualizer.setBandLevel(band, (short) (maxEQLevel * (0.50)));
-		}
 	}
 
 	protected void Start() {
@@ -174,15 +119,14 @@ public class AudioTrackTest extends Activity {
 
 		audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, freq,
 				AudioFormat.CHANNEL_IN_MONO, AudioCodec, bufferSize);
-		// Log.i("AudioTrackTest",
-		// "NoiseSuppressor.isAvailable() = "+NoiseSuppressor.isAvailable());
-		// if(NoiseSuppressor.isAvailable()){
-		// try{
-		// NoiseSuppressor.create(audioRecord.getAudioSessionId());
-		// }catch(Exception e){
-		// Log.e("AudioTrackTest", "NS error: "+e.toString());
-		// }
-		// }
+//		Log.i("AudioTrackTest", "NoiseSuppressor.isAvailable() = "+NoiseSuppressor.isAvailable());
+//		if(NoiseSuppressor.isAvailable()){
+//			try{
+//			NoiseSuppressor.create(audioRecord.getAudioSessionId()); 
+//			}catch(Exception e){
+//				Log.e("AudioTrackTest", "NS error: "+e.toString());
+//			}
+//		}
 		// ENCODING_PCM_16BIT
 		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, freq,
 				AudioFormat.CHANNEL_OUT_MONO, AudioCodec, bufferSize,
@@ -191,7 +135,7 @@ public class AudioTrackTest extends Activity {
 		audioTrack.setPlaybackRate(freq);
 		final byte[] buffer = new byte[bufferSize];
 		setupEqualizerFxAndUI();
-		resetEQ();
+
 		audioRecord.startRecording();
 		Log.i(LOG_TAG, "Audio Recording started");
 		audioTrack.setStereoVolume(AudioTrack.getMaxVolume(),
@@ -244,10 +188,10 @@ public class AudioTrackTest extends Activity {
 		// with a default priority (0).
 		mEqualizer = new Equalizer(0, audioTrack.getAudioSessionId());
 		mEqualizer.setEnabled(true);
-		// mLinearLayout.removeAllViews();
+//		mLinearLayout.removeAllViews();
 		TextView eqTextView = new TextView(this);
-		// eqTextView.setText("Equalizer:");
-		// mLinearLayout.addView(eqTextView);
+//		eqTextView.setText("Equalizer:");
+//		mLinearLayout.addView(eqTextView);
 
 		short bands = mEqualizer.getNumberOfBands();
 		Log.d("AFX", "BAnds" + bands + "");
@@ -267,7 +211,7 @@ public class AudioTrackTest extends Activity {
 			freqTextView.setGravity(Gravity.CENTER_HORIZONTAL);
 			freqTextView.setText((mEqualizer.getCenterFreq(band) / 1000)
 					+ " Hz");
-			// mLinearLayout.addView(freqTextView);
+//			mLinearLayout.addView(freqTextView);
 			// Log.i(LOG_TAG, "band: "+band+" "+mEqualizer.);
 
 			LinearLayout row = new LinearLayout(this);
@@ -299,25 +243,24 @@ public class AudioTrackTest extends Activity {
 						boolean fromUser) {
 					mEqualizer.setBandLevel(band,
 							(short) (progress + minEQLevel));
-					// Log.d("EQ", "band: "+band+"  prog:"+progress);
-
+//					Log.d("EQ", "band: "+band+"  prog:"+progress);
+					
 				}
 
 				public void onStartTrackingTouch(SeekBar seekBar) {
 				}
 
 				public void onStopTrackingTouch(SeekBar seekBar) {
-					Log.d("EQ",
-							"band: " + band + "  prog:" + seekBar.getProgress());
+					Log.d("EQ", "band: "+band+"  prog:"+seekBar.getProgress());
 
 				}
 			});
 
-			// row.addView(minDbTextView);
-			// row.addView(bar);
-			// row.addView(maxDbTextView);
+//			row.addView(minDbTextView);
+//			row.addView(bar);
+//			row.addView(maxDbTextView);
 
-			// mLinearLayout.addView(row);
+//			mLinearLayout.addView(row);
 		}
 	}
 

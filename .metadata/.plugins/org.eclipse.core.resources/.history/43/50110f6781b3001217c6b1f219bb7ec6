@@ -104,59 +104,62 @@ public class AudioTrackTest extends Activity {
 			}
 		});
 
-		final ToggleButton btn_preset_1 = (ToggleButton) findViewById(R.id.btn_preset_1);
-		final ToggleButton btn_preset_2 = (ToggleButton) findViewById(R.id.btn_preset_2);
-		final ToggleButton btn_preset_3 = (ToggleButton) findViewById(R.id.btn_preset_3);
+		ToggleButton btn_preset_1 = (ToggleButton) findViewById(R.id.btn_preset_1);
+		ToggleButton btn_preset_2 = (ToggleButton) findViewById(R.id.btn_preset_2);
+		ToggleButton btn_preset_3 = (ToggleButton) findViewById(R.id.btn_preset_3);
 
 		btn_preset_1.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (btn_preset_1.isChecked())
-					resetEQ();
-				else {
-					short bands = mEqualizer.getNumberOfBands();
-					final short minEQLevel = mEqualizer.getBandLevelRange()[0];
-					final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-					Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
-					Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
+				// TODO: presets
+				short bands = mEqualizer.getNumberOfBands();
+				final short minEQLevel = mEqualizer.getBandLevelRange()[0];
+				final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
+				Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
+				Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
 
-					for (short i = 0; i < bands; i++) {
-						final short band = i;
-						Log.d("AFX", "band: " + band + "");
+				for (short i = 0; i < bands; i++) {
+					final short band = i;
+					Log.d("AFX", "band: " + band + "");
 
-						mEqualizer.setBandLevel(band,
-								(short) (maxEQLevel * (1.00)));
-					}
+					mEqualizer
+							.setBandLevel(band, (short) (maxEQLevel * (1.00)));
 				}
 			}
 		});
 		btn_preset_2.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (btn_preset_2.isChecked())
-					resetEQ();
-				else {
-					short bands = mEqualizer.getNumberOfBands();
-					final short minEQLevel = mEqualizer.getBandLevelRange()[0];
-					final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-					for (short i = 0; i < bands; i++) {
-						final short band = i;
-						mEqualizer.setBandLevel(band,
-								(short) (maxEQLevel * (0.00)));
-					}
+				// TODO: presets
+				short bands = mEqualizer.getNumberOfBands();
+				final short minEQLevel = mEqualizer.getBandLevelRange()[0];
+				final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
+				Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
+				Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
+
+				for (short i = 0; i < bands; i++) {
+					final short band = i;
+					Log.d("AFX", "band: " + band + "");
+
+					mEqualizer
+							.setBandLevel(band, (short) (maxEQLevel * (0.00)));
 				}
+
 			}
 		});
 
 	}
-
-	private void resetEQ() {
+	
+	private void resetEQ(){
 		short bands = mEqualizer.getNumberOfBands();
+		final short minEQLevel = mEqualizer.getBandLevelRange()[0];
 		final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
 		for (short i = 0; i < bands; i++) {
 			final short band = i;
 			Log.d("AFX", "band: " + band + "");
-			mEqualizer.setBandLevel(band, (short) (maxEQLevel * (0.50)));
+
+			mEqualizer
+					.setBandLevel(band, (short) (maxEQLevel * (0.00)));
 		}
 	}
 
@@ -191,7 +194,7 @@ public class AudioTrackTest extends Activity {
 		audioTrack.setPlaybackRate(freq);
 		final byte[] buffer = new byte[bufferSize];
 		setupEqualizerFxAndUI();
-		resetEQ();
+
 		audioRecord.startRecording();
 		Log.i(LOG_TAG, "Audio Recording started");
 		audioTrack.setStereoVolume(AudioTrack.getMaxVolume(),
