@@ -259,7 +259,7 @@ public class AudioTrackTest extends Activity {
 				}
 
 				public void onStopTrackingTouch(SeekBar seekBar) {
-					Log.d("EQ", "band: "+band+"  prog:"+seekBar.getProgress());
+					Log.d("EQ", "band: "+band+"  prog:"+progress);
 
 				}
 			});

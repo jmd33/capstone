@@ -251,7 +251,7 @@ public class AudioTrackTest extends Activity {
 						boolean fromUser) {
 					mEqualizer.setBandLevel(band,
 							(short) (progress + minEQLevel));
-//					Log.d("EQ", "band: "+band+"  prog:"+progress);
+					Log.d("EQ", "band: "+band+"  prog:"+progress);
 					
 				}
 
@@ -259,8 +259,6 @@ public class AudioTrackTest extends Activity {
 				}
 
 				public void onStopTrackingTouch(SeekBar seekBar) {
-					Log.d("EQ", "band: "+band+"  prog:"+seekBar.getProgress());
-
 				}
 			});
 

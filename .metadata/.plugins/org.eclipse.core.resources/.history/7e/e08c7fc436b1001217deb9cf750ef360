@@ -177,10 +177,10 @@ public class PlayFrequency {
 	public void playSound(int whichEar) {
 		switch (whichEar) {
 		case LEFT_EAR_ONLY:
-			playSound(0.05f, 0f);
+			playSound(0.1f, 0f);
 			break;
 		case RIGHT_EAR_ONLY:
-			playSound(0f, 0.05f);
+			playSound(0f, 0.1f);
 			break;
 		case BOTH_EARS:
 			playSound(1f, 1f);
