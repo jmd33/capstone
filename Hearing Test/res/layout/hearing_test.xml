@@ -16,9 +16,17 @@
     <LinearLayout
         android:id="@+id/LL_vis"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:orientation="vertical" >
     </LinearLayout>
+    
+    <TextView
+        android:id="@+id/frequency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        android:textSize="20dp"
+        android:width="40dp" />
 
     <TextView
         android:id="@+id/textView1"

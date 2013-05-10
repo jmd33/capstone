@@ -55,6 +55,7 @@ public class HearingTest extends Activity {
 	private LinearLayout mLinearLayout;
 	private VisualizerView mVisualizerView;
 	private TextView mStatusTextView;
+	private TextView mFrequencyTextView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +68,8 @@ public class HearingTest extends Activity {
 		}
 		freqs = getResources().getIntArray(R.array.frequencies);
 		value = (TextView) findViewById(R.id.textview);
+		mFrequencyTextView = (TextView) findViewById(R.id.frequency);
+		mFrequencyTextView.setText("Current Frequency: " + freqs[pointer] + "hz");
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
 		seekbar.setProgress(75);
 		num = 0;
@@ -128,6 +131,7 @@ public class HearingTest extends Activity {
 					is_left_ear = false;
 				} else if (pointer < freqs.length - 1 && !is_left_ear) {
 					pointer++;
+					mFrequencyTextView.setText("Current Frequency: " + freqs[pointer] + "hz");
 					test_progress.setProgress(test_progress.getProgress() + (6));
 					is_left_ear = true;
 				} else if (pointer == freqs.length - 1) {
@@ -178,7 +182,7 @@ public class HearingTest extends Activity {
 			public void onStopTrackingTouch(SeekBar seekBar) {
 			}
 		});
-
+		
 	}
 
 	@Override
