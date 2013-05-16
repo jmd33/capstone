@@ -111,8 +111,8 @@ public class Main extends Activity{
 		Intent intent;
 	    switch (item.getItemId()) {
 	    	case R.id.audiogram:
-//				intent = new Intent(ctx, AudioGram.class);
-				intent = new Intent(ctx, About.class);
+				intent = new Intent(ctx, AudioGram.class);
+//				intent = new Intent(ctx, About.class);
 
 				ctx.startActivity(intent);
 	            return true;

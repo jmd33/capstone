@@ -140,7 +140,7 @@ public class HearingTest extends Activity {
 					File temp = getApplicationContext().getFileStreamPath(
 							"temp_data.txt");
 					temp.renameTo(file);
-					Intent intent = new Intent(ctx, HearingAidMain.class);
+					Intent intent = new Intent(ctx, AudioGram.class);
 					ctx.startActivity(intent);
 				}
 				// tv_freq.setText(freqs[pointer] + "");

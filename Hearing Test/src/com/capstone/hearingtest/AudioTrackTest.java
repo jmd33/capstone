@@ -29,6 +29,9 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
@@ -107,7 +110,7 @@ public class AudioTrackTest extends Activity {
 		final ToggleButton btn_preset_1 = (ToggleButton) findViewById(R.id.btn_preset_1);
 		final ToggleButton btn_preset_2 = (ToggleButton) findViewById(R.id.btn_preset_2);
 		final ToggleButton btn_preset_3 = (ToggleButton) findViewById(R.id.btn_preset_3);
-
+		btn_preset_3.setVisibility(ToggleButton.GONE);
 		btn_preset_1.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
@@ -235,6 +238,46 @@ public class AudioTrackTest extends Activity {
 
 	}
 
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		if(audioTrack != null)
+			audioTrack.release();
+		if(audioRecord != null)
+			audioRecord.release();
+	}
+	
+	@Override
+    protected void onResume() {
+        super.onResume();
+    }
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// generate menu
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.hearing_aid_menu, menu);
+	    return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle menu item selection
+		Intent intent;
+	    switch (item.getItemId()) {
+	        case R.id.help:
+				 intent = new Intent(ctx, About.class);
+				ctx.startActivity(intent);
+	        	return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
+	
+	
+	
+	
+	
 	/*
 	 * creates EQ sliders on screen and attaches EQ to the AudioTrack
 	 */
