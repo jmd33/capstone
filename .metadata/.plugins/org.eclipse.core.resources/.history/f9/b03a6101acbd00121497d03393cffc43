@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hearing Helper</string>
+    <string name="welcome">Welcome to Hearing Helper!</string>
+    <string name="share_subject">Share!</string>
+    <string name="share_text">share text</string>
+    <string name="share_chooser_text">share chooser text</string>
+
+<!-- Attribution -->
+<string name="ic_tv_icon_link">http://thenounproject.com/noun/television/#icon-No2650</string>
+<string name="ic_tv_author_link">http://thenounproject.com/pieroborgo</string>
+<string name="ic_tv_author_name"><a href='http://www.google.com'>Google</a> + Television designed by Piero Borgo from The Noun Project</string>
+
+
+
+</resources>

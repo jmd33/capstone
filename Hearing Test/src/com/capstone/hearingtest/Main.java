@@ -1,5 +1,6 @@
 package com.capstone.hearingtest;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -38,8 +39,7 @@ public class Main extends Activity{
 		File dir = getFilesDir();
 		File temp = new File(dir, "temp_data.txt");
 		boolean deleted = temp.delete();
-		
-		
+//		ActionBar ab = getActionBar();
 		// If opening app for the first time, create the account file.
 		File file = getApplicationContext().getFileStreamPath("account_data.txt");
 		if ( ! file.exists()) {
@@ -111,7 +111,9 @@ public class Main extends Activity{
 		Intent intent;
 	    switch (item.getItemId()) {
 	    	case R.id.audiogram:
-				intent = new Intent(ctx, AudioGram.class);
+//				intent = new Intent(ctx, AudioGram.class);
+				intent = new Intent(ctx, About.class);
+
 				ctx.startActivity(intent);
 	            return true;
 	        case R.id.help:

@@ -34,17 +34,25 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical" >
-
+	<LinearLayout
+        android:id="@+id/ll_presets"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
 		<ToggleButton
 		    android:id="@+id/btn_preset_1"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
+		    android:background="@drawable/ic_tv"
 		    android:text="ToggleButton" />
 	    <ToggleButton
 		    android:id="@+id/btn_preset_2"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
+			android:background="@drawable/ic_conversation"
+		    
 		    android:text="ToggleButton" />
+	    </LinearLayout>
 	    <ToggleButton
 		    android:id="@+id/btn_preset_3"
 		    android:layout_width="wrap_content"

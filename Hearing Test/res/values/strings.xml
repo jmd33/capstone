@@ -4,4 +4,16 @@
     <string name="share_subject">Share!</string>
     <string name="share_text">share text</string>
     <string name="share_chooser_text">share chooser text</string>
+
+<!-- Attribution -->
+<string name="ic_tv_icon_link"><a href='http://thenounproject.com/noun/television/#icon-No2650'>Television</a></string>
+<string name="ic_tv_author_link"><a href='http://thenounproject.com/pieroborgo'>Piero Borgo</a></string>
+<string name="ic_conversation_icon_link"><a href='http://thenounproject.com/noun/conversation/#icon-No9490'>Conversation</a></string>
+<string name="ic_conversation_author_link"><a href='http://thenounproject.com/mvsuriano'>Michael V. Suriano</a></string>
+
+<string name="designed_by">" designed by "</string>
+<string name="tnp">" from The Noun Project"</string>
+
+
+
 </resources>
