@@ -24,72 +24,86 @@ public final class R {
     public static final class drawable {
         public static final int ic_action_about=0x7f020000;
         public static final int ic_action_exit=0x7f020001;
-        public static final int ic_action_help=0x7f020002;
-        public static final int ic_action_microphone=0x7f020003;
-        public static final int ic_action_share=0x7f020004;
-        public static final int ic_assistive_listening=0x7f020005;
-        public static final int ic_conversation=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int ic_power_blue=0x7f020008;
-        public static final int ic_power_red=0x7f020009;
-        public static final int ic_symptom=0x7f02000a;
-        public static final int ic_tv=0x7f02000b;
+        public static final int ic_action_graph=0x7f020002;
+        public static final int ic_action_help=0x7f020003;
+        public static final int ic_action_microphone=0x7f020004;
+        public static final int ic_action_share=0x7f020005;
+        public static final int ic_assistive_listening=0x7f020006;
+        public static final int ic_conversation=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int ic_power_blue=0x7f020009;
+        public static final int ic_power_red=0x7f02000a;
+        public static final int ic_symptom=0x7f02000b;
+        public static final int ic_tv=0x7f02000c;
     }
     public static final class id {
-        public static final int BTN_play=0x7f0a0016;
-        public static final int BTN_submit=0x7f0a0017;
-        public static final int ET_frequency=0x7f0a001a;
-        public static final int LL_vis=0x7f0a0012;
-        public static final int PB_test_progress=0x7f0a0019;
-        public static final int audiogram=0x7f0a0026;
-        public static final int btn_create_account=0x7f0a0011;
-        public static final int btn_getstarted=0x7f0a0020;
-        public static final int btn_hearing_aid=0x7f0a0021;
-        public static final int btn_preset_1=0x7f0a001d;
-        public static final int btn_preset_2=0x7f0a001e;
-        public static final int btn_preset_3=0x7f0a001f;
-        public static final int btn_retake_test=0x7f0a0022;
-        public static final int exit=0x7f0a0028;
-        public static final int frequency=0x7f0a0013;
-        public static final int help=0x7f0a0025;
-        public static final int imageView1=0x7f0a0001;
-        public static final int ll_EQ=0x7f0a0024;
-        public static final int ll_presets=0x7f0a001c;
-        public static final int mySimpleXYPlot=0x7f0a000b;
-        public static final int scrollView1=0x7f0a000a;
-        public static final int seekbar=0x7f0a0014;
-        public static final int share=0x7f0a0027;
-        public static final int spinner_age=0x7f0a0010;
-        public static final int spinner_gender=0x7f0a000e;
-        public static final int tbtn_play=0x7f0a0023;
-        public static final int tbtn_record=0x7f0a001b;
-        public static final int textView1=0x7f0a0000;
-        public static final int textView2=0x7f0a000d;
-        public static final int textView3=0x7f0a000f;
-        public static final int textview=0x7f0a0015;
-        public static final int tv_account=0x7f0a000c;
-        public static final int tv_ic_conversation_attr2=0x7f0a0007;
-        public static final int tv_ic_conversation_attr3=0x7f0a0008;
-        public static final int tv_ic_conversation_attr4=0x7f0a0009;
-        public static final int tv_ic_conversation_tv_attr=0x7f0a0006;
-        public static final int tv_ic_tv_attr=0x7f0a0002;
-        public static final int tv_ic_tv_attr2=0x7f0a0003;
-        public static final int tv_ic_tv_attr3=0x7f0a0004;
-        public static final int tv_ic_tv_attr4=0x7f0a0005;
-        public static final int x=0x7f0a0018;
+        public static final int BTN_play=0x7f0a0020;
+        public static final int BTN_submit=0x7f0a0021;
+        public static final int ET_frequency=0x7f0a0024;
+        public static final int LL_vis=0x7f0a001c;
+        public static final int PB_test_progress=0x7f0a0023;
+        public static final int about=0x7f0a0031;
+        public static final int audiogram=0x7f0a0030;
+        public static final int btn_artwork=0x7f0a0003;
+        public static final int btn_create_account=0x7f0a001b;
+        public static final int btn_getstarted=0x7f0a002a;
+        public static final int btn_hearing_aid=0x7f0a002b;
+        public static final int btn_libraries=0x7f0a0005;
+        public static final int btn_preset_1=0x7f0a0027;
+        public static final int btn_preset_2=0x7f0a0028;
+        public static final int btn_preset_3=0x7f0a0029;
+        public static final int btn_privacy=0x7f0a0004;
+        public static final int btn_retake_test=0x7f0a002c;
+        public static final int btn_terms=0x7f0a0002;
+        public static final int content=0x7f0a0009;
+        public static final int exit=0x7f0a0033;
+        public static final int frequency=0x7f0a001d;
+        public static final int help=0x7f0a002f;
+        public static final int imageView1=0x7f0a0010;
+        public static final int iv_icon_1=0x7f0a000b;
+        public static final int ll_EQ=0x7f0a002e;
+        public static final int ll_presets=0x7f0a0026;
+        public static final int mySimpleXYPlot=0x7f0a0015;
+        public static final int scrollView1=0x7f0a0007;
+        public static final int seekbar=0x7f0a001e;
+        public static final int share=0x7f0a0032;
+        public static final int spinner_age=0x7f0a001a;
+        public static final int spinner_gender=0x7f0a0018;
+        public static final int tbtn_play=0x7f0a002d;
+        public static final int tbtn_record=0x7f0a0025;
+        public static final int textView1=0x7f0a000a;
+        public static final int textView2=0x7f0a0017;
+        public static final int textView3=0x7f0a0019;
+        public static final int textview=0x7f0a001f;
+        public static final int title=0x7f0a0008;
+        public static final int tv_account=0x7f0a0016;
+        public static final int tv_ic_conversation_attr2=0x7f0a0012;
+        public static final int tv_ic_conversation_attr3=0x7f0a0013;
+        public static final int tv_ic_conversation_attr4=0x7f0a0014;
+        public static final int tv_ic_conversation_tv_attr=0x7f0a0011;
+        public static final int tv_ic_tv_attr=0x7f0a000c;
+        public static final int tv_ic_tv_attr2=0x7f0a000d;
+        public static final int tv_ic_tv_attr3=0x7f0a000e;
+        public static final int tv_ic_tv_attr4=0x7f0a000f;
+        public static final int view1=0x7f0a0001;
+        public static final int view2=0x7f0a0006;
+        public static final int viewSwitcher1=0x7f0a0000;
+        public static final int x=0x7f0a0022;
     }
     public static final class layout {
         public static final int about=0x7f030000;
-        public static final int audiogram=0x7f030001;
-        public static final int create_account=0x7f030002;
-        public static final int hearing_test=0x7f030003;
-        public static final int helloworld=0x7f030004;
-        public static final int listen=0x7f030005;
-        public static final int main=0x7f030006;
-        public static final int main_no_account=0x7f030007;
-        public static final int main_with_account=0x7f030008;
-        public static final int record=0x7f030009;
-        public static final int welcome=0x7f03000a;
+        public static final int artwork=0x7f030001;
+        public static final int audiogram=0x7f030002;
+        public static final int create_account=0x7f030003;
+        public static final int hearing_test=0x7f030004;
+        public static final int helloworld=0x7f030005;
+        public static final int help=0x7f030006;
+        public static final int listen=0x7f030007;
+        public static final int main=0x7f030008;
+        public static final int main_no_account=0x7f030009;
+        public static final int main_with_account=0x7f03000a;
+        public static final int record=0x7f03000b;
+        public static final int welcome=0x7f03000c;
     }
     public static final class menu {
         public static final int hearing_aid_menu=0x7f090000;
@@ -101,17 +115,106 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f070000;
-        public static final int designed_by=0x7f070009;
-        public static final int ic_conversation_author_link=0x7f070008;
-        public static final int ic_conversation_icon_link=0x7f070007;
-        public static final int ic_tv_author_link=0x7f070006;
+        public static final int artwork=0x7f070008;
+        public static final int designed_by=0x7f07000d;
+        public static final int ic_conversation_author_link=0x7f07000c;
+        public static final int ic_conversation_icon_link=0x7f07000b;
+        public static final int ic_tv_author_link=0x7f07000a;
         /**  Attribution 
          */
-        public static final int ic_tv_icon_link=0x7f070005;
+        public static final int ic_tv_icon_link=0x7f070009;
+        public static final int libraries=0x7f070007;
+        public static final int privacy_policy=0x7f070006;
+        /** 
+<ol>
+	<li>
+		Permission is granted to temporarily download one copy of the materials 
+		(information or software) on Hear Rite's web site for personal, 
+		non-commercial transitory viewing only. This is the grant of a license, 
+		not a transfer of title, and under this license you may not:
+		
+		<ul>
+			<li>modify or copy the materials;</li>
+			<li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+			<li>attempt to decompile or reverse engineer any software contained on Hear Rite's web site;</li>
+			<li>remove any copyright or other proprietary notations from the materials; or</li>
+			<li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+		</ul>
+	</li>
+	<li>
+		This license shall automatically terminate if you violate any of these restrictions and may be terminated by Hear Rite at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+	</li>
+</ol>
+
+<h3>
+	3. Disclaimer
+</h3>
+
+<ol>
+	<li>
+		The materials on Hear Rite's web site are provided "as is". Hear Rite makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, Hear Rite does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.
+	</li>
+</ol>
+
+<h3>
+	4. Limitations
+</h3>
+
+<p>
+	In no event shall Hear Rite or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on Hear Rite's Internet site, even if Hear Rite or a Hear Rite authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+</p>
+			
+<h3>
+	5. Revisions and Errata
+</h3>
+
+<p>
+	The materials appearing on Hear Rite's web site could include technical, typographical, or photographic errors. Hear Rite does not warrant that any of the materials on its web site are accurate, complete, or current. Hear Rite may make changes to the materials contained on its web site at any time without notice. Hear Rite does not, however, make any commitment to update the materials.
+</p>
+
+<h3>
+	6. Links
+</h3>
+
+<p>
+	Hear Rite has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Hear Rite of the site. Use of any such linked web site is at the user's own risk.
+</p>
+
+<h3>
+	7. Site Terms of Use Modifications
+</h3>
+
+<p>
+	Hear Rite may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+</p>
+
+<h3>
+	8. Governing Law
+</h3>
+
+<p>
+	Any claim relating to Hear Rite's web site shall be governed by the laws of the State of Washington without regard to its conflict of law provisions.
+</p>
+
+<p>
+	General Terms and Conditions applicable to Use of a Web Site.
+</p>
+
+</string>
+
+
+
+
+         */
+        public static final int privacy_policy_content=0x7f070010;
         public static final int share_chooser_text=0x7f070004;
         public static final int share_subject=0x7f070002;
         public static final int share_text=0x7f070003;
-        public static final int tnp=0x7f07000a;
+        /**  Legal 
+         */
+        public static final int terms_of_service=0x7f070005;
+        public static final int terms_of_service_content=0x7f07000f;
+        public static final int tnp=0x7f07000e;
         public static final int welcome=0x7f070001;
     }
     public static final class style {

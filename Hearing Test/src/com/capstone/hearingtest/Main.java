@@ -117,7 +117,11 @@ public class Main extends Activity{
 				ctx.startActivity(intent);
 	            return true;
 	        case R.id.help:
-				 intent = new Intent(ctx, HearingAidMain.class);
+				 intent = new Intent(ctx, Help.class);
+				ctx.startActivity(intent);
+	        	return true;
+	        case R.id.about:
+				 intent = new Intent(ctx, About.class);
 				ctx.startActivity(intent);
 	        	return true;
 	        case R.id.share:
