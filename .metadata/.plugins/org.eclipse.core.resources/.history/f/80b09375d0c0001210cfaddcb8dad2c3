@@ -339,7 +339,6 @@ public class AudioTrackTest extends Activity {
 	}
 
 	public void stopListen(){
-		Rthread.interrupt();
 		Rthread = null;
 		if (audioTrack != null)
 			audioTrack.release();

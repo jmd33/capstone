@@ -339,14 +339,10 @@ public class AudioTrackTest extends Activity {
 	}
 
 	public void stopListen(){
-		Rthread.interrupt();
-		Rthread = null;
 		if (audioTrack != null)
 			audioTrack.release();
 		if (audioRecord != null)
 			audioRecord.release();
-		isRecording = null;
-		mRecordButton.setChecked(false);
 		
 	}
 	protected void loopback() {
@@ -513,8 +509,6 @@ public class AudioTrackTest extends Activity {
 			audioTrack.release();
 		if (audioRecord != null)
 			audioRecord.release();
-		unregisterReceiver(receiver);
-
 	}
 
 	@Override
