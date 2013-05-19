@@ -15,10 +15,8 @@ import java.io.OutputStream;
 import android.app.Activity;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioRecord;
@@ -43,8 +41,6 @@ import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RemoteViews;
-import android.widget.RemoteViews.RemoteView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
@@ -72,7 +68,6 @@ public class AudioTrackTest extends Activity {
 	private AudioTrack audioTrack = null;
 	byte[] buffer = new byte[freq];
 	public static final int AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
-	public static final String KEY_STOP = "com.capstone.hearingtest.AudioTrackTest.stopListen";
 
 	// The different audio codecs
 	// int AAC AAC Low Complexity (AAC-LC) audio codec
@@ -85,7 +80,7 @@ public class AudioTrackTest extends Activity {
 	private ViewSwitcher viewSwitcher;
 	private LinearLayout myFirstView;
 	private LinearLayout mySecondView;
-	public BroadcastReceiver receiver = null;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -103,25 +98,6 @@ public class AudioTrackTest extends Activity {
 		// mFileName += "/audiorecordtest.3gp";
 
 		// = create();
-		IntentFilter filter = new IntentFilter();
-		filter.addAction(KEY_STOP);
-		// Add other actions as needed
-
-		receiver = new BroadcastReceiver() {
-		    @Override
-		    public void onReceive(Context context, Intent intent) {
-		        if (intent.getAction().equals(KEY_STOP)) {
-		            stopListen();
-		        }
-		        // else if (...) {
-//		        }
-		    }
-		};
-
-		registerReceiver(receiver, filter);
-		
-		
-		
 
 		mRecordButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
@@ -333,13 +309,6 @@ public class AudioTrackTest extends Activity {
 		loopback();
 	}
 
-	public void stopListen(){
-		if (audioTrack != null)
-			audioTrack.release();
-		if (audioRecord != null)
-			audioRecord.release();
-		
-	}
 	protected void loopback() {
 
 		android.os.Process
@@ -522,23 +491,12 @@ public class AudioTrackTest extends Activity {
 	}
 
 	private void showNotification(){
-//        Intent clickIntent = new Intent(Intent.ACTION_VIEW, );
-//		PendingIntent myPauseIntent =  PendingIntent.getActivity(this, 0, clickIntent, 0);
-		Intent nextIntent = new Intent(KEY_STOP);
-		PendingIntent PendingPauseIntent = PendingIntent.getBroadcast(this, 0, nextIntent, 0);
-		RemoteViews rv = new RemoteViews(getPackageName(), R.layout.custom_notification);
-        rv.setOnClickPendingIntent(R.id.notification_btn_pause, PendingPauseIntent);
-
-		//		rv.setTextViewText(R.id.notification_title, "Hear Rite");
-//		rv.setTextViewText(R.id.notification_text, "click to stop listening");
-//		rv.setImageViewResource(R.id.notifiation_image, R.drawable.ic_launcher);
-//		rv.
+		
 		NotificationCompat.Builder mBuilder =
 		        new NotificationCompat.Builder(this)
-//		        .setContentTitle("Hear Rite")
-		.setSmallIcon(R.drawable.ic_launcher)
-		.setContent(rv);
-//		        .setContentText("click to stop listening");
+		        .setSmallIcon(R.drawable.ic_launcher)
+		        .setContentTitle("Hear Rite")
+		        .setContentText("click to stop listening");
 		// Creates an explicit intent for an Activity in your app
 		Intent resultIntent = new Intent(this, AudioTrackTest.class);
 
@@ -557,7 +515,6 @@ public class AudioTrackTest extends Activity {
 		            PendingIntent.FLAG_UPDATE_CURRENT
 		        );
 		mBuilder.setContentIntent(resultPendingIntent);
-		mBuilder.setAutoCancel(true);
 		NotificationManager mNotificationManager =
 		    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 		// mId allows you to update the notification later on.
