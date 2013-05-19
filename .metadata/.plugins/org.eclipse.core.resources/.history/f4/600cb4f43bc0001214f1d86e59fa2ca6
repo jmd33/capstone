@@ -28,6 +28,8 @@
             android:text="ToggleButton"
             android:textOff="Listen"
             android:textOn="Stop" />
+
+        
     </LinearLayout>
 
     <ViewSwitcher
@@ -67,7 +69,6 @@
                         android:id="@+id/btn_preset_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
                         android:background="@drawable/ic_conversation"
                         android:text="ToggleButton" />
                 </LinearLayout>
@@ -83,7 +84,6 @@
                         android:id="@+id/btn_preset_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
                         android:background="@drawable/ic_laptop"
                         android:text="ToggleButton" />
                 </LinearLayout>
@@ -94,8 +94,6 @@
             android:id="@+id/view_eq"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
             android:orientation="horizontal" >
 
             <include layout="@layout/equalizer" />
@@ -114,15 +112,12 @@
     <RelativeLayout
         android:id="@+id/ll_other"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" >
-
         <Button
             android:id="@+id/btn_eq"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/ic_eq" />
     </RelativeLayout>

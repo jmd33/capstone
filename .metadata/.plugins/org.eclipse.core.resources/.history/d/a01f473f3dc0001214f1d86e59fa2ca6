@@ -5,8 +5,7 @@
 
     <LinearLayout
         android:id="@+id/dfad"
-        android:layout_width="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal" >
 

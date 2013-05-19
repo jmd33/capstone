@@ -498,7 +498,7 @@ public class AudioTrackTest extends Activity {
 	protected void onStop() {
 		super.onStop();
 		Log.d("AudioTrackTest", "onStop() called");
-//		unregisterReceiver(receiver);
+		unregisterReceiver(receiver);
 
 	}
 	

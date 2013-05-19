@@ -51,13 +51,13 @@ public final class R {
         public static final int audiogram=0x7f0a004b;
         public static final int btn_artwork=0x7f0a0003;
         public static final int btn_create_account=0x7f0a001b;
-        public static final int btn_eq=0x7f0a003a;
+        public static final int btn_eq=0x7f0a0044;
         public static final int btn_getstarted=0x7f0a0045;
         public static final int btn_hearing_aid=0x7f0a0046;
         public static final int btn_libraries=0x7f0a0005;
-        public static final int btn_preset_1=0x7f0a003f;
-        public static final int btn_preset_2=0x7f0a0040;
-        public static final int btn_preset_3=0x7f0a0042;
+        public static final int btn_preset_1=0x7f0a003e;
+        public static final int btn_preset_2=0x7f0a003f;
+        public static final int btn_preset_3=0x7f0a0041;
         public static final int btn_privacy=0x7f0a0004;
         public static final int btn_retake_test=0x7f0a0047;
         public static final int btn_terms=0x7f0a0002;
@@ -74,10 +74,10 @@ public final class R {
         public static final int ll_bar3=0x7f0a0027;
         public static final int ll_bar4=0x7f0a002a;
         public static final int ll_bar5=0x7f0a002d;
-        public static final int ll_other=0x7f0a0044;
-        public static final int ll_presets=0x7f0a003d;
-        public static final int ll_presets2=0x7f0a003e;
-        public static final int ll_presets3=0x7f0a0041;
+        public static final int ll_other=0x7f0a0043;
+        public static final int ll_presets=0x7f0a003c;
+        public static final int ll_presets2=0x7f0a003d;
+        public static final int ll_presets3=0x7f0a0040;
         public static final int ll_x_axis=0x7f0a0020;
         public static final int mySimpleXYPlot=0x7f0a0015;
         public static final int notification_btn_pause=0x7f0a001e;
@@ -117,9 +117,9 @@ public final class R {
         public static final int view1=0x7f0a0001;
         public static final int view2=0x7f0a0006;
         public static final int viewSwitcher1=0x7f0a0000;
-        public static final int view_eq=0x7f0a0043;
-        public static final int view_presets=0x7f0a003c;
-        public static final int vs_presets_eq=0x7f0a003b;
+        public static final int view_eq=0x7f0a0042;
+        public static final int view_presets=0x7f0a003b;
+        public static final int vs_presets_eq=0x7f0a003a;
         public static final int x=0x7f0a0036;
     }
     public static final class layout {

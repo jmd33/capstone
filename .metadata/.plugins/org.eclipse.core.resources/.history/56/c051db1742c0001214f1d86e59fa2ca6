@@ -495,14 +495,6 @@ public class AudioTrackTest extends Activity {
 	}
 	
 	@Override
-	protected void onStop() {
-		super.onStop();
-		Log.d("AudioTrackTest", "onStop() called");
-//		unregisterReceiver(receiver);
-
-	}
-	
-	@Override
 	protected void onDestroy() {
 		super.onDestroy();
 		if (audioTrack != null)

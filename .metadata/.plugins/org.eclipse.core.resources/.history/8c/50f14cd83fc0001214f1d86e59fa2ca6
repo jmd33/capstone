@@ -93,9 +93,7 @@ public class AudioTrackTest extends Activity {
 		mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
 		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		if (savedInstanceState != null) {
-			isRecording = savedInstanceState.getBoolean("isRecording");
-			if(isRecording)
-				Start();
+//			savedInstanceState.
 		}
 		// mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
 		if (Build.VERSION.SDK_INT < 10)
@@ -486,20 +484,8 @@ public class AudioTrackTest extends Activity {
 	protected void onPause() {
 		super.onPause();
 		Log.d("AudioTrackTest", "onPause() called");
-		if(isRecording != null){
-			if(isRecording)
-				showNotification();
-		}else{
-			unregisterReceiver(receiver);
-		}
-	}
-	
-	@Override
-	protected void onStop() {
-		super.onStop();
-		Log.d("AudioTrackTest", "onStop() called");
-//		unregisterReceiver(receiver);
-
+		if(isRecording)
+			showNotification();
 	}
 	
 	@Override
@@ -515,17 +501,8 @@ public class AudioTrackTest extends Activity {
 	protected void onResume() {
 		super.onResume();
 		Log.d("AudioTrackTest", "onResume() called");
-		if(isRecording != null )
-			if(isRecording && audioRecord == null)
-				Start();
-	}
-	@Override
-	public void onSaveInstanceState(Bundle savedInstanceState) {
-		super.onSaveInstanceState(savedInstanceState);
-		if(isRecording != null)
-			savedInstanceState.putBoolean("isRecording", isRecording);
-	}
 
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
