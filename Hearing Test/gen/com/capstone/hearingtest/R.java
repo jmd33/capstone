@@ -9,20 +9,20 @@ package com.capstone.hearingtest;
 
 public final class R {
     public static final class array {
-        public static final int conversation=0x7f050004;
-        public static final int flat=0x7f050002;
-        public static final int frequencies=0x7f050001;
-        public static final int gender=0x7f050000;
-        public static final int tv=0x7f050003;
+        public static final int conversation=0x7f060004;
+        public static final int flat=0x7f060002;
+        public static final int frequencies=0x7f060001;
+        public static final int gender=0x7f060000;
+        public static final int tv=0x7f060003;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int brown=0x7f060003;
-        public static final int dark_blue=0x7f060000;
-        public static final int light_blue=0x7f060001;
-        public static final int neutral=0x7f060002;
-        public static final int red=0x7f060004;
+        public static final int brown=0x7f070003;
+        public static final int dark_blue=0x7f070000;
+        public static final int light_blue=0x7f070001;
+        public static final int neutral=0x7f070002;
+        public static final int red=0x7f070004;
     }
     public static final class drawable {
         public static final int ic_action_about=0x7f020000;
@@ -42,85 +42,87 @@ public final class R {
         public static final int ic_tv=0x7f02000e;
     }
     public static final class id {
-        public static final int BTN_play=0x7f0a0034;
-        public static final int BTN_submit=0x7f0a0035;
-        public static final int ET_frequency=0x7f0a0038;
-        public static final int LL_vis=0x7f0a0030;
-        public static final int PB_test_progress=0x7f0a0037;
-        public static final int about=0x7f0a004c;
-        public static final int audiogram=0x7f0a004b;
+        public static final int BTN_play=0x7f0a0036;
+        public static final int BTN_submit=0x7f0a0037;
+        public static final int ET_frequency=0x7f0a003a;
+        public static final int LL_vis=0x7f0a0032;
+        public static final int PB_test_progress=0x7f0a0039;
+        public static final int about=0x7f0a004e;
+        public static final int audiogram=0x7f0a004d;
         public static final int btn_artwork=0x7f0a0003;
-        public static final int btn_create_account=0x7f0a001b;
-        public static final int btn_eq=0x7f0a0044;
-        public static final int btn_getstarted=0x7f0a0045;
-        public static final int btn_hearing_aid=0x7f0a0046;
+        public static final int btn_create_account=0x7f0a001d;
+        public static final int btn_eq=0x7f0a0046;
+        public static final int btn_getstarted=0x7f0a0047;
+        public static final int btn_hearing_aid=0x7f0a0048;
         public static final int btn_libraries=0x7f0a0005;
-        public static final int btn_preset_1=0x7f0a003e;
-        public static final int btn_preset_2=0x7f0a003f;
-        public static final int btn_preset_3=0x7f0a0041;
+        public static final int btn_preset_1=0x7f0a0040;
+        public static final int btn_preset_2=0x7f0a0041;
+        public static final int btn_preset_3=0x7f0a0043;
         public static final int btn_privacy=0x7f0a0004;
-        public static final int btn_retake_test=0x7f0a0047;
+        public static final int btn_retake_test=0x7f0a0049;
         public static final int btn_terms=0x7f0a0002;
-        public static final int content=0x7f0a0009;
-        public static final int dfad=0x7f0a001f;
-        public static final int exit=0x7f0a004e;
-        public static final int frequency=0x7f0a0031;
-        public static final int help=0x7f0a004a;
-        public static final int imageView1=0x7f0a0010;
-        public static final int iv_icon_1=0x7f0a000b;
-        public static final int ll_EQ=0x7f0a0049;
-        public static final int ll_bar1=0x7f0a0021;
-        public static final int ll_bar2=0x7f0a0024;
-        public static final int ll_bar3=0x7f0a0027;
-        public static final int ll_bar4=0x7f0a002a;
-        public static final int ll_bar5=0x7f0a002d;
-        public static final int ll_other=0x7f0a0043;
-        public static final int ll_presets=0x7f0a003c;
-        public static final int ll_presets2=0x7f0a003d;
-        public static final int ll_presets3=0x7f0a0040;
-        public static final int ll_x_axis=0x7f0a0020;
-        public static final int mySimpleXYPlot=0x7f0a0015;
-        public static final int notification_btn_pause=0x7f0a001e;
-        public static final int notification_main_img=0x7f0a001c;
-        public static final int notification_main_txt=0x7f0a001d;
-        public static final int sb_1=0x7f0a0022;
-        public static final int sb_2=0x7f0a0025;
-        public static final int sb_3=0x7f0a0028;
-        public static final int sb_4=0x7f0a002b;
-        public static final int sb_5=0x7f0a002e;
+        public static final int content=0x7f0a000a;
+        public static final int dfad=0x7f0a0021;
+        public static final int exit=0x7f0a0050;
+        public static final int frequency=0x7f0a0033;
+        public static final int help=0x7f0a004c;
+        public static final int imageView1=0x7f0a0012;
+        public static final int iv_icon_1=0x7f0a000d;
+        public static final int ll_EQ=0x7f0a004b;
+        public static final int ll_bar1=0x7f0a0023;
+        public static final int ll_bar2=0x7f0a0026;
+        public static final int ll_bar3=0x7f0a0029;
+        public static final int ll_bar4=0x7f0a002c;
+        public static final int ll_bar5=0x7f0a002f;
+        public static final int ll_libraries=0x7f0a000b;
+        public static final int ll_other=0x7f0a0045;
+        public static final int ll_presets=0x7f0a003e;
+        public static final int ll_presets2=0x7f0a003f;
+        public static final int ll_presets3=0x7f0a0042;
+        public static final int ll_view2_content=0x7f0a0008;
+        public static final int ll_x_axis=0x7f0a0022;
+        public static final int mySimpleXYPlot=0x7f0a0017;
+        public static final int notification_btn_pause=0x7f0a0020;
+        public static final int notification_main_img=0x7f0a001e;
+        public static final int notification_main_txt=0x7f0a001f;
+        public static final int sb_1=0x7f0a0024;
+        public static final int sb_2=0x7f0a0027;
+        public static final int sb_3=0x7f0a002a;
+        public static final int sb_4=0x7f0a002d;
+        public static final int sb_5=0x7f0a0030;
         public static final int scrollView1=0x7f0a0007;
-        public static final int seekbar=0x7f0a0032;
-        public static final int share=0x7f0a004d;
-        public static final int spinner_age=0x7f0a001a;
-        public static final int spinner_gender=0x7f0a0018;
-        public static final int tbtn_play=0x7f0a0048;
-        public static final int tbtn_record=0x7f0a0039;
-        public static final int textView1=0x7f0a000a;
-        public static final int textView2=0x7f0a0017;
-        public static final int textView3=0x7f0a0019;
-        public static final int textview=0x7f0a0033;
-        public static final int title=0x7f0a0008;
-        public static final int tv_account=0x7f0a0016;
-        public static final int tv_hz_1=0x7f0a0023;
-        public static final int tv_hz_2=0x7f0a0026;
-        public static final int tv_hz_3=0x7f0a0029;
-        public static final int tv_hz_4=0x7f0a002c;
-        public static final int tv_hz_5=0x7f0a002f;
-        public static final int tv_ic_conversation_attr2=0x7f0a0012;
-        public static final int tv_ic_conversation_attr3=0x7f0a0013;
-        public static final int tv_ic_conversation_attr4=0x7f0a0014;
-        public static final int tv_ic_conversation_tv_attr=0x7f0a0011;
-        public static final int tv_ic_tv_attr=0x7f0a000c;
-        public static final int tv_ic_tv_attr2=0x7f0a000d;
-        public static final int tv_ic_tv_attr3=0x7f0a000e;
-        public static final int tv_ic_tv_attr4=0x7f0a000f;
+        public static final int seekbar=0x7f0a0034;
+        public static final int share=0x7f0a004f;
+        public static final int spinner_age=0x7f0a001c;
+        public static final int spinner_gender=0x7f0a001a;
+        public static final int tbtn_play=0x7f0a004a;
+        public static final int tbtn_record=0x7f0a003b;
+        public static final int textView1=0x7f0a000c;
+        public static final int textView2=0x7f0a0019;
+        public static final int textView3=0x7f0a001b;
+        public static final int textview=0x7f0a0035;
+        public static final int title=0x7f0a0009;
+        public static final int tv_account=0x7f0a0018;
+        public static final int tv_hz_1=0x7f0a0025;
+        public static final int tv_hz_2=0x7f0a0028;
+        public static final int tv_hz_3=0x7f0a002b;
+        public static final int tv_hz_4=0x7f0a002e;
+        public static final int tv_hz_5=0x7f0a0031;
+        public static final int tv_ic_conversation_attr2=0x7f0a0014;
+        public static final int tv_ic_conversation_attr3=0x7f0a0015;
+        public static final int tv_ic_conversation_attr4=0x7f0a0016;
+        public static final int tv_ic_conversation_tv_attr=0x7f0a0013;
+        public static final int tv_ic_tv_attr=0x7f0a000e;
+        public static final int tv_ic_tv_attr2=0x7f0a000f;
+        public static final int tv_ic_tv_attr3=0x7f0a0010;
+        public static final int tv_ic_tv_attr4=0x7f0a0011;
         public static final int view1=0x7f0a0001;
         public static final int view2=0x7f0a0006;
         public static final int viewSwitcher1=0x7f0a0000;
-        public static final int view_eq=0x7f0a0042;
-        public static final int view_presets=0x7f0a003b;
-        public static final int vs_presets_eq=0x7f0a003a;
-        public static final int x=0x7f0a0036;
+        public static final int view_eq=0x7f0a0044;
+        public static final int view_presets=0x7f0a003d;
+        public static final int vs_presets_eq=0x7f0a003c;
+        public static final int x=0x7f0a0038;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -148,17 +150,20 @@ public final class R {
         public static final int test_cbr=0x7f040000;
     }
     public static final class string {
-        public static final int app_name=0x7f070000;
-        public static final int artwork=0x7f070008;
-        public static final int designed_by=0x7f07000d;
-        public static final int ic_conversation_author_link=0x7f07000c;
-        public static final int ic_conversation_icon_link=0x7f07000b;
-        public static final int ic_tv_author_link=0x7f07000a;
+        public static final int android_plot_license=0x7f050011;
+        public static final int androidplot=0x7f050010;
+        public static final int apache_2_0_license=0x7f050000;
+        public static final int app_name=0x7f050001;
+        public static final int artwork=0x7f050009;
+        public static final int designed_by=0x7f05000e;
+        public static final int ic_conversation_author_link=0x7f05000d;
+        public static final int ic_conversation_icon_link=0x7f05000c;
+        public static final int ic_tv_author_link=0x7f05000b;
         /**  Attribution 
          */
-        public static final int ic_tv_icon_link=0x7f070009;
-        public static final int libraries=0x7f070007;
-        public static final int privacy_policy=0x7f070006;
+        public static final int ic_tv_icon_link=0x7f05000a;
+        public static final int libraries=0x7f050008;
+        public static final int privacy_policy=0x7f050007;
         /** 
 <ol>
 	<li>
@@ -240,16 +245,16 @@ public final class R {
 
 
          */
-        public static final int privacy_policy_content=0x7f070010;
-        public static final int share_chooser_text=0x7f070004;
-        public static final int share_subject=0x7f070002;
-        public static final int share_text=0x7f070003;
+        public static final int privacy_policy_content=0x7f050013;
+        public static final int share_chooser_text=0x7f050005;
+        public static final int share_subject=0x7f050003;
+        public static final int share_text=0x7f050004;
         /**  Legal 
          */
-        public static final int terms_of_service=0x7f070005;
-        public static final int terms_of_service_content=0x7f07000f;
-        public static final int tnp=0x7f07000e;
-        public static final int welcome=0x7f070001;
+        public static final int terms_of_service=0x7f050006;
+        public static final int terms_of_service_content=0x7f050012;
+        public static final int tnp=0x7f05000f;
+        public static final int welcome=0x7f050002;
     }
     public static final class style {
         public static final int ActionBar_TitleTextStyle=0x7f080002;

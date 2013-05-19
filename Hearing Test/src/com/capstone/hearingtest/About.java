@@ -3,11 +3,13 @@ package com.capstone.hearingtest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -55,11 +57,13 @@ public class About extends Activity {
 				if (viewSwitcher.getCurrentView() != myFirstView) {
 					viewSwitcher.showPrevious();
 				} else if (viewSwitcher.getCurrentView() != mySecondView) {
-
+					LinearLayout ll_temp = (LinearLayout) findViewById(R.id.ll_libraries);
+					ll_temp.removeAllViews();
 					viewSwitcher.showNext();
 					final TextView tv_content = (TextView) findViewById(R.id.content);
 					final TextView tv_title = (TextView) findViewById(R.id.title);
-
+					tv_content.setText("");
+					tv_title.setText("");
 					if (v.getId() == btn_terms.getId()) {
 						tv_content.setText(Html.fromHtml(getResources()
 								.getString(R.string.terms_of_service_content)));
@@ -71,10 +75,14 @@ public class About extends Activity {
 						tv_title.setText((getResources()
 								.getString(R.string.privacy_policy)));
 					} else if (v.getId() == btn_libraries.getId()) {
-						tv_content.setText((getResources()
-								.getString(R.string.libraries)));
 						tv_title.setText((getResources()
 								.getString(R.string.libraries)));
+//						tv_content.setText((getResources()
+//								.getString(R.string.libraries)));
+						addLibrary(getResources()
+								.getString(R.string.androidplot),
+								getResources()
+								.getString(R.string.android_plot_license));
 					}
 				}
 			}
@@ -90,6 +98,41 @@ public class About extends Activity {
 		});
 	}
 
+	private void addLibrary(String library_name, String library_license){
+		LinearLayout ll = new LinearLayout(this);
+		ll.setOrientation(LinearLayout.VERTICAL);
+		LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+				ViewGroup.LayoutParams.MATCH_PARENT,
+				ViewGroup.LayoutParams.WRAP_CONTENT);
+		ll.setLayoutParams(layoutParams);
+		
+		TextView library = new TextView(this);
+		TextView license = new TextView(this);
+		TextView license2 = new TextView(this);
+
+		library.setLayoutParams(layoutParams);
+		license.setLayoutParams(layoutParams);		
+		license2.setLayoutParams(layoutParams);		
+
+		library.setTextSize(25f);
+		library.setText(library_name);
+		license.setText(library_license);
+		license.setPadding(30, 30, 30, 30);
+		license2.setText(getResources().getString(R.string.apache_2_0_license));
+		license2.setPadding(30, 30, 30, 30);
+		license.setBackgroundColor(getResources().getColor(R.color.neutral));
+		license2.setBackgroundColor(getResources().getColor(R.color.neutral));
+
+		ll.addView(library, 0);
+		ll.addView(license, 1);
+		ll.addView(license2, 2);
+		
+		
+	LinearLayout view2 = (LinearLayout) findViewById(R.id.ll_libraries);
+	view2.addView(ll);
+	
+	}
+	
 	@Override
 	public void onBackPressed() {
 		if (viewSwitcher.getCurrentView() != myFirstView)
