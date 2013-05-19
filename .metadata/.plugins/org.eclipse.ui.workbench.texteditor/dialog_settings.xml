@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="layout" key="selection"/>
+		<item value="apply" key="selection"/>
 		<list key="findhistory">
-			<item value="layout"/>
-			<item value="res"/>
-			<item value="listen"/>
+			<item value="apply"/>
+			<item value="start"/>
+			<item value="setup"/>
+			<item value="mequ"/>
+			<item value="sync"/>
+			<item value="toggle"/>
+			<item value="onst"/>
 			<item value="on"/>
-			<item value="intent"/>
-			<item value="destr"/>
-			<item value="action"/>
-			<item value="getRe"/>
 		</list>
 		<list key="replacehistory">
 			<item value="sp"/>

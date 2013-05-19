@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width=”match_parent”
+    android:layout_height="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/ll_x_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+15 db" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="0 db" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="-15 db" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bar1"
+        android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+        
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+         <TextView
+            android:id="@+id/tv_hz_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 Hz" />
+    </LinearLayout>
+
+    
+     <LinearLayout
+        android:id="@+id/ll_bar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+        
+        android:orientation="vertical" >
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+         <TextView
+            android:id="@+id/tv_hz_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="230 Hz" />
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        android:id="@+id/ll_bar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+        
+        android:orientation="vertical" >
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+         <TextView
+            android:id="@+id/tv_hz_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="910 Hz" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/ll_bar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+        
+        android:orientation="vertical" >
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+         <TextView
+            android:id="@+id/tv_hz_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 kHz" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:id="@+id/ll_bar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <android.widget.VerticalSeekBar
+            android:id="@+id/sb_5"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+         <TextView
+            android:id="@+id/tv_hz_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14 kHz" />
+    </LinearLayout>
+     
+     
+     
+     
+     
+     
+</FrameLayout>

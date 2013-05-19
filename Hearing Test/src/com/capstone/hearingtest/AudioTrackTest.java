@@ -35,10 +35,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
+import android.widget.VerticalSeekBar;
+import android.widget.ViewSwitcher;
 
 public class AudioTrackTest extends Activity {
 	private static final String LOG_TAG = "AudioRecordTest";
@@ -68,12 +73,16 @@ public class AudioTrackTest extends Activity {
 	// int DEFAULT
 	// int HE_AAC High Efficiency AAC (HE-AAC) audio codec
 	private int AudioCodec = MediaRecorder.AudioEncoder.AMR_WB;
+	private ViewSwitcher viewSwitcher;
+	private LinearLayout myFirstView;
+	private LinearLayout mySecondView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.listen);
 		mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
+		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		// mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
 		if (Build.VERSION.SDK_INT < 10)
 			AudioCodec = MediaRecorder.AudioEncoder.AMR_NB;
@@ -110,25 +119,35 @@ public class AudioTrackTest extends Activity {
 		final ToggleButton btn_preset_1 = (ToggleButton) findViewById(R.id.btn_preset_1);
 		final ToggleButton btn_preset_2 = (ToggleButton) findViewById(R.id.btn_preset_2);
 		final ToggleButton btn_preset_3 = (ToggleButton) findViewById(R.id.btn_preset_3);
-		btn_preset_3.setVisibility(ToggleButton.GONE);
+		// btn_preset_3.setVisibility(ToggleButton.GONE);
 		btn_preset_1.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (btn_preset_1.isChecked())
-					resetEQ();
-				else {
-					short bands = mEqualizer.getNumberOfBands();
-					final short minEQLevel = mEqualizer.getBandLevelRange()[0];
-					final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-					Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
-					Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
-
-					for (short i = 0; i < bands; i++) {
-						final short band = i;
-						Log.d("AFX", "band: " + band + "");
-
-						mEqualizer.setBandLevel(band,
-								(short) (maxEQLevel * (1.00)));
+				if (isRecording == null){
+					btn_preset_1.setChecked(false);
+					Toast.makeText(ctx, "click listen first",
+							Toast.LENGTH_SHORT).show();
+				}else {
+					if (btn_preset_1.isChecked()) {
+						applyPreset(1);
+						// resetEQ();
+					} else {
+						applyPreset(0);
+						// short bands = mEqualizer.getNumberOfBands();
+						// final short minEQLevel =
+						// mEqualizer.getBandLevelRange()[0];
+						// final short maxEQLevel =
+						// mEqualizer.getBandLevelRange()[1];
+						// Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
+						// Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
+						//
+						// for (short i = 0; i < bands; i++) {
+						// final short band = i;
+						// Log.d("AFX", "band: " + band + "");
+						//
+						// mEqualizer.setBandLevel(band,
+						// (short) (maxEQLevel * (1.00)));
+						// }
 					}
 				}
 			}
@@ -136,20 +155,117 @@ public class AudioTrackTest extends Activity {
 		btn_preset_2.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (btn_preset_2.isChecked())
-					resetEQ();
-				else {
-					short bands = mEqualizer.getNumberOfBands();
-					final short minEQLevel = mEqualizer.getBandLevelRange()[0];
-					final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
-					for (short i = 0; i < bands; i++) {
-						final short band = i;
-						mEqualizer.setBandLevel(band,
-								(short) (maxEQLevel * (0.00)));
+				if (isRecording == null){
+					btn_preset_2.setChecked(false);
+					Toast.makeText(ctx, "click listen first",
+							Toast.LENGTH_SHORT).show();
+				}else {
+					if (btn_preset_2.isChecked()) {
+						applyPreset(2);
+						// resetEQ();
+					} else {
+						applyPreset(0);
+
+						// short bands = mEqualizer.getNumberOfBands();
+						// final short minEQLevel =
+						// mEqualizer.getBandLevelRange()[0];
+						// final short maxEQLevel =
+						// mEqualizer.getBandLevelRange()[1];
+						// for (short i = 0; i < bands; i++) {
+						// final short band = i;
+						// mEqualizer.setBandLevel(band,
+						// (short) (maxEQLevel * (0.00)));
+						// }
 					}
 				}
 			}
 		});
+
+		viewSwitcher = (ViewSwitcher) findViewById(R.id.vs_presets_eq);
+		myFirstView = (LinearLayout) findViewById(R.id.view_presets);
+		mySecondView = (LinearLayout) findViewById(R.id.view_eq);
+		final Button btn_eq = (Button) findViewById(R.id.btn_eq);
+		btn_eq.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+				Log.d("eq_btn", "view: " + v);
+				if (viewSwitcher.getCurrentView() != myFirstView) {
+					viewSwitcher.showPrevious();
+				} else if (viewSwitcher.getCurrentView() != mySecondView) {
+					viewSwitcher.showNext();
+//					syncEqBars();
+				}
+			}
+		});
+
+		// OnSeekBarChangeListener osbcl = (new
+		// SeekBar.OnSeekBarChangeListener() {
+		// public void onProgressChanged(SeekBar seekBar, int progress,
+		// boolean fromUser) {
+		// mEqualizer.setBandLevel(band, (short) (progress + minEQLevel));
+		// // Log.d("EQ", "band: "+band+"  prog:"+progress);
+		//
+		// }
+		//
+		// public void onStartTrackingTouch(SeekBar seekBar) {
+		// }
+		//
+		// public void onStopTrackingTouch(SeekBar seekBar) {
+		// Log.d("EQ", "band: " + band + "  prog:" + seekBar.getProgress());
+		//
+		// }
+		// });
+		//
+		// SeekBar sb = (SeekBar) findViewById(R.id.sb_1);
+		// sb.setOnSeekBarChangeListener(osbcl);
+
+	}
+
+	private void syncEqBars() {
+		short bands = mEqualizer.getNumberOfBands();
+		final short minEQLevel = mEqualizer.getBandLevelRange()[0];
+		final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
+		Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
+		Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
+
+		for (short i = 0; i < bands && i < 5; i++) {
+			final short band = i;
+			Log.d("AFX", "band: " + band + "");
+
+			// Log.i(LOG_TAG, "band: "+band+" "+mEqualizer.);
+			SeekBar bar = null;
+			switch (i) {
+			case 0:
+				bar = (SeekBar) findViewById(R.id.sb_1);
+				break;
+			case 1:
+				bar = (SeekBar) findViewById(R.id.sb_2);
+				break;
+			case 2:
+				bar = (SeekBar) findViewById(R.id.sb_3);
+				break;
+			case 3:
+				bar = (SeekBar) findViewById(R.id.sb_4);
+				break;
+			case 4:
+				bar = (SeekBar) findViewById(R.id.sb_5);
+				break;
+			}
+			Log.d("EQ",
+					"band level; " + band + " = "
+							+ mEqualizer.getBandLevel(band));
+			int level = mEqualizer.getBandLevel(band);
+			if (level < 0)
+				level = level * (-1);
+			else if (level > 0)
+				level = level * 2 - 1;
+			else if (level == 0)
+				level = 1500;
+			bar.setProgress(level);
+			Log.d("EQ", "bar getProgress() = " + bar.getProgress());
+			Log.d("EQ", "band = level: " + band + " = " + level);
+
+		}
 
 	}
 
@@ -161,6 +277,28 @@ public class AudioTrackTest extends Activity {
 			Log.d("AFX", "band: " + band + "");
 			mEqualizer.setBandLevel(band, (short) (maxEQLevel * (0.50)));
 		}
+	}
+
+	private void applyPreset(int preset_name) {
+		int[] x = null;
+		switch (preset_name) {
+		case 0:
+			x = getResources().getIntArray(R.array.flat);
+			break;
+		case 1:
+			x = getResources().getIntArray(R.array.tv);
+			break;
+		case 2:
+			x = getResources().getIntArray(R.array.conversation);
+			break;
+		}
+		Log.d("applyPreset", "x length = "+ x.length);
+		for (int i = 0; i < x.length; i++){
+			short band = (short) i;
+			mEqualizer.setBandLevel( band, (short) x[i]);
+			Log.i("ApplyPreset","band: "+band+" level: "+ mEqualizer.getBandLevel(band));
+		}
+		syncEqBars();
 	}
 
 	protected void Start() {
@@ -193,7 +331,8 @@ public class AudioTrackTest extends Activity {
 
 		audioTrack.setPlaybackRate(freq);
 		final byte[] buffer = new byte[bufferSize];
-		setupEqualizerFxAndUI();
+		setupEqualizer();
+		// setupEqualizerFxAndUI();
 		resetEQ();
 		audioRecord.startRecording();
 		Log.i(LOG_TAG, "Audio Recording started");
@@ -238,46 +377,108 @@ public class AudioTrackTest extends Activity {
 
 	}
 
+	private void setupEqualizer() {
+		// Create the Equalizer object (an AudioEffect subclass) and attach it
+		// to our media player,
+		// with a default priority (0).
+		mEqualizer = new Equalizer(0, audioTrack.getAudioSessionId());
+		mEqualizer.setEnabled(true);
+
+		short bands = mEqualizer.getNumberOfBands();
+//		Log.d("AFX", "BAnds" + bands + "");
+		final short minEQLevel = mEqualizer.getBandLevelRange()[0];
+		final short maxEQLevel = mEqualizer.getBandLevelRange()[1];
+		Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
+		Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
+
+		for (short i = 0; i < bands && i < 5; i++) {
+			final short band = i;
+//			Log.d("AFX", "band: " + band + "");
+
+			// Log.i(LOG_TAG, "band: "+band+" "+mEqualizer.);
+			SeekBar bar = null;
+			switch (i) {
+			case 0:
+				bar = (SeekBar) findViewById(R.id.sb_1);
+				break;
+			case 1:
+				bar = (SeekBar) findViewById(R.id.sb_2);
+				break;
+			case 2:
+				bar = (SeekBar) findViewById(R.id.sb_3);
+				break;
+			case 3:
+				bar = (SeekBar) findViewById(R.id.sb_4);
+				break;
+			case 4:
+				bar = (SeekBar) findViewById(R.id.sb_5);
+				break;
+			}
+
+			// SeekBar bar = new SeekBar(this);
+			bar.setMax(maxEQLevel - minEQLevel);
+			bar.setProgress(mEqualizer.getBandLevel(band));
+			bar.setOnSeekBarChangeListener(new VerticalSeekBar.OnSeekBarChangeListener() {
+				public void onProgressChanged(SeekBar seekBar, int progress,
+						boolean fromUser) {
+					mEqualizer.setBandLevel(band,
+							(short) (progress + minEQLevel));
+//					Log.d("EQ", "onchange. band: " + band + "  prog:"
+//							+ progress);
+				}
+
+				public void onStartTrackingTouch(SeekBar seekBar) {
+//					Log.d("EQ",
+//							"onstart. band: " + band + "  prog:"
+//									+ seekBar.getProgress());
+				}
+
+				public void onStopTrackingTouch(SeekBar seekBar) {
+//					Log.d("EQ",
+//							"onstop. band: " + band + "  prog:"
+//									+ seekBar.getProgress());
+				}
+			});
+		}
+		applyPreset(0);
+	}
+
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		if(audioTrack != null)
+		if (audioTrack != null)
 			audioTrack.release();
-		if(audioRecord != null)
+		if (audioRecord != null)
 			audioRecord.release();
 	}
-	
+
 	@Override
-    protected void onResume() {
-        super.onResume();
-    }
-	
+	protected void onResume() {
+		super.onResume();
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// generate menu
-	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.menu.hearing_aid_menu, menu);
-	    return true;
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.hearing_aid_menu, menu);
+		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle menu item selection
+		// Handle menu item selection
 		Intent intent;
-	    switch (item.getItemId()) {
-	        case R.id.help:
-				 intent = new Intent(ctx, About.class);
-				ctx.startActivity(intent);
-	        	return true;
-	        default:
-	            return super.onOptionsItemSelected(item);
-	    }
+		switch (item.getItemId()) {
+		case R.id.help:
+			intent = new Intent(ctx, About.class);
+			ctx.startActivity(intent);
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
-	
-	
-	
-	
-	
+
 	/*
 	 * creates EQ sliders on screen and attaches EQ to the AudioTrack
 	 */

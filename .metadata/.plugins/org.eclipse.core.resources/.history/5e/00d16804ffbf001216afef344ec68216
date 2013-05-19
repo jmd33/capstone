@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+         <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen to the world around you."
+        android:textSize="30sp" />
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/tbtn_record"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_power_blue"
+            android:text="ToggleButton"
+            android:textOff="Listen"
+            android:textOn="Stop" />
+    </LinearLayout>
+
+    <ViewSwitcher
+        android:id="@+id/vs_presets_eq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:inAnimation="@android:anim/fade_in" >
+
+        <LinearLayout
+            android:id="@+id/view_presets"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_presets2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/btn_preset_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/ic_tv"
+                    android:text="ToggleButton" />
+
+                <ToggleButton
+                    android:id="@+id/btn_preset_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_conversation"
+                    android:text="ToggleButton" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_presets3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/btn_preset_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_laptop"
+                    android:text="ToggleButton" />
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/view_eq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Listen to the world around you."
+                    android:textSize="30sp" />
+            </LinearLayout>
+    </ViewSwitcher>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/ll_EQ"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_eq"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_eq" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -8,10 +8,8 @@
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.widget.Spinner"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.array"/>
 <fullyQualifiedTypeName name="android.content.SharedPreferences"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.os.Environment"/>
 <fullyQualifiedTypeName name="android.media.AudioRecord"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
@@ -26,12 +24,17 @@
 <fullyQualifiedTypeName name="com.androidplot.xy.BoundaryMode"/>
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.media.audiofx.NoiseSuppressor"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.media.AudioManager"/>
 <fullyQualifiedTypeName name="android.media.AudioManager.OnAudioFocusChangeListener"/>
 <fullyQualifiedTypeName name="android.view.KeyEvent.DispatcherState"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.string"/>
 <fullyQualifiedTypeName name="android.text.method.LinkMovementMethod"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.string"/>
+<fullyQualifiedTypeName name="android.text.Html"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.widget.SeekBar.OnSeekBarChangeListener"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
+<fullyQualifiedTypeName name="android.widget.VerticalSeekBar"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.array"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
 </qualifiedTypeNameHistroy>
