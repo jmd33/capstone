@@ -29,7 +29,6 @@
 <fullyQualifiedTypeName name="android.view.KeyEvent.DispatcherState"/>
 <fullyQualifiedTypeName name="android.text.method.LinkMovementMethod"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.string"/>
 <fullyQualifiedTypeName name="android.text.Html"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="android.widget.SeekBar.OnSeekBarChangeListener"/>
@@ -40,7 +39,10 @@
 <fullyQualifiedTypeName name="android.widget.RemoteViews"/>
 <fullyQualifiedTypeName name="android.widget.RemoteViews.RemoteView"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.layout"/>
-<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.drawable"/>
 <fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.id"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.string"/>
+<fullyQualifiedTypeName name="com.capstone.hearingtest.R.color"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
 </qualifiedTypeNameHistroy>

@@ -32,35 +32,27 @@
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1360040323318" focus="true" label="Workspace - Java">
 <editors>
-<editorArea activeWorkbook="DefaultEditorWorkbook">
-<info part="DefaultEditorWorkbook">
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@57d5d80f">
+<info part="org.eclipse.ui.internal.EditorStack@57d5d80f">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="listen.xml" partName="listen.xml" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/res/layout/listen.xml" title="listen.xml" tooltip="Hearing Test/res/layout/listen.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/res/layout/listen.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioTrackTest.java" partName="AudioTrackTest.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java" title="AudioTrackTest.java" tooltip="Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioTrackTest.java" partName="AudioTrackTest.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java" title="AudioTrackTest.java" tooltip="Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java" workbook="org.eclipse.ui.internal.EditorStack@57d5d80f">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15006" selectionTopPixel="7986"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10424" selectionTopPixel="0"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="equalizer.xml" partName="equalizer.xml" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/res/layout/equalizer.xml" title="equalizer.xml" tooltip="Hearing Test/res/layout/equalizer.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/res/layout/equalizer.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Help.java" partName="Help.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/Help.java" title="Help.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Help.java" workbook="org.eclipse.ui.internal.EditorStack@57d5d80f">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/Help.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HearingTest.java" partName="HearingTest.java" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/src/com/capstone/hearingtest/HearingTest.java" title="HearingTest.java" tooltip="Hearing Test/src/com/capstone/hearingtest/HearingTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/src/com/capstone/hearingtest/HearingTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="235" selectionOffset="7492" selectionTopPixel="3349"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="Hearing Test Manifest" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/AndroidManifest.xml" title="Hearing Test Manifest" tooltip="Hearing Test/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/AndroidManifest.xml"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="help.xml" partName="help.xml" path="/Users/wazo/Documents/UW/capstone/capstone/Hearing Test/res/layout/help.xml" title="help.xml" tooltip="Hearing Test/res/layout/help.xml" workbook="org.eclipse.ui.internal.EditorStack@57d5d80f">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Hearing Test/res/layout/help.xml"/>
 </editor>
 </editors>
 <views>
@@ -70,7 +62,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (90 items)"/>
+<category IMemento.internal.id="Warnings (93 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="433"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -383,137 +375,142 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/about.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/About.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/android/widget/VerticalSeekBar.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/custom_notification.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/listen.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/Hearing Test/res/layout/listen.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/equalizer.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/Hearing Test/res/layout/equalizer.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/HearingTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/Hearing Test/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/values/apache_2_license.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Hearing Test/src/com/capstone/hearingtest/Help.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Hearing Test/res/layout/help.xml"/>
 </editors>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15942" y="1"/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20056" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="14941" y="5"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4211" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="16051" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4209" y="0"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="16051" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4779" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15250" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4394" y="0"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="16228" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4718" y="0"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15292" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4424" y="0"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="17404" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4426" y="1"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15846" y="22"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4430" y="1"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15846" y="22"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4779" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="9506" y="0"/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4779" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15791" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4849" y="0"/>
 </item>
-<item historyLabel="custom_notification.xml" index="2"/>
-<item historyLabel="VerticalSeekBar.java" index="1">
-<position info="not_deleted" x="204" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="3355" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15791" y="0"/>
-</item>
-<item historyLabel="listen.xml" index="3"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
-</item>
-<item historyLabel="listen.xml" index="3"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
-</item>
-<item historyLabel="listen.xml" index="3">
-<position info="not_deleted" x="4601" y="0"/>
-</item>
-<item historyLabel="listen.xml" index="4">
+<item historyLabel="About.java" index="1">
 <position/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="2386" y="0"/>
 </item>
-<item historyLabel="listen.xml" index="3"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20789" y="0"/>
 </item>
-<item historyLabel="listen.xml" index="3"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="3820" y="0"/>
 </item>
-<item historyLabel="equalizer.xml" index="5"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="2271" y="0"/>
 </item>
-<item historyLabel="equalizer.xml" index="5">
-<position/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20754" y="0"/>
 </item>
-<item historyLabel="equalizer.xml" index="6">
-<position info="not_deleted" x="4310" y="171"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4871" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20701" y="0"/>
 </item>
-<item historyLabel="HearingTest.java" index="7">
-<position info="not_deleted" x="2095" y="33"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4876" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="2801" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="2467" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="14761" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="2297" y="0"/>
 </item>
-<item historyLabel="Hearing Test Manifest" index="8"/>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="2297" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20497" y="0"/>
 </item>
-<item historyLabel="Hearing Test Manifest" index="8"/>
-<item historyLabel="HearingTest.java" index="7">
-<position info="not_deleted" x="7492" y="235"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="1943" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="3411" y="0"/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="1943" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="3458" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4467" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15371" y="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4694" y="0"/>
 </item>
-<item historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="15369" y="0"/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4694" y="0"/>
 </item>
-<item active="true" historyLabel="AudioTrackTest.java" index="0">
-<position info="not_deleted" x="14923" y="0"/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4694" y="0"/>
+</item>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4591" y="0"/>
+</item>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4617" y="0"/>
+</item>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="4327" y="0"/>
+</item>
+<item historyLabel="apache_2_license.xml" index="3"/>
+<item historyLabel="About.java" index="1">
+<position info="not_deleted" x="3728" y="0"/>
+</item>
+<item historyLabel="apache_2_license.xml" index="3"/>
+<item historyLabel="about.xml" index="0"/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20497" y="0"/>
+</item>
+<item historyLabel="Help.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="help.xml" index="5"/>
+<item historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="20497" y="0"/>
+</item>
+<item active="true" historyLabel="AudioTrackTest.java" index="2">
+<position info="not_deleted" x="10489" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -521,6 +518,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="bottom"/>
 </trimArea>
@@ -537,6 +537,33 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="help.xml" tooltip="Hearing Test/res/layout/help.xml">
+<persistable path="/Hearing Test/res/layout/help.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Help.java" tooltip="Hearing Test/src/com/capstone/hearingtest/Help.java">
+<persistable path="/Hearing Test/src/com/capstone/hearingtest/Help.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioTrackTest.java" tooltip="Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java">
+<persistable path="/Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="About.java" tooltip="Hearing Test/src/com/capstone/hearingtest/About.java">
+<persistable path="/Hearing Test/src/com/capstone/hearingtest/About.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="about.xml" tooltip="Hearing Test/res/layout/about.xml">
+<persistable path="/Hearing Test/res/layout/about.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="Hearing Test/res/values/strings.xml">
+<persistable path="/Hearing Test/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="apache_2_license.xml" tooltip="Hearing Test/res/values/apache_2_license.xml">
+<persistable path="/Hearing Test/res/values/apache_2_license.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="libraries.xml" tooltip="Hearing Test/res/values/attribution/libraries.xml">
+<persistable path="/Hearing Test/res/values/attribution/libraries.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="libraries.xml" tooltip="Hearing Test/res/layout/libraries.xml">
+<persistable path="/Hearing Test/res/layout/libraries.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="Hearing Test/AndroidManifest.xml">
 <persistable path="/Hearing Test/AndroidManifest.xml"/>
 </file>
@@ -549,38 +576,11 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="equalizer.xml" tooltip="Hearing Test/res/layout/equalizer.xml">
 <persistable path="/Hearing Test/res/layout/equalizer.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AudioTrackTest.java" tooltip="Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java">
-<persistable path="/Hearing Test/src/com/capstone/hearingtest/AudioTrackTest.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="listen.xml" tooltip="Hearing Test/res/layout/listen.xml">
 <persistable path="/Hearing Test/res/layout/listen.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="custom_notification.xml" tooltip="Hearing Test/res/layout/custom_notification.xml">
 <persistable path="/Hearing Test/res/layout/custom_notification.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="arrays.xml" tooltip="Hearing Test/res/values/arrays.xml">
-<persistable path="/Hearing Test/res/values/arrays.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="eq_presets.xml" tooltip="Hearing Test/res/values/eq_presets.xml">
-<persistable path="/Hearing Test/res/values/eq_presets.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AboutArtwork.java" tooltip="Hearing Test/src/com/capstone/hearingtest/AboutArtwork.java">
-<persistable path="/Hearing Test/src/com/capstone/hearingtest/AboutArtwork.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VerticalSeekBar.java" tooltip="Hearing Test/src/android/widget/VerticalSeekBar.java">
-<persistable path="/Hearing Test/src/android/widget/VerticalSeekBar.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="temp.xml" tooltip="Hearing Test/res/layout/temp.xml">
-<persistable path="/Hearing Test/res/layout/temp.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="About.java" tooltip="Hearing Test/src/com/capstone/hearingtest/About.java">
-<persistable path="/Hearing Test/src/com/capstone/hearingtest/About.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="about.xml" tooltip="Hearing Test/res/layout/about.xml">
-<persistable path="/Hearing Test/res/layout/about.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="artwork.xml" tooltip="Hearing Test/res/layout/artwork.xml">
-<persistable path="/Hearing Test/res/layout/artwork.xml"/>
 </file>
 </mruList>
 </workbench>

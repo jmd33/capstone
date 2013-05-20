@@ -40,19 +40,11 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/frequency"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:height="30dp"
-                android:textSize="20dp"
-                android:width="40dp" />
-
-            <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="34dp"
                 android:text="Volume"
                 android:textSize="20dp" />
 
@@ -69,10 +61,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical" >
-  <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+
             <Button
                 android:id="@+id/BTN_play"
                 android:layout_width="wrap_content"
@@ -87,10 +76,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:height="20dp"
+                android:height="60dp"
                 android:text="Next"
                 android:width="100dp" />
-</LinearLayout>
+
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="fill_parent"
@@ -100,7 +89,6 @@
                 android:width="40dp" />
         </LinearLayout>
     </LinearLayout>
-
     <RelativeLayout
         android:id="@+id/x"
         android:layout_width="fill_parent"
@@ -114,5 +102,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true" />
     </RelativeLayout>
+
 
 </LinearLayout>
