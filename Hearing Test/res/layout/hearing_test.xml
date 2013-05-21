@@ -2,6 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
     android:orientation="vertical" >
 
     <TextView
@@ -89,7 +92,7 @@
             android:id="@+id/PB_test_progress"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="10dp"
             android:layout_alignParentBottom="true" />
     </RelativeLayout>
 

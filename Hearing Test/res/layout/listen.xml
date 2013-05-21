@@ -17,10 +17,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+
         android:orientation="horizontal" >
 
         <ToggleButton
             android:id="@+id/tbtn_record"
+
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
@@ -33,12 +36,16 @@
     <ViewSwitcher
         android:id="@+id/vs_presets_eq"
         android:layout_width="fill_parent"
+
         android:layout_height="wrap_content"
         android:inAnimation="@android:anim/fade_in" >
 
         <LinearLayout
             android:id="@+id/view_presets"
             android:layout_width="fill_parent"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="60dp"
             android:layout_height="200dp"
             android:orientation="vertical" >
 
@@ -48,7 +55,7 @@
                 android:layout_height="fill_parent"
                 android:orientation="vertical" >
 
-                <LinearLayout
+                <RelativeLayout
                     android:id="@+id/ll_presets2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -56,32 +63,77 @@
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal" >
 
-                    <ToggleButton
+                    <ImageView
                         android:id="@+id/btn_preset_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:layout_weight="1"
-                        android:background="@drawable/ic_tv"
-                        android:text="ToggleButton" />
 
-                    <ToggleButton
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_tv"
+                        />
+
+
+                    <ImageView
                         android:id="@+id/btn_preset_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                                                android:layout_weight="1"
-                        android:layout_marginLeft="30dp"
-                        android:background="@drawable/ic_conversation"
-                        android:text="ToggleButton" />
-                    <ToggleButton
+                        android:layout_toRightOf="@id/btn_preset_1"
+
+                        android:src="@drawable/ic_conversation"
+                            />
+                    <ImageView
                         android:id="@+id/btn_preset_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                                                android:layout_weight="1"
-                        android:background="@drawable/ic_group"
-                        android:text="ToggleButton" />
-                </LinearLayout>
+                        android:layout_toRightOf="@id/btn_preset_2"
+
+                        android:src="@drawable/ic_group"
+                        />
+
+
+
+                    <!--Active Below Icons-->
+                    <ImageView
+                            android:id="@+id/iv_preset_active_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btn_preset_1"
+                            android:layout_marginLeft="30dp"
+
+                            android:src="@drawable/ic_below_acive"
+
+                            android:layout_marginTop="-43dp"/>
+                    <ImageView
+                            android:id="@+id/iv_preset_active_2"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btn_preset_2"
+                            android:layout_toRightOf="@id/btn_preset_1"
+
+                            android:src="@drawable/ic_below_acive"
+
+                            android:layout_marginTop="-43dp"/>
+
+
+                    <ImageView
+                            android:id="@+id/iv_preset_active_3"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btn_preset_3"
+                            android:layout_toRightOf="@id/btn_preset_2"
+
+                            android:src="@drawable/ic_below_acive"
+
+                            android:layout_marginTop="-43dp"/>
+
+
+
+
+
+                </RelativeLayout>
 <!-- 
                 <LinearLayout
                     android:id="@+id/ll_presets3"

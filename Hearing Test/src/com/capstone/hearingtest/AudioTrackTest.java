@@ -51,6 +51,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import android.widget.VerticalSeekBar;
+import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
 public class AudioTrackTest extends Activity {
@@ -86,6 +87,8 @@ public class AudioTrackTest extends Activity {
 	private LinearLayout myFirstView;
 	private LinearLayout mySecondView;
 	public BroadcastReceiver receiver = null;
+    private int preset_active = 0;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -149,19 +152,19 @@ public class AudioTrackTest extends Activity {
 			}
 		});
 
-		final ToggleButton btn_preset_1 = (ToggleButton) findViewById(R.id.btn_preset_1);
-		final ToggleButton btn_preset_2 = (ToggleButton) findViewById(R.id.btn_preset_2);
-		final ToggleButton btn_preset_3 = (ToggleButton) findViewById(R.id.btn_preset_3);
+		final ImageView btn_preset_1 = (ImageView) findViewById(R.id.btn_preset_1);
+		final ImageView btn_preset_2 = (ImageView) findViewById(R.id.btn_preset_2);
+		final ImageView btn_preset_3 = (ImageView) findViewById(R.id.btn_preset_3);
 		// btn_preset_3.setVisibility(ToggleButton.GONE);
 		btn_preset_1.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
 				if (isRecording == null){
-					btn_preset_1.setChecked(false);
+//					btn_preset_1.setChecked(false);
 					Toast.makeText(ctx, "click listen first",
 							Toast.LENGTH_SHORT).show();
 				}else {
-					if (btn_preset_1.isChecked()) {
+					if (preset_active != 1) {
 						applyPreset(1);
 						// resetEQ();
 					} else {
@@ -189,11 +192,11 @@ public class AudioTrackTest extends Activity {
 
 			public void onClick(View v) {
 				if (isRecording == null){
-					btn_preset_2.setChecked(false);
+//					btn_preset_2.setChecked(false);
 					Toast.makeText(ctx, "click listen first",
 							Toast.LENGTH_SHORT).show();
 				}else {
-					if (btn_preset_2.isChecked()) {
+					if (preset_active != 2) {
 						applyPreset(2);
 						// resetEQ();
 					} else {
@@ -253,6 +256,7 @@ public class AudioTrackTest extends Activity {
 		// sb.setOnSeekBarChangeListener(osbcl);
 
 	}
+
 
 	private void syncEqBars() {
 		short bands = mEqualizer.getNumberOfBands();
@@ -331,8 +335,39 @@ public class AudioTrackTest extends Activity {
 			mEqualizer.setBandLevel( band, (short) x[i]);
 			Log.i("ApplyPreset","band: "+band+" level: "+ mEqualizer.getBandLevel(band));
 		}
+        presetActiveStatus(preset_name);
 		syncEqBars();
 	}
+    private void presetActiveStatus(int preset){
+//        TODO: show the graphic under the preset buttons when that preset is active and if the user changes the eq turn them all off
+        preset_active = preset;
+        ImageView iv;
+
+        switch(preset){
+
+            case(0):
+                iv = (ImageView) findViewById(R.id.iv_preset_active_1);
+                iv.setVisibility(View.INVISIBLE);
+                iv = (ImageView) findViewById(R.id.iv_preset_active_2);
+                iv.setVisibility(View.INVISIBLE);
+                iv = (ImageView) findViewById(R.id.iv_preset_active_3);
+                iv.setVisibility(View.INVISIBLE);
+                break;
+            case(1):
+                iv = (ImageView) findViewById(R.id.iv_preset_active_1);
+                iv.setVisibility(View.VISIBLE);
+                break;
+            case(2):
+                iv = (ImageView) findViewById(R.id.iv_preset_active_2);
+                iv.setVisibility(View.VISIBLE);
+                break;
+            case(3):
+                iv = (ImageView) findViewById(R.id.iv_preset_active_3);
+                iv.setVisibility(View.VISIBLE);
+                break;
+
+        }
+    }
 
 	protected void Start() {
 		loopback();
@@ -469,6 +504,7 @@ public class AudioTrackTest extends Activity {
 							(short) (progress + minEQLevel));
 //					Log.d("EQ", "onchange. band: " + band + "  prog:"
 //							+ progress);
+                    presetActiveStatus(0);
 				}
 
 				public void onStartTrackingTouch(SeekBar seekBar) {
@@ -494,7 +530,11 @@ public class AudioTrackTest extends Activity {
 			if(isRecording)
 				showNotification();
 		}else{
+            try{
 			unregisterReceiver(receiver);
+            }catch (Exception e){
+                Log.e("AudioTrackTest", e.toString());
+            }
 		}
 	}
 	
