@@ -52,6 +52,7 @@
                     android:id="@+id/ll_presets2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:weightSum="3"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal" >
 
@@ -60,6 +61,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
                         android:background="@drawable/ic_tv"
                         android:text="ToggleButton" />
 
@@ -67,27 +69,29 @@
                         android:id="@+id/btn_preset_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                                                android:layout_weight="1"
                         android:layout_marginLeft="30dp"
                         android:background="@drawable/ic_conversation"
                         android:text="ToggleButton" />
+                    <ToggleButton
+                        android:id="@+id/btn_preset_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                                                android:layout_weight="1"
+                        android:background="@drawable/ic_group"
+                        android:text="ToggleButton" />
                 </LinearLayout>
-
+<!-- 
                 <LinearLayout
                     android:id="@+id/ll_presets3"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
                     android:orientation="horizontal" >
-
-                    <ToggleButton
-                        android:id="@+id/btn_preset_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:background="@drawable/ic_laptop"
-                        android:text="ToggleButton" />
-                </LinearLayout>
-            </LinearLayout>
+ -->
+<!--                 </LinearLayout>
+ -->            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout

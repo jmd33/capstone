@@ -18,7 +18,7 @@ public class AboutArtwork extends Activity{
 		String tnp = " " + getResources().getString(R.string.tnp);
 
 		String attribution = "";
-		TextView tv = (TextView) findViewById(R.id.tv_ic_tv_attr);
+//		TextView tv = (TextView) findViewById(R.id.tv_ic_tv_attr);
 //        tv.setText(Html.fromHtml(getResources().getString(R.string.ic_tv_icon_link)));
 
 //			attribution +=	getResources().getString(R.string.ic_tv_icon_link);
@@ -26,7 +26,7 @@ public class AboutArtwork extends Activity{
 //			attribution +=	getResources().getString(R.string.ic_tv_author_link);
 //			attribution += tnp;
 
-		tv.setMovementMethod(LinkMovementMethod.getInstance());
+//		tv.setMovementMethod(LinkMovementMethod.getInstance());
 			
 
 	}

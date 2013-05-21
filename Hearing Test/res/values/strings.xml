@@ -1,54 +1,51 @@
 <resources>
+
     <string name="app_name">Hear Rite</string>
     <string name="welcome">Welcome to Hear Rite!</string>
     <string name="share_subject">Share!</string>
     <string name="share_text">share text</string>
     <string name="share_chooser_text">share chooser text</string>
-<!-- Legal -->
-<string name="terms_of_service">Terms of Service</string>
+    <!-- Legal -->
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="libraries">Libraries</string>
+    <string name="artwork">Artwork</string>
 
-<string name="privacy_policy">Privacy Policy</string>
+    <!-- Attribution -->
+    <string name="ic_tv_icon_link"><a href="http://thenounproject.com/noun/television/#icon-No2650">Television</a></string>
+    <string name="ic_tv_author_link"><a href="http://thenounproject.com/pieroborgo">Piero Borgo</a></string>
+    <string name="ic_conversation_icon_link"><a href="http://thenounproject.com/noun/conversation/#icon-No9490">Conversation</a></string>
+    <string name="ic_conversation_author_link"><a href="http://thenounproject.com/mvsuriano">Michael V. Suriano</a></string>
+    <string name="ic_symptom_icon_link"><a href="http://thenounproject.com/noun/symptom/#icon-No8150">Symptom</a></string>
+    <string name="ic_symptom_author_link"><a href="http://thenounproject.com/lemonliu">Lemon Liu</a></string>
+    <string name="ic_equalizer_icon_link"><a href="http://thenounproject.com/noun/equalizer/#icon-No9091">Equalizer</a></string>
+    <string name="ic_equalizer_author_link"><a href="http://thenounproject.com/pirx">Paul Kolling</a></string>
+    <string name="ic_linegraph_icon_link"><a href="http://thenounproject.com/noun/line-graph/#icon-No3519">Line Graph</a></string>
+    <string name="ic_linegraph_author_link"><a href="http://thenounproject.com/KenanSulayman">Kenan Sulayman</a></string>
+  	<string name="ic_asl_icon_link"><a href="http://thenounproject.com/noun/assistive-listening-system/#icon-No491">Assistive Listening System</a></string>
+    <string name="ic_asl_author_link">Unknown designer</string>
 
-<string name="libraries">Libraries</string>
-<string name="artwork">Artwork</string>
-
-
-<!-- Attribution -->
-<string name="ic_tv_icon_link"><a href='http://thenounproject.com/noun/television/#icon-No2650'>Television</a></string>
-<string name="ic_tv_author_link"><a href='http://thenounproject.com/pieroborgo'>Piero Borgo</a></string>
-<string name="ic_conversation_icon_link"><a href='http://thenounproject.com/noun/conversation/#icon-No9490'>Conversation</a></string>
-<string name="ic_conversation_author_link"><a href='http://thenounproject.com/mvsuriano'>Michael V. Suriano</a></string>
-
-<string name="designed_by">" designed by "</string>
-<string name="tnp">" from The Noun Project"</string>
-
-<string name="androidplot">AndroidPlot</string>
-<string name="android_plot_license">Copyright 2013 AndroidPlot.com Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-    </string>
-
-<string name="terms_of_service_content"><h2>
-	Web Site Terms and Conditions of Use
-</h2>
- 
-<h3>
-	1. Terms
-</h3>
-
-<p>
-	By accessing this web site, you are agreeing to be bound by these 
+   <!--  
+    <string name="ic__icon_link"><a href="http://thenounproject.com/noun/"></a></string>
+    <string name="ic__author_link"><a href="http://thenounproject.com/"></a></string>
+   -->
+    
+    
+    <string name="designed_by">" designed by "</string>
+    <string name="tnp">" from The Noun Project"</string>
+    
+    <string name="androidplot">AndroidPlot</string>
+    <string name="android_plot_license">Copyright 2013 AndroidPlot.com Licensed under the Apache License, Version 2.0 (the /"License/"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an /"AS IS/" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    
+    
+    <string name="terms_of_service_content"><h2>	Web Site Terms and Conditions of Use</h2><h3>	1. Terms</h3><p>	By accessing this web site, you are agreeing to be bound by these 
 	web site Terms and Conditions of Use, all applicable laws and regulations, 
 	and agree that you are responsible for compliance with any applicable local 
 	laws. If you do not agree with any of these terms, you are prohibited from 
 	using or accessing this site. The materials contained in this web site are 
-	protected by applicable copyright and trade mark law.
-</p>
+	protected by applicable copyright and trade mark law.</p><h3>	2. Use License</h3></string>
 
-<h3>
-	2. Use License
-</h3>
-</string>
-
-<!--
+    <!--
 <ol>
 	<li>
 		Permission is granted to temporarily download one copy of the materials 
@@ -124,48 +121,8 @@
 </p>
 
 </string>
-
-
-
--->
-<string name="privacy_policy_content">
-
-<h2>
-	Privacy Policy
-</h2>
-
-<p>
-	Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.
-</p>
-
-<ul>
-	<li>
-		Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.
-	</li>
-	<li>
-		We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.		
-	</li>
-	<li>
-		We will only retain personal information as long as necessary for the fulfillment of those purposes. 
-	</li>
-	<li>
-		We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned. 
-	</li>
-	<li>
-		Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date. 
-	</li>
-	<li>
-		We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
-	</li>
-	<li>
-		We will make readily available to customers information about our policies and practices relating to the management of personal information. 
-	</li>
-</ul>
-
-<p>
-	We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. 
-</p>		
-</string>
-			
-
+    -->
+    <string name="privacy_policy_content"></string>
+       <!--  <h2>	Privacy Policy</h2><p>	Your privacy is very important to us. Accordingly, we have developed this Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.</p><ul><li>		Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</li><li>		We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.		</li><li>		We will only retain personal information as long as necessary for the fulfillment of those purposes. </li><li>		We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned. </li><li>		Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date. </li><li>		We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</li><li>		We will make readily available to customers information about our policies and practices relating to the management of personal information. </li></ul><p>	We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. </p></string>
+ -->
 </resources>

@@ -22,7 +22,6 @@
 <fullyQualifiedTypeName name="com.androidplot.xy.LineAndPointFormatter"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.androidplot.xy.BoundaryMode"/>
-<fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.media.audiofx.NoiseSuppressor"/>
 <fullyQualifiedTypeName name="android.media.AudioManager"/>
 <fullyQualifiedTypeName name="android.media.AudioManager.OnAudioFocusChangeListener"/>
@@ -45,4 +44,5 @@
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.string"/>
 <fullyQualifiedTypeName name="com.capstone.hearingtest.R.color"/>
 <fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
+<fullyQualifiedTypeName name="android.R"/>
 </qualifiedTypeNameHistroy>
