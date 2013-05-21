@@ -155,35 +155,17 @@ public class AudioTrackTest extends Activity {
 		final ImageView btn_preset_1 = (ImageView) findViewById(R.id.btn_preset_1);
 		final ImageView btn_preset_2 = (ImageView) findViewById(R.id.btn_preset_2);
 		final ImageView btn_preset_3 = (ImageView) findViewById(R.id.btn_preset_3);
-		// btn_preset_3.setVisibility(ToggleButton.GONE);
 		btn_preset_1.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
 				if (isRecording == null){
-//					btn_preset_1.setChecked(false);
 					Toast.makeText(ctx, "click listen first",
 							Toast.LENGTH_SHORT).show();
 				}else {
 					if (preset_active != 1) {
 						applyPreset(1);
-						// resetEQ();
 					} else {
 						applyPreset(0);
-						// short bands = mEqualizer.getNumberOfBands();
-						// final short minEQLevel =
-						// mEqualizer.getBandLevelRange()[0];
-						// final short maxEQLevel =
-						// mEqualizer.getBandLevelRange()[1];
-						// Log.i(LOG_TAG, "minEQLevel: " + minEQLevel);
-						// Log.i(LOG_TAG, "maxEQLevel: " + maxEQLevel);
-						//
-						// for (short i = 0; i < bands; i++) {
-						// final short band = i;
-						// Log.d("AFX", "band: " + band + "");
-						//
-						// mEqualizer.setBandLevel(band,
-						// (short) (maxEQLevel * (1.00)));
-						// }
 					}
 				}
 			}
@@ -192,31 +174,32 @@ public class AudioTrackTest extends Activity {
 
 			public void onClick(View v) {
 				if (isRecording == null){
-//					btn_preset_2.setChecked(false);
 					Toast.makeText(ctx, "click listen first",
 							Toast.LENGTH_SHORT).show();
 				}else {
 					if (preset_active != 2) {
 						applyPreset(2);
-						// resetEQ();
 					} else {
 						applyPreset(0);
-
-						// short bands = mEqualizer.getNumberOfBands();
-						// final short minEQLevel =
-						// mEqualizer.getBandLevelRange()[0];
-						// final short maxEQLevel =
-						// mEqualizer.getBandLevelRange()[1];
-						// for (short i = 0; i < bands; i++) {
-						// final short band = i;
-						// mEqualizer.setBandLevel(band,
-						// (short) (maxEQLevel * (0.00)));
-						// }
 					}
 				}
 			}
 		});
+        btn_preset_3.setOnClickListener(new OnClickListener() {
 
+            public void onClick(View v) {
+                if (isRecording == null){
+                    Toast.makeText(ctx, "click listen first",
+                            Toast.LENGTH_SHORT).show();
+                }else {
+                    if (preset_active != 3) {
+                        applyPreset(3);
+                    } else {
+                        applyPreset(0);
+                    }
+                }
+            }
+        });
 		viewSwitcher = (ViewSwitcher) findViewById(R.id.vs_presets_eq);
 		myFirstView = (LinearLayout) findViewById(R.id.view_presets);
 		mySecondView = (LinearLayout) findViewById(R.id.view_eq);
@@ -292,12 +275,13 @@ public class AudioTrackTest extends Activity {
 					"band level; " + band + " = "
 							+ mEqualizer.getBandLevel(band));
 			int level = mEqualizer.getBandLevel(band);
-			if (level < 0)
-				level = level * (-1);
-			else if (level > 0)
-				level = level * 2 - 1;
-			else if (level == 0)
-				level = 1500;
+			level += 1500;
+//            if (level < 0)
+//				level = level + 1500;
+//			else if (level > 0)
+//				level = level + 1500;
+//			else if (level == 0)
+//				level = 1500;
 			bar.setProgress(level);
 			Log.d("EQ", "bar getProgress() = " + bar.getProgress());
 			Log.d("EQ", "band = level: " + band + " = " + level);
@@ -328,6 +312,9 @@ public class AudioTrackTest extends Activity {
 		case 2:
 			x = getResources().getIntArray(R.array.conversation);
 			break;
+        case 3:
+            x = getResources().getIntArray(R.array.crowded);
+            break;
 		}
 		Log.d("applyPreset", "x length = "+ x.length);
 		for (int i = 0; i < x.length; i++){
@@ -335,9 +322,9 @@ public class AudioTrackTest extends Activity {
 			mEqualizer.setBandLevel( band, (short) x[i]);
 			Log.i("ApplyPreset","band: "+band+" level: "+ mEqualizer.getBandLevel(band));
 		}
-        presetActiveStatus(preset_name);
 		syncEqBars();
-	}
+        presetActiveStatus(preset_name);
+    }
     private void presetActiveStatus(int preset){
 //        TODO: show the graphic under the preset buttons when that preset is active and if the user changes the eq turn them all off
         preset_active = preset;
@@ -553,7 +540,11 @@ public class AudioTrackTest extends Activity {
 			audioTrack.release();
 		if (audioRecord != null)
 			audioRecord.release();
-		unregisterReceiver(receiver);
+        try{
+            unregisterReceiver(receiver);
+        }catch (Exception e){
+            Log.e("AudioTrackTest", e.toString());
+        }
 
 	}
 

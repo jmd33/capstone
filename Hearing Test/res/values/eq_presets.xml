@@ -23,4 +23,11 @@
         <item>1000</item>
         <item>100</item>
     </integer-array>
+    <integer-array name="crowded">
+        <item>1200</item>
+        <item>1000</item>
+        <item>800</item>
+        <item>600</item>
+        <item>400</item>
+    </integer-array>
 </resources>
