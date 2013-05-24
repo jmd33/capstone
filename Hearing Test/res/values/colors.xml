@@ -7,4 +7,12 @@
     <color name="brown">#AB8B7C</color>
     <color name="red">#9D4F48</color>
 
+
+    <!--<color name="audiogram_green">#ff1A7B30</color>-->
+    <color name="audiogram_yellow">#ffABA000</color>
+    <!--<color name="audiogram_red">#ff9E0B0F</color>-->
+
+    <color name="audiogram_red">#ffff7190</color>
+    <color name="audiogram_green">#ff0Bcc90</color>
+
 </resources>

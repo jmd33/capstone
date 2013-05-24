@@ -5,6 +5,15 @@
     <string name="share_subject">Share!</string>
     <string name="share_text">share text</string>
     <string name="share_chooser_text">share chooser text</string>
+
+
+    <!-- Audiogram text -->
+    <string name="audiogram_green_explanation">Values in the green area are ideal and represent normal hearing.</string>
+    <string name="audiogram_understanding_results_title">Understanding Your Results</string>
+
+
+
+
     <!-- Legal -->
     <string name="terms_of_service">Terms of Service</string>
     <string name="privacy_policy">Privacy Policy</string>
@@ -38,12 +47,40 @@
     <string name="android_plot_license">Copyright 2013 AndroidPlot.com Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
     
     
-    <string name="terms_of_service_content"><h2>	Web Site Terms and Conditions of Use</h2><h3>	1. Terms</h3><p>	By accessing this web site, you are agreeing to be bound by these 
-	web site Terms and Conditions of Use, all applicable laws and regulations, 
-	and agree that you are responsible for compliance with any applicable local 
-	laws. If you do not agree with any of these terms, you are prohibited from 
-	using or accessing this site. The materials contained in this web site are 
-	protected by applicable copyright and trade mark law.</p><h3>	2. Use License</h3></string>
+    <string name="terms_of_service_content">IMPORTANT, PLEASE READ CAREFULLY. THIS IS A LICENSE AGREEMENT.
+        \n\n
+        This SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties as well as other intellectual property laws and treaties. This SOFTWARE PRODUCT is licensed, not sold!
+        End User License Agreement
+        \n\n
+        This End User License Agreement (“EULA”) is a legal agreement between you (either an individual or a single entity) and Hear Rite (henceforth "Hear Rite Team") with regard to the copyrighted software (henceforth referred to as “SOFTWARE PRODUCT” or “Software”) provided with this EULA. The SOFTWARE PRODUCT includes software, the associated media, and printed materials, and any “on line” or electronic documentation. Use of any software and related documentation (“SOFTWARE”) provided to you by Hear Rite Team in whatever form or media, will constitute your acceptance of these terms, unless separate terms are provided by the software supplier, in which case certain additional or different terms may apply. If you do not agree with the terms of this EULA, do not download, install, copy or use the Software. By installing, copying or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA.
+        \n\n
+        If you do not agree to the terms of this EULA, Hear Rite Team is unwilling to license the SOFTWARE PRODUCT to you and you must stop using and unistall the SOFTWARE PRODUCT.
+        NO WARRANTY: YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE LICENSED APPLICATION IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED APPLICATION AND ANY SERVICES PERFORMED OR PROVIDED BY THE LICENSED APPLICATION ("SERVICES") ARE PROVIDED "AS IS" AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND Hear Rite TEAM HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE LICENSED APPLICATION AND ANY SERVICES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. Hear Rite TEAM DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE LICENSED APPLICATION, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE LICENSED APPLICATION WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE LICENSED APPLICATION OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE LICENSED APPLICATION OR SERVICES WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY Hear Rite TEAM OR ITS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE LICENSED APPLICATION OR SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU. Hear Rite Team is not obligated to provide any updates to the software.
+        \n\n
+        Limitation of Liability. \n\n
+        TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL HEAR RITE TEAM BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE LICENSED APPLICATION, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF Hear Rite TEAM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU.
+        \n\n
+        Risk.\n\n
+        By using the Hear Rite application you have agreed you understand the risk you are taking. You understand that this is a free mobile application that was neither designed by doctors nor intended to replace the advices and of your doctor or the help of a professional grade hearing device. You understand that all software is flawed and any damage to self or Android device from any flaws or bugs in the software are an inherent risk of any software and you waive all rights to hold the Hear Rite Team liable.
+        \n\n
+        Rental.\n\n
+        You may not loan, rent, or lease the Software.
+        Upgrades. If the SOFTWARE is an upgrade from an earlier release or previously released version, you now may use that upgraded product only in accordance with this EULA. If the SOFTWARE PRODUCT is an upgrade of a software program which you licensed as a single product, the SOFTWARE PRODUCT may be used only as part of that single product package and may not be separated for use on more than one Android device.
+        \n\n
+        No Liability for Consequential Damages. \n\n
+        In no event shall Hear Rite Team, or its suppliers, be liable for any damages whatsoever (including, without limitation, incidental, direct, indirect, special and consequential damages, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use or inability to use this Software, even if Hear Rite Team has been advised of the possibility of such damages. Because some states/countries do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitation may not apply to you.
+        Eligible Licensees. This Software is available for license solely to SOFTWARE owners, with no right of duplication or further distribution, licensing, or sub-licensing. IF YOU DO NOT OWN THE SOFTWARE, THEN DO NOT DOWNLOAD, INSTALL, COPY OR USE THE SOFTWARE.
+        \n\n
+        License Grant. \n\n
+        Hear Rite Team grants to you a personal, non-transferable and non-exclusive right to use the copy of the Software provided with this EULA. You agree you will not copy the Software. Modifying, translating, renting, copying, transferring or assigning all or part of the Software, or any rights granted hereunder, to any other persons and removing any proprietary notices, labels, or marks from the Software is strictly prohibited. Furthermore, you hereby agree not to create derivative works based on the Software. You many not transfer this Software.
+        \n\n
+        Copyright.\n\n
+        The Software is licensed, not sold. You acknowledge that no title to the intellectual property in the Software is transferred to you. You further acknowledge that title and full ownership rights to the Software will remain the exclusive property of Hear Rite Team and its suppliers, and you will not acquire any rights to the Software, except as expressly set forth above. All copies of the Software will contain the same proprietary notices as contained in the Software. All title and copyrights in and to the SOFTWARE PRODUCT (including but not limited to any images, photographs, animations, video, audio, music, and text incorporated into the SOFTWARE PRODUCT), and any copies of the SOFTWARE PRODUCT are owned by Hear Rite Team or its suppliers. The SOFTWARE PRODUCT is protected by copyright laws and international treaty provisions.
+        \n\n
+        Reverse Engineering. \n\n
+        You agree that you will not attempt to reverse compile, modify, translate or disassemble the Software in whole or in part. Any failure to comply with the above or any other terms and conditions contained herein will result in the automatic termination of this license and the reversion of the rights granted hereunder to Hear Rite Team.
+
+    </string>
 
     <!--
 <ol>

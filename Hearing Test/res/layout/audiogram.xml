@@ -32,12 +32,48 @@
             <com.androidplot.xy.XYPlot
                 android:id="@+id/mySimpleXYPlot"
                 android:layout_width="fill_parent"
-                android:layout_height="300dp"
+                android:layout_height="400dp"
                 android:layout_marginLeft="10px"
                 android:layout_marginRight="10px"
-                android:layout_marginTop="10px"
+                android:layout_marginTop="30px"
                 title="A Simple XYPlot Example" />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:layout_gravity="left|center_vertical">
+
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audiogram_understanding_results_title"
+                android:textColor="#111111"
+                android:textSize="24dp" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" android:layout_gravity="left|center_vertical">
+
+            <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:text=""
+                    android:background="@color/audiogram_green"
+                    />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/audiogram_green_explanation"
+                android:textColor="#111111"
+                android:textSize="16dp" />
+
+            </LinearLayout>
+
+    </LinearLayout>
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

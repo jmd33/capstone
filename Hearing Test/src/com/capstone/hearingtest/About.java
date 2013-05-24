@@ -49,6 +49,7 @@ public class About extends Activity {
 		final Button btn_terms = (Button) findViewById(R.id.btn_terms);
 		Button btn_artwork = (Button) findViewById(R.id.btn_artwork);
 		final Button btn_privacy = (Button) findViewById(R.id.btn_privacy);
+        btn_privacy.setVisibility(View.GONE);
 		final Button btn_libraries = (Button) findViewById(R.id.btn_libraries);
 		OnClickListener ocl = new OnClickListener() {
 
@@ -65,7 +66,7 @@ public class About extends Activity {
 					tv_content.setText("");
 					tv_title.setText("");
 					if (v.getId() == btn_terms.getId()) {
-						tv_content.setText(Html.fromHtml(getResources()
+						tv_content.setText((getResources()
 								.getString(R.string.terms_of_service_content)));
 						tv_title.setText((getResources()
 								.getString(R.string.terms_of_service)));

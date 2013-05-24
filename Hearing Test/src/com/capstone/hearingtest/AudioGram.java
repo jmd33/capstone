@@ -11,14 +11,16 @@ import java.util.Arrays;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
+import android.graphics.Shader;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.androidplot.series.XYSeries;
-import com.androidplot.xy.BoundaryMode;
-import com.androidplot.xy.LineAndPointFormatter;
-import com.androidplot.xy.SimpleXYSeries;
-import com.androidplot.xy.XYPlot;
+import com.androidplot.ui.SizeLayoutType;
+import com.androidplot.ui.SizeMetrics;
+import com.androidplot.xy.*;
 
 public class AudioGram extends Activity {
 	private XYPlot mySimpleXYPlot;
@@ -48,9 +50,14 @@ public class AudioGram extends Activity {
 		mySimpleXYPlot.setTitle("Audiogram");
 		mySimpleXYPlot.setRangeLabel("Hearing Level");
 		mySimpleXYPlot.setDomainLabel("Frequency Hz");
-		mySimpleXYPlot.setDomainBoundaries(125, 8000, BoundaryMode.FIXED);
+
+        mySimpleXYPlot.setDomainBoundaries(0, 8000, BoundaryMode.FIXED);
 		mySimpleXYPlot.setRangeBoundaries(0, 10, BoundaryMode.FIXED);
-		mySimpleXYPlot.getBackgroundPaint().setColor(Color.WHITE);
+        mySimpleXYPlot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, 1000);
+        mySimpleXYPlot.setRangeStep(XYStepMode.INCREMENT_BY_VAL, 1);
+//        mySimpleXYPlot.setRange
+
+        mySimpleXYPlot.getBackgroundPaint().setColor(Color.WHITE);
 		// mySimpleXYPlot.setBorderStyle(XYPlot.BorderStyle.NONE, null, null);
 		mySimpleXYPlot.getGraphWidget().getBackgroundPaint()
 				.setColor(Color.WHITE);
@@ -65,6 +72,23 @@ public class AudioGram extends Activity {
 		mySimpleXYPlot.getGraphWidget().getDomainOriginLinePaint()
 				.setColor(Color.BLACK);
 		mySimpleXYPlot.getTitleWidget().getLabelPaint().setColor(Color.BLACK);
+        mySimpleXYPlot.getTitleWidget().getLabelPaint().setTextSize(50);
+        mySimpleXYPlot.getTitleWidget().setHeight(100);
+        mySimpleXYPlot.getTitleWidget().setWidth(400);
+
+        mySimpleXYPlot.getGraphWidget().setPaddingTop(50);
+//        mySimpleXYPlot.getGraphWidget().setPaddingBottom(50);
+//        mySimpleXYPlot.getGraphWidget().setPaddingLeft(50);
+
+        mySimpleXYPlot.getLegendWidget().setHeight(50);
+        mySimpleXYPlot.getLegendWidget().setBackgroundPaint(new Paint(Color.BLUE));
+        mySimpleXYPlot.getLegendWidget().setVisible(false);
+
+        mySimpleXYPlot.getLegendWidget().getTextPaint().setTextSize(30);
+//                setHeight(300, SizeLayoutType.ABSOLUTE);
+
+
+
 		File file = getApplicationContext().getFileStreamPath(
 				"account_data.txt");
 		if (!file.exists()) {
@@ -117,6 +141,8 @@ public class AudioGram extends Activity {
 						user_results[15] };
 				series1Numbers = left_ear;
 				series2Numbers = right_ear;
+
+
 				// BufferedReader bufferedReader = new
 				// BufferedReader(inputStreamReader);
 				// Log.d("AudioGram",
@@ -152,7 +178,10 @@ public class AudioGram extends Activity {
 					Color.rgb(6, 121, 159), // point color
 					null); // fill color (none)
 			// add a new series' to the xyplot:
-			mySimpleXYPlot.addSeries(series1, series1Format);
+
+            colorBackground();
+            mySimpleXYPlot.addSeries(series1, series1Format);
+            colorBackground();
 
 			// same as above:
 			mySimpleXYPlot.addSeries(
@@ -170,4 +199,100 @@ public class AudioGram extends Activity {
 
 	}
 
+
+
+    private void colorBackground(){
+        Number[] a = { 0, 4, 8000,
+                4 };
+
+        Number[] seriesANumbers = a;
+
+        XYSeries seriesA = new SimpleXYSeries(
+                Arrays.asList(seriesANumbers),
+                SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,
+                "");
+        LineAndPointFormatter seriesAFormat = new LineAndPointFormatter(
+                (getResources().getColor(R.color.audiogram_green)),                   // line color
+                null,                   // point color
+                (getResources().getColor(R.color.audiogram_green)));                            // fill color
+
+        Number[] b = { 0, 8, 8000,
+                8 };
+
+        Number[] seriesBNumbers = b;
+
+        XYSeries seriesB = new SimpleXYSeries(
+                Arrays.asList(seriesBNumbers),
+                SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,
+                "");
+        LineAndPointFormatter seriesBFormat = new LineAndPointFormatter(
+                (getResources().getColor(R.color.audiogram_yellow)),                   // line color
+                null,                   // point color
+                (getResources().getColor(R.color.audiogram_yellow))
+        );
+                                            // fill color
+
+
+        Number[] c = { 0, 10, 8000,
+                10 };
+
+        Number[] seriesCNumbers = c;
+
+        XYSeries seriesC = new SimpleXYSeries(
+                Arrays.asList(seriesCNumbers),
+                SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,
+                "");
+        LineAndPointFormatter seriesCFormat = new LineAndPointFormatter(
+                (getResources().getColor(R.color.audiogram_red)),                   // line color
+                null,                   // point color
+                (getResources().getColor(R.color.audiogram_red)));                            // fill color
+
+
+
+//        mySimpleXYPlot.getLegendWidget().setSize(new SizeMetrics(3000, SizeLayoutType.ABSOLUTE, 3000, SizeLayoutType.ABSOLUTE));
+
+//        mySimpleXYPlot.getLegendWidget().getIconSizeMetrics().s.setPadding(10, 1, 1, 1);
+        mySimpleXYPlot.getDomainLabelWidget().getLabelPaint().setTextSize(20);
+
+        mySimpleXYPlot.addSeries(seriesC, seriesCFormat);
+        mySimpleXYPlot.addSeries(seriesB, seriesBFormat);
+        mySimpleXYPlot.addSeries(seriesA, seriesAFormat);
+
+
+//
+//        Number[] seriesXNumbers = {1, 2, 3, 4, 2, 3, 4, 2, 2, 2, 3, 4, 2, 3, 2, 2};
+//
+//        // create our series from our array of nums:
+//        XYSeries seriesX = new SimpleXYSeries(
+//                Arrays.asList(seriesXNumbers),
+//                SimpleXYSeries.ArrayFormat.Y_VALS_ONLY,
+//                "Thread #1");
+//
+//
+//
+//        LineAndPointFormatter seriesXFormat = new LineAndPointFormatter(
+//                Color.rgb(0, 100, 0),                   // line color
+//                Color.rgb(0, 100, 0),                   // point color
+//                Color.rgb(100, 200, 0));                // fill color
+//
+//        // setup our line fill paint to be a slightly transparent gradient:
+//        Paint lineFill = new Paint();
+//        lineFill.setAlpha(200);
+//        lineFill.setShader(new LinearGradient(0, 0, 0, 250, Color.WHITE, Color.BLUE, Shader.TileMode.MIRROR));
+//
+//        StepFormatter stepFormatter  = new StepFormatter(Color.rgb(0, 0,0), Color.BLUE);
+//        stepFormatter.getLinePaint().setStrokeWidth(1);
+//
+//        stepFormatter.getLinePaint().setAntiAlias(false);
+//        stepFormatter.setFillPaint(lineFill);
+//        mySimpleXYPlot.addSeries(seriesX, stepFormatter);
+
+        // adjust the domain/range ticks to make more sense; label per tick for range and label per 5 ticks domain:
+//        mySimpleXYPlot.setRangeStep(XYStepMode.INCREMENT_BY_VAL, 1);
+//        mySimpleXYPlot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, 1);
+//        mySimpleXYPlot.setTicksPerRangeLabel(1);
+//        mySimpleXYPlot.setTicksPerDomainLabel(5);
+
+
+    }
 }
