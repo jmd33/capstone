@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="The results of from your hearing test are plotted on the graph below."
+                android:text="@string/audiogram_above_graph"
                 android:textColor="#111111"
                 android:textSize="20dp" />
             

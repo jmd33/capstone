@@ -73,12 +73,16 @@ public class AudioGram extends Activity {
 				.setColor(Color.BLACK);
 		mySimpleXYPlot.getGraphWidget().getDomainOriginLinePaint()
 				.setColor(Color.BLACK);
-		mySimpleXYPlot.getTitleWidget().getLabelPaint().setColor(Color.BLACK);
+		mySimpleXYPlot.getTitleWidget().getLabelPaint().setColor(getResources().getColor(R.color.dark_blue));
         mySimpleXYPlot.getTitleWidget().getLabelPaint().setTextSize(50);
         mySimpleXYPlot.getTitleWidget().setHeight(100);
         mySimpleXYPlot.getTitleWidget().setWidth(400);
 
-        mySimpleXYPlot.getGraphWidget().setPaddingTop(50);
+        mySimpleXYPlot.getGraphWidget().setPaddingTop(60);
+        mySimpleXYPlot.getGraphWidget().setPaddingBottom(50);
+        mySimpleXYPlot.getGraphWidget().setPaddingLeft(20);
+
+
 //        mySimpleXYPlot.getGraphWidget().setPaddingBottom(50);
 //        mySimpleXYPlot.getGraphWidget().setPaddingLeft(50);
 
@@ -89,9 +93,20 @@ public class AudioGram extends Activity {
         mySimpleXYPlot.getLegendWidget().getTextPaint().setTextSize(30);
 //                setHeight(300, SizeLayoutType.ABSOLUTE);
 
+        mySimpleXYPlot.getDomainLabelWidget().getLabelPaint().setTextSize(40);
+        mySimpleXYPlot.getDomainLabelWidget().setWidth(500);
+        mySimpleXYPlot.getDomainLabelWidget().setHeight(50);
+        mySimpleXYPlot.getDomainLabelWidget().getLabelPaint().setColor(getResources().getColor(R.color.dark_blue));
+
+        mySimpleXYPlot.getRangeLabelWidget().getLabelPaint().setTextSize(40);
+        mySimpleXYPlot.getRangeLabelWidget().setWidth(50);
+        mySimpleXYPlot.getRangeLabelWidget().setHeight(500);
+        mySimpleXYPlot.getRangeLabelWidget().getLabelPaint().setColor(getResources().getColor(R.color.dark_blue));
 
 
-		File file = getApplicationContext().getFileStreamPath(
+
+
+        File file = getApplicationContext().getFileStreamPath(
 				"account_data.txt");
 		if (!file.exists()) {
 			// don't populate the graph. maybe display a different message
@@ -265,7 +280,6 @@ public class AudioGram extends Activity {
 //        mySimpleXYPlot.getLegendWidget().setSize(new SizeMetrics(3000, SizeLayoutType.ABSOLUTE, 3000, SizeLayoutType.ABSOLUTE));
 
 //        mySimpleXYPlot.getLegendWidget().getIconSizeMetrics().s.setPadding(10, 1, 1, 1);
-        mySimpleXYPlot.getDomainLabelWidget().getLabelPaint().setTextSize(20);
 
         mySimpleXYPlot.addSeries(seriesC, seriesCFormat);
         mySimpleXYPlot.addSeries(seriesB, seriesBFormat);

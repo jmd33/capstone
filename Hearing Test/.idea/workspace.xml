@@ -49,10 +49,10 @@
     <file path="/a.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369174149113" ignored="false" />
     <file path="/About.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369174559424" ignored="false" />
     <file path="/about.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369174725278" ignored="false" />
-    <file path="/AudioGram.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369792238720" ignored="false" />
+    <file path="/AudioGram.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369797239635" ignored="false" />
     <file path="/colors.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369792091307" ignored="false" />
-    <file path="/audiogram.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369336474748" ignored="false" />
-    <file path="/strings.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369336499324" ignored="false" />
+    <file path="/audiogram.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369796535854" ignored="false" />
+    <file path="/strings.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369796665586" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <file leaf-file-name="audiogram.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/audiogram.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="36" selection-start="2033" selection-end="2033" vertical-scroll-proportion="-0.5555556">
+            <state line="19" column="52" selection-start="705" selection-end="705" vertical-scroll-proportion="-1.925926">
               <folding />
             </state>
           </provider>
@@ -133,7 +133,7 @@
       <file leaf-file-name="AudioGram.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="63" selection-start="7447" selection-end="7447" vertical-scroll-proportion="0.61497325">
+            <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.03551402">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,7 +144,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="83" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="720" selection-end="720" vertical-scroll-proportion="14.423077">
               <folding />
             </state>
           </provider>
@@ -192,9 +192,9 @@
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/About.java" />
         <option value="$PROJECT_DIR$/res/layout/about.xml" />
         <option value="$PROJECT_DIR$/res/layout/listen.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/audiogram.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/layout/audiogram.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java" />
       </list>
     </option>
@@ -548,12 +548,12 @@
       <workItem from="1369204068031" duration="14200000" />
       <workItem from="1369333923001" duration="1497000" />
       <workItem from="1369336154267" duration="729000" />
-      <workItem from="1369788838757" duration="3414000" />
+      <workItem from="1369788838757" duration="7085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35135000" />
+    <option name="totallyTimeSpent" value="38806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1260" height="760" extended-state="0" />
@@ -574,7 +574,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.940625" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.059375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.059375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2018122" sideWeight="0.9390625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.9390625" order="3" side_tool="false" content_ui="tabs" />
@@ -715,23 +715,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="83" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/audiogram.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="36" selection-start="2033" selection-end="2033" vertical-scroll-proportion="-0.5555556">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="10" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
@@ -739,9 +722,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="720" selection-end="720" vertical-scroll-proportion="14.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/audiogram.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="52" selection-start="705" selection-end="705" vertical-scroll-proportion="-1.925926">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="63" selection-start="7447" selection-end="7447" vertical-scroll-proportion="0.61497325">
+        <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.03551402">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
