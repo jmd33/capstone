@@ -8,7 +8,12 @@
 
 
     <!-- Audiogram text -->
-    <string name="audiogram_green_explanation">Values in the green area are ideal and represent normal hearing.</string>
+    <string name="audiogram_green_explanation"> <b>=</b> normal</string>
+    <string name="audiogram_red_explanation"> <b>=</b> severe hearing loss</string>
+    <string name="audiogram_yellow_explanation"> <b>=</b> mild hearing loss</string>
+
+    <string name="audiogram_green_explanation_old">Values in the green area are ideal and represent normal hearing.</string>
+
     <string name="audiogram_understanding_results_title">Understanding Your Results</string>
     <string name="audiogram_above_graph">The results of your hearing test are displayed below in a graph called an audiogram. The audiogram shows the severity of your hearing loss.</string>
 
