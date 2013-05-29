@@ -99,7 +99,7 @@ public class AudioTrackTest extends Activity {
         mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
 		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		if (savedInstanceState != null) {
-			isRecording = savedInstanceState.getBoolean("isRecording");
+			isRecording = savedInstanceState.getBoolean("isRecording", false);
 			if(isRecording)
 				StartListening();
 		}
@@ -173,45 +173,30 @@ public class AudioTrackTest extends Activity {
 		btn_preset_1.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (isRecording == null){
-					Toast.makeText(ctx, "click listen first",
-							Toast.LENGTH_SHORT).show();
-				}else {
-					if (preset_active != 1) {
-						applyPreset(1);
-					} else {
-						applyPreset(0);
-					}
-				}
+                if (preset_active != 1) {
+                    applyPreset(1);
+                } else {
+                    applyPreset(0);
+                }
 			}
 		});
 		btn_preset_2.setOnClickListener(new OnClickListener() {
 
 			public void onClick(View v) {
-				if (isRecording == null){
-					Toast.makeText(ctx, "click listen first",
-							Toast.LENGTH_SHORT).show();
-				}else {
-					if (preset_active != 2) {
-						applyPreset(2);
-					} else {
-						applyPreset(0);
-					}
-				}
+                if (preset_active != 2) {
+                    applyPreset(2);
+                } else {
+                    applyPreset(0);
+                }
 			}
 		});
         btn_preset_3.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
-                if (isRecording == null){
-                    Toast.makeText(ctx, "click listen first",
-                            Toast.LENGTH_SHORT).show();
-                }else {
-                    if (preset_active != 3) {
-                        applyPreset(3);
-                    } else {
-                        applyPreset(0);
-                    }
+                if (preset_active != 3) {
+                    applyPreset(3);
+                } else {
+                    applyPreset(0);
                 }
             }
         });
@@ -295,29 +280,34 @@ public class AudioTrackTest extends Activity {
 	}
 
 	private void applyPreset(int preset_name) {
-		int[] x = null;
-		switch (preset_name) {
-		case 0:
-			x = getResources().getIntArray(R.array.flat);
-			break;
-		case 1:
-			x = getResources().getIntArray(R.array.tv);
-			break;
-		case 2:
-			x = getResources().getIntArray(R.array.conversation);
-			break;
-        case 3:
-            x = getResources().getIntArray(R.array.crowded);
-            break;
-		}
-		Log.d("applyPreset", "x length = "+ x.length);
-		for (int i = 0; i < x.length; i++){
-			short band = (short) i;
-			mEqualizer.setBandLevel( band, (short) x[i]);
-			Log.i("ApplyPreset","band: "+band+" level: "+ mEqualizer.getBandLevel(band));
-		}
-		syncEqBars();
-        presetActiveStatus(preset_name);
+        if (isRecording == null){
+            Toast.makeText(ctx, "click listen first",
+                    Toast.LENGTH_SHORT).show();
+        }else{
+            int[] x = null;
+            switch (preset_name) {
+            case 0:
+                x = getResources().getIntArray(R.array.flat);
+                break;
+            case 1:
+                x = getResources().getIntArray(R.array.tv);
+                break;
+            case 2:
+                x = getResources().getIntArray(R.array.conversation);
+                break;
+            case 3:
+                x = getResources().getIntArray(R.array.crowded);
+                break;
+            }
+            Log.d("applyPreset", "x length = "+ x.length);
+            for (int i = 0; i < x.length; i++){
+                short band = (short) i;
+                mEqualizer.setBandLevel( band, (short) x[i]);
+                Log.i("ApplyPreset","band: "+band+" level: "+ mEqualizer.getBandLevel(band));
+            }
+            syncEqBars();
+            presetActiveStatus(preset_name);
+        }
     }
     private void presetActiveStatus(int preset){
         preset_active = preset;
@@ -350,6 +340,7 @@ public class AudioTrackTest extends Activity {
     }
 
 	protected void StartListening() {
+        isRecording = false;
         if(headsetReceiver.isPluggedIn()){
             isRecording = true;
             if(audioRecord == null)
@@ -404,7 +395,7 @@ public class AudioTrackTest extends Activity {
 		Rthread = new Thread(new Runnable() {
 			public void run() {
 				while (!Thread.interrupted()) {
-					if (isRecording) {
+					if (isRecording != null && isRecording) {
 						try {
 							audioRecord.read(buffer, 0, bufferSize);
 							// Log.i(LOG_TAG, "READ");
@@ -508,6 +499,9 @@ public class AudioTrackTest extends Activity {
 		if(isRecording != null){
 			if(isRecording)
 				showNotification();
+            else{
+                isRecording = null;
+            }
 		}else{
             try{
 			    unregisterReceiver(receiver);
@@ -559,8 +553,8 @@ public class AudioTrackTest extends Activity {
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
 		super.onSaveInstanceState(savedInstanceState);
-		if(isRecording != null)
-			savedInstanceState.putBoolean("isRecording", isRecording);
+//		if(isRecording != null)
+//			savedInstanceState.putBoolean("isRecording", isRecording);
 	}
 
 

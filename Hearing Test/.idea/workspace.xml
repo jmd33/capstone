@@ -41,7 +41,7 @@
     <file path="/fragment.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369114357176" ignored="false" />
     <file path="/hearing_test.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369115611070" ignored="false" />
     <file path="/listen.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369335049168" ignored="false" />
-    <file path="/AudioTrackTest.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369849355250" ignored="false" />
+    <file path="/AudioTrackTest.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369871279309" ignored="false" />
     <file path="/eq_presets.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369166277677" ignored="false" />
     <file path="/Dummy.txt" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369169445409" ignored="false" />
     <file path="/a.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369174149113" ignored="false" />
@@ -131,22 +131,10 @@
       <file leaf-file-name="AudioTrackTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="373" column="40" selection-start="11980" selection-end="11980" vertical-scroll-proportion="0.06825939">
+            <state line="393" column="48" selection-start="13107" selection-end="13107" vertical-scroll-proportion="0.47603834">
               <folding>
-                <element signature="e#0#22951#0" expanded="true" />
+                <element signature="e#0#23116#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#4224#5218#0" expanded="true" />
-                <element signature="e#5213#5214#0" expanded="true" />
-                <element signature="e#5304#5832#0" expanded="true" />
-                <element signature="e#5827#5828#0" expanded="true" />
-                <element signature="e#6104#6396#0" expanded="true" />
-                <element signature="e#6391#6392#0" expanded="true" />
-                <element signature="e#6433#6725#0" expanded="true" />
-                <element signature="e#6720#6721#0" expanded="true" />
-                <element signature="e#6768#7237#0" expanded="true" />
-                <element signature="e#7226#7227#0" expanded="true" />
-                <element signature="e#7518#7830#0" expanded="true" />
-                <element signature="e#7825#7826#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,7 +155,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="48" selection-start="825" selection-end="825" vertical-scroll-proportion="-5.0740743">
+            <state line="22" column="48" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -552,12 +540,13 @@
       <workItem from="1369333923001" duration="1497000" />
       <workItem from="1369336154267" duration="729000" />
       <workItem from="1369788838757" duration="13997000" />
-      <workItem from="1369844898510" duration="4531000" />
+      <workItem from="1369844898510" duration="5783000" />
+      <workItem from="1369870505485" duration="947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50249000" />
+    <option name="totallyTimeSpent" value="52448000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -583,8 +572,6 @@
     <frame x="4" y="22" width="1260" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2018122" sideWeight="0.99375" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.99375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.4078125" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,14 +581,16 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.9390625" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8171875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4265625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24917492" sideWeight="0.9390625" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.940625" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3203125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31931463" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2018122" sideWeight="0.99375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.99375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -677,9 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/eq_presets.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="509" selection-end="509" vertical-scroll-proportion="0.4256757">
-          <folding />
-        </state>
+        <state line="21" column="18" selection-start="509" selection-end="509" vertical-scroll-proportion="0.4256757" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/Help.java">
@@ -705,9 +692,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/About.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="36" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.6162047">
-          <folding />
-        </state>
+        <state line="73" column="36" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.6162047" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/listen.xml">
@@ -715,25 +700,17 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="50" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="122" column="50" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="17" column="10" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="2.635514">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="2.635514" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/HeadsetStateReceiver.java">
@@ -760,9 +737,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="49" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.4017094">
-          <folding />
-        </state>
+        <state line="108" column="49" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.4017094" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/custom_notification.xml">
@@ -770,7 +745,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="48" selection-start="825" selection-end="825" vertical-scroll-proportion="-5.0740743">
+        <state line="22" column="48" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -791,22 +766,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="373" column="40" selection-start="11980" selection-end="11980" vertical-scroll-proportion="0.06825939">
+        <state line="393" column="48" selection-start="13107" selection-end="13107" vertical-scroll-proportion="0.47603834">
           <folding>
-            <element signature="e#0#22951#0" expanded="true" />
+            <element signature="e#0#23116#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#4224#5218#0" expanded="true" />
-            <element signature="e#5213#5214#0" expanded="true" />
-            <element signature="e#5304#5832#0" expanded="true" />
-            <element signature="e#5827#5828#0" expanded="true" />
-            <element signature="e#6104#6396#0" expanded="true" />
-            <element signature="e#6391#6392#0" expanded="true" />
-            <element signature="e#6433#6725#0" expanded="true" />
-            <element signature="e#6720#6721#0" expanded="true" />
-            <element signature="e#6768#7237#0" expanded="true" />
-            <element signature="e#7226#7227#0" expanded="true" />
-            <element signature="e#7518#7830#0" expanded="true" />
-            <element signature="e#7825#7826#0" expanded="true" />
           </folding>
         </state>
       </provider>
