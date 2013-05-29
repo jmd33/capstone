@@ -19,6 +19,8 @@ import android.util.Log;
 
 import com.androidplot.series.XYSeries;
 import com.androidplot.ui.SizeLayoutType;
+import com.androidplot.xy.XYRegionFormatter;
+
 import com.androidplot.ui.SizeMetrics;
 import com.androidplot.xy.*;
 
@@ -181,14 +183,13 @@ public class AudioGram extends Activity {
 
             colorBackground();
             mySimpleXYPlot.addSeries(series1, series1Format);
-            colorBackground();
 
 			// same as above:
 			mySimpleXYPlot.addSeries(
 					series2,
 					new LineAndPointFormatter(Color.rgb(0, 0, 200), Color.rgb(
 							0, 0, 100), null));
-		}
+        }
 		// reduce the number of range labels
 		mySimpleXYPlot.setTicksPerRangeLabel(3);
 
@@ -212,9 +213,15 @@ public class AudioGram extends Activity {
                 SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,
                 "");
         LineAndPointFormatter seriesAFormat = new LineAndPointFormatter(
-                (getResources().getColor(R.color.audiogram_green)),                   // line color
+                getResources().getColor(R.color.audiogram_green),                   // line color
                 null,                   // point color
-                (getResources().getColor(R.color.audiogram_green)));                            // fill color
+                 null
+//              (getResources().getColor(R.color.audiogram_green))
+);                            // fill color
+        XYRegionFormatter regionAFormatter = new XYRegionFormatter(getResources().getColor(R.color.audiogram_green));
+        seriesAFormat.addRegion(new RectRegion(0, 8000, 0, 4, "Positive"), regionAFormatter);
+
+
 
         Number[] b = { 0, 8, 8000,
                 8 };
@@ -226,11 +233,14 @@ public class AudioGram extends Activity {
                 SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,
                 "");
         LineAndPointFormatter seriesBFormat = new LineAndPointFormatter(
-                (getResources().getColor(R.color.audiogram_yellow)),                   // line color
+                getResources().getColor(R.color.audiogram_yellow),                   // line color
                 null,                   // point color
-                (getResources().getColor(R.color.audiogram_yellow))
+                null
+//        (getResources().getColor(R.color.audiogram_yellow))
         );
                                             // fill color
+        XYRegionFormatter regionBFormatter = new XYRegionFormatter(getResources().getColor(R.color.audiogram_yellow));
+        seriesBFormat.addRegion(new RectRegion(0, 8000, 4, 8, "Positive"), regionBFormatter);
 
 
         Number[] c = { 0, 10, 8000,
@@ -243,10 +253,13 @@ public class AudioGram extends Activity {
                 SimpleXYSeries.ArrayFormat.XY_VALS_INTERLEAVED,
                 "");
         LineAndPointFormatter seriesCFormat = new LineAndPointFormatter(
-                (getResources().getColor(R.color.audiogram_red)),                   // line color
+                getResources().getColor(R.color.audiogram_red),                   // line color
                 null,                   // point color
-                (getResources().getColor(R.color.audiogram_red)));                            // fill color
+                null);
+//                (getResources().getColor(R.color.audiogram_red)));                            // fill color
 
+        XYRegionFormatter regionFormatter = new XYRegionFormatter(getResources().getColor(R.color.audiogram_red));
+        seriesCFormat.addRegion(new RectRegion(0, 8000, 8, 10, "Positive"), regionFormatter);
 
 
 //        mySimpleXYPlot.getLegendWidget().setSize(new SizeMetrics(3000, SizeLayoutType.ABSOLUTE, 3000, SizeLayoutType.ABSOLUTE));
