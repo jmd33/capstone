@@ -89,16 +89,13 @@ public class AudioTrackTest extends Activity {
 	public BroadcastReceiver receiver = null;
     private int preset_active = 0;
     IntentFilter headsetFilter = new IntentFilter(Intent.ACTION_HEADSET_PLUG);
-
     private HeadsetStateReceiver headsetReceiver;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.listen);
-        headsetReceiver = new HeadsetStateReceiver();
-        registerReceiver(headsetReceiver, headsetFilter);
-
+        registerHeadset();
         mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
 		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		if (savedInstanceState != null) {
@@ -125,7 +122,20 @@ public class AudioTrackTest extends Activity {
 		    @Override
 		    public void onReceive(Context context, Intent intent) {
 		        if (intent.getAction().equals(KEY_STOP)) {
-		            stopListen();
+                    ImageView iv = (ImageView) findViewById(R.id.notification_btn_pause);
+                    TextView tv = (TextView) findViewById(R.id.notification_main_txt);
+//                    Log.d("AudioTrackTest", tv.toString());
+                    if(isRecording != null && isRecording){
+                        stopListen();
+//                        iv.setImageResource(R.drawable.ic_power_blue);
+//                        tv.setText(getResources().getString(R.string.notification_pause_text));
+
+                    }else{
+                        StartListening();
+//                        iv.setImageResource(R.drawable.ic_power_red);
+//                        tv.setText(getResources().getString(R.string.notification_start_text));
+
+                    }
 		        }
 		        // else if (...) {
 //		        }
@@ -223,7 +233,13 @@ public class AudioTrackTest extends Activity {
 		});
 
 	}
-
+    private void registerHeadset(){
+        if(headsetReceiver != null)
+            unregisterReceiver(headsetReceiver);
+        headsetReceiver = null;
+        headsetReceiver = new HeadsetStateReceiver();
+        registerReceiver(headsetReceiver, headsetFilter);
+    }
 
 	private void syncEqBars() {
 		short bands = mEqualizer.getNumberOfBands();
@@ -304,7 +320,6 @@ public class AudioTrackTest extends Activity {
         presetActiveStatus(preset_name);
     }
     private void presetActiveStatus(int preset){
-//        TODO: show the graphic under the preset buttons when that preset is active and if the user changes the eq turn them all off
         preset_active = preset;
         ImageView iv;
 
@@ -346,7 +361,8 @@ public class AudioTrackTest extends Activity {
 	}
 
 	public void stopListen(){
-		Rthread.interrupt();
+		if(Rthread != null)
+            Rthread.interrupt();
 		Rthread = null;
 		if (audioTrack != null)
 			audioTrack.release();
@@ -359,7 +375,6 @@ public class AudioTrackTest extends Activity {
 		
 	}
 	protected void loopback() {
-
 		android.os.Process
 				.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
 		final int bufferSize = AudioRecord.getMinBufferSize(freq,
@@ -535,6 +550,11 @@ public class AudioTrackTest extends Activity {
 		if(isRecording != null )
 			if(isRecording && audioRecord == null)
 				StartListening();
+        try{
+            registerHeadset();
+        }catch(Exception e){
+            Log.e("AudioTrackTest", "onResume error: "+ e.toString() );
+        }
 	}
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {

@@ -18,7 +18,10 @@
     <string name="audiogram_above_graph">The results of your hearing test are displayed below in a graph called an audiogram. The audiogram shows the severity of your hearing loss.</string>
 
 
+    <!--Notification-->
+    <string name="notification_start_text">click to start listening</string>
 
+    <string name="notification_pause_text">click to stop listening</string>
 
     <!-- Legal -->
     <string name="terms_of_service">Terms of Service</string>
