@@ -58,9 +58,9 @@ public class AudioTrackTest extends Activity {
 	private static final String LOG_TAG = "AudioRecordTest";
 	// private static String mFileName = null;
 	private Context ctx = this;
-	private ToggleButton mRecordButton = null;
+	public static ToggleButton mRecordButton = null;
 	private MediaPlayer mPlayer = null;
-	private Boolean isRecording = null;
+	public static Boolean isRecording = null;
 	private Equalizer mEqualizer;
 	private LinearLayout mLinearLayout;
 
@@ -88,17 +88,23 @@ public class AudioTrackTest extends Activity {
 	private LinearLayout mySecondView;
 	public BroadcastReceiver receiver = null;
     private int preset_active = 0;
+    IntentFilter headsetFilter = new IntentFilter(Intent.ACTION_HEADSET_PLUG);
+
+    private HeadsetStateReceiver headsetReceiver;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.listen);
-		mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
+        headsetReceiver = new HeadsetStateReceiver();
+        registerReceiver(headsetReceiver, headsetFilter);
+
+        mRecordButton = (ToggleButton) findViewById(R.id.tbtn_record);
 		this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
 		if (savedInstanceState != null) {
 			isRecording = savedInstanceState.getBoolean("isRecording");
 			if(isRecording)
-				Start();
+				StartListening();
 		}
 		// mLinearLayout = (LinearLayout) findViewById(R.id.ll_EQ);
 		if (Build.VERSION.SDK_INT < 10)
@@ -135,18 +141,17 @@ public class AudioTrackTest extends Activity {
 			public void onClick(View v) {
 				Log.d(LOG_TAG, mRecordButton.isChecked() + " rec btn");
 				// onRecord(mRecordButton.isChecked());
-				if (isRecording == null) {
-					isRecording = true;
-					Start();
+                if (isRecording == null) {
+					StartListening();
 				} else if (isRecording) {
-					isRecording = false;
+//					isRecording = false;
+					stopListen();
 					// Rthread.interrupt();
 					// audioTrack.stop();
 				} else {
-					isRecording = true;
-					// Rthread.notify();
+                    StartListening();
+                    // Rthread.notify();
 					// Rthread.start();// = null;
-					// Start();
 					// audioTrack.play();
 				}
 			}
@@ -217,27 +222,6 @@ public class AudioTrackTest extends Activity {
 			}
 		});
 
-		// OnSeekBarChangeListener osbcl = (new
-		// SeekBar.OnSeekBarChangeListener() {
-		// public void onProgressChanged(SeekBar seekBar, int progress,
-		// boolean fromUser) {
-		// mEqualizer.setBandLevel(band, (short) (progress + minEQLevel));
-		// // Log.d("EQ", "band: "+band+"  prog:"+progress);
-		//
-		// }
-		//
-		// public void onStartTrackingTouch(SeekBar seekBar) {
-		// }
-		//
-		// public void onStopTrackingTouch(SeekBar seekBar) {
-		// Log.d("EQ", "band: " + band + "  prog:" + seekBar.getProgress());
-		//
-		// }
-		// });
-		//
-		// SeekBar sb = (SeekBar) findViewById(R.id.sb_1);
-		// sb.setOnSeekBarChangeListener(osbcl);
-
 	}
 
 
@@ -276,12 +260,6 @@ public class AudioTrackTest extends Activity {
 							+ mEqualizer.getBandLevel(band));
 			int level = mEqualizer.getBandLevel(band);
 			level += 1500;
-//            if (level < 0)
-//				level = level + 1500;
-//			else if (level > 0)
-//				level = level + 1500;
-//			else if (level == 0)
-//				level = 1500;
 			bar.setProgress(level);
 			Log.d("EQ", "bar getProgress() = " + bar.getProgress());
 			Log.d("EQ", "band = level: " + band + " = " + level);
@@ -356,8 +334,15 @@ public class AudioTrackTest extends Activity {
         }
     }
 
-	protected void Start() {
-		loopback();
+	protected void StartListening() {
+        if(headsetReceiver.isPluggedIn()){
+            isRecording = true;
+            if(audioRecord == null)
+		        loopback();
+        }else{
+            Toast.makeText(ctx, "Please connect headphones first.", Toast.LENGTH_LONG).show();
+            mRecordButton.setChecked(false);
+        }
 	}
 
 	public void stopListen(){
@@ -367,6 +352,8 @@ public class AudioTrackTest extends Activity {
 			audioTrack.release();
 		if (audioRecord != null)
 			audioRecord.release();
+        audioTrack = null;
+        audioRecord = null;
 		isRecording = null;
 		mRecordButton.setChecked(false);
 		
@@ -381,15 +368,6 @@ public class AudioTrackTest extends Activity {
 
 		audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, freq,
 				AudioFormat.CHANNEL_IN_MONO, AudioCodec, bufferSize);
-		// Log.i("AudioTrackTest",
-		// "NoiseSuppressor.isAvailable() = "+NoiseSuppressor.isAvailable());
-		// if(NoiseSuppressor.isAvailable()){
-		// try{
-		// NoiseSuppressor.create(audioRecord.getAudioSessionId());
-		// }catch(Exception e){
-		// Log.e("AudioTrackTest", "NS error: "+e.toString());
-		// }
-		// }
 		// ENCODING_PCM_16BIT
 		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, freq,
 				AudioFormat.CHANNEL_OUT_MONO, AudioCodec, bufferSize,
@@ -398,7 +376,6 @@ public class AudioTrackTest extends Activity {
 		audioTrack.setPlaybackRate(freq);
 		final byte[] buffer = new byte[bufferSize];
 		setupEqualizer();
-		// setupEqualizerFxAndUI();
 		resetEQ();
 		audioRecord.startRecording();
 		Log.i(LOG_TAG, "Audio Recording started");
@@ -518,12 +495,14 @@ public class AudioTrackTest extends Activity {
 				showNotification();
 		}else{
             try{
-			unregisterReceiver(receiver);
+			    unregisterReceiver(receiver);
+                unregisterReceiver(headsetReceiver);
             }catch (Exception e){
                 Log.e("AudioTrackTest", e.toString());
             }
 		}
-	}
+
+    }
 	
 	@Override
 	protected void onStop() {
@@ -542,6 +521,7 @@ public class AudioTrackTest extends Activity {
 			audioRecord.release();
         try{
             unregisterReceiver(receiver);
+            unregisterReceiver(headsetReceiver);
         }catch (Exception e){
             Log.e("AudioTrackTest", e.toString());
         }
@@ -554,7 +534,7 @@ public class AudioTrackTest extends Activity {
 		Log.d("AudioTrackTest", "onResume() called");
 		if(isRecording != null )
 			if(isRecording && audioRecord == null)
-				Start();
+				StartListening();
 	}
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {

@@ -43,7 +43,7 @@
     <file path="/fragment.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369114357176" ignored="false" />
     <file path="/hearing_test.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369115611070" ignored="false" />
     <file path="/listen.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369335049168" ignored="false" />
-    <file path="/AudioTrackTest.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369169587143" ignored="false" />
+    <file path="/AudioTrackTest.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369805183307" ignored="false" />
     <file path="/eq_presets.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369166277677" ignored="false" />
     <file path="/Dummy.txt" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369169445409" ignored="false" />
     <file path="/a.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369174149113" ignored="false" />
@@ -53,6 +53,8 @@
     <file path="/colors.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369792091307" ignored="false" />
     <file path="/audiogram.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369796535854" ignored="false" />
     <file path="/strings.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369796665586" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369798929546" ignored="false" />
+    <file path="/HeadsetStateReceiver.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369804073579" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,24 +120,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="audiogram.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/audiogram.xml">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="52" selection-start="705" selection-end="705" vertical-scroll-proportion="-1.925926">
-              <folding />
+            <state line="141" column="53" selection-start="5741" selection-end="5761" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1228#1246#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioGram.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
+      <file leaf-file-name="AudioTrackTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.03551402">
+            <state line="399" column="54" selection-start="12579" selection-end="12589" vertical-scroll-proportion="-0.42582896">
+              <folding>
+                <element signature="e#4648#5176#0" expanded="true" />
+                <element signature="e#5171#5172#0" expanded="true" />
+                <element signature="e#5448#5740#0" expanded="true" />
+                <element signature="e#5735#5736#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeadsetStateReceiver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/HeadsetStateReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="39" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1293#1344#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,18 +175,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listen.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/listen.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="50" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -186,8 +190,6 @@
         <option value="$PROJECT_DIR$/res/layout/hearing_test.xml" />
         <option value="$PROJECT_DIR$/res/values/eq_presets.xml" />
         <option value="$PROJECT_DIR$/res/layout-land/listen.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java" />
         <option value="$PROJECT_DIR$/res/layout/help.xml" />
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/About.java" />
         <option value="$PROJECT_DIR$/res/layout/about.xml" />
@@ -196,6 +198,9 @@
         <option value="$PROJECT_DIR$/res/layout/audiogram.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/HeadsetStateReceiver.java" />
+        <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java" />
       </list>
     </option>
   </component>
@@ -548,12 +553,12 @@
       <workItem from="1369204068031" duration="14200000" />
       <workItem from="1369333923001" duration="1497000" />
       <workItem from="1369336154267" duration="729000" />
-      <workItem from="1369788838757" duration="7085000" />
+      <workItem from="1369788838757" duration="13017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38806000" />
+    <option name="totallyTimeSpent" value="44738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1260" height="760" extended-state="0" />
@@ -568,13 +573,13 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.9390625" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.175" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.790625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24917492" sideWeight="0.9390625" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.940625" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.059375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958813" sideWeight="0.209375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.059375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2018122" sideWeight="0.9390625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.9390625" order="3" side_tool="false" content_ui="tabs" />
@@ -653,18 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="542" column="12" selection-start="16270" selection-end="16270" vertical-scroll-proportion="0.69069767" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="59" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.09594883">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/HearingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="169" column="36" selection-start="6303" selection-end="6306" vertical-scroll-proportion="-3.2167044" />
@@ -729,9 +722,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="2.635514">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/audiogram.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="705" selection-end="705" vertical-scroll-proportion="-1.925926">
+        <state line="19" column="52" selection-start="705" selection-end="705" vertical-scroll-proportion="0.095063984">
           <folding />
         </state>
       </provider>
@@ -739,11 +741,33 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.03551402">
+        <state line="141" column="53" selection-start="5741" selection-end="5761" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1228#1246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/HeadsetStateReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="39" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1293#1344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="399" column="54" selection-start="12579" selection-end="12589" vertical-scroll-proportion="-0.42582896">
+          <folding>
+            <element signature="e#4648#5176#0" expanded="true" />
+            <element signature="e#5171#5172#0" expanded="true" />
+            <element signature="e#5448#5740#0" expanded="true" />
+            <element signature="e#5735#5736#0" expanded="true" />
           </folding>
         </state>
       </provider>
