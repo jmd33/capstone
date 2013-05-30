@@ -16,6 +16,8 @@
 
     <string name="audiogram_understanding_results_title">Understanding Your Results</string>
     <string name="audiogram_above_graph">The results of your hearing test are displayed below in a graph called an audiogram. The audiogram shows the severity of your hearing loss.</string>
+    <string name="left_ear">Left Ear</string>
+    <string name="right_ear">Right Ear</string>
 
 
     <!--Notification-->
@@ -42,6 +44,10 @@
     <string name="ic_linegraph_author_link"><a href="http://thenounproject.com/KenanSulayman">Kenan Sulayman</a></string>
   	<string name="ic_asl_icon_link"><a href="http://thenounproject.com/noun/assistive-listening-system/#icon-No491">Assistive Listening System</a></string>
     <string name="ic_asl_author_link">Unknown designer</string>
+    <string name="ic_group_icon_link"><a href="http://thenounproject.com/noun/group/#icon-No7771">Group</a></string>
+    <string name="ic_group_author_link"><a href="http://thenounproject.com/tonikdesigns">Tonielle Krisanski</a></string>
+
+
 
    <!--  
     <string name="ic__icon_link"><a href="http://thenounproject.com/noun/"></a></string>

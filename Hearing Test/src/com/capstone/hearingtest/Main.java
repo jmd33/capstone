@@ -127,12 +127,12 @@ public class Main extends Activity{
 	        case R.id.share:
 	        	share();
 	        	return true;
-	        case R.id.exit:
-	        	intent = new Intent(Intent.ACTION_MAIN);
-	        	intent.addCategory(Intent.CATEGORY_HOME);
-	        	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-	        	startActivity(intent);
-	        	return true;
+//	        case R.id.exit:
+//	        	intent = new Intent(Intent.ACTION_MAIN);
+//	        	intent.addCategory(Intent.CATEGORY_HOME);
+//	        	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//	        	startActivity(intent);
+//	        	return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
