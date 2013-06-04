@@ -56,7 +56,9 @@ public class HearingTest extends Activity {
 	private VisualizerView mVisualizerView;
 	private TextView mStatusTextView;
 	private TextView mFrequencyTextView;
-
+	private TextView mLeftEarTextView;
+	private TextView mRightEarTextView;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -70,6 +72,10 @@ public class HearingTest extends Activity {
 		value = (TextView) findViewById(R.id.textview);
 		mFrequencyTextView = (TextView) findViewById(R.id.frequency);
 		mFrequencyTextView.setText("Current Frequency: " + freqs[pointer] + "hz");
+		mLeftEarTextView = (TextView) findViewById(R.id.left_ear);
+		mLeftEarTextView.setText("");
+		mRightEarTextView = (TextView) findViewById(R.id.right_ear);
+		mRightEarTextView.setText("Right Ear");
 		seekbar = (SeekBar) findViewById(R.id.seekbar);
 		seekbar.setProgress(75);
 		num = 0;
@@ -128,10 +134,14 @@ public class HearingTest extends Activity {
 				}
 				if (is_left_ear) {
 					test_progress.setProgress(test_progress.getProgress() + (6));
+					mLeftEarTextView.setText("Left Ear");
+					mRightEarTextView.setText("");
 					is_left_ear = false;
 				} else if (pointer < freqs.length - 1 && !is_left_ear) {
 					pointer++;
 					mFrequencyTextView.setText("Current Frequency: " + freqs[pointer] + "hz");
+					mRightEarTextView.setText("Right Ear");
+					mLeftEarTextView.setText("");
 					test_progress.setProgress(test_progress.getProgress() + (6));
 					is_left_ear = true;
 				} else if (pointer == freqs.length - 1) {
@@ -198,8 +208,9 @@ public class HearingTest extends Activity {
 		// Handle menu item selection
 		Intent intent;
 		switch (item.getItemId()) {
-		case R.id.help:
-			return true;
+		case R.id.home:
+			intent = new Intent(ctx, Main.class);
+			ctx.startActivity(intent);
 		default:
 			return super.onOptionsItemSelected(item);
 		}

@@ -10,12 +10,17 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.androidplot.series.XYSeries;
 import com.androidplot.ui.SizeLayoutType;
@@ -28,6 +33,7 @@ public class AudioGram extends Activity {
 	private XYPlot mySimpleXYPlot;
 	private Number[] series1Numbers;
 	private Number[] series2Numbers;
+	private Context ctx = this;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -213,6 +219,27 @@ public class AudioGram extends Activity {
 		// To get rid of them call disableAllMarkup():
 		mySimpleXYPlot.disableAllMarkup();
 
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// generate menu
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.hearing_test_menu, menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle menu item selection
+		Intent intent;
+		switch (item.getItemId()) {
+		case R.id.home:
+			intent = new Intent(ctx, Main.class);
+			ctx.startActivity(intent);
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 
