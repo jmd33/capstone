@@ -575,9 +575,6 @@ public class AudioTrackTest extends Activity {
 			intent = new Intent(ctx, About.class);
 			ctx.startActivity(intent);
 			return true;
-		case R.id.home:
-			intent = new Intent(ctx, Main.class);
-			ctx.startActivity(intent);
 		default:
 			return super.onOptionsItemSelected(item);
 		}

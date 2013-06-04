@@ -12,5 +12,4 @@
         android:icon="@drawable/ic_home"
         android:showAsAction="ifRoom"
         android:title="Home">
-    </item>
 </menu>

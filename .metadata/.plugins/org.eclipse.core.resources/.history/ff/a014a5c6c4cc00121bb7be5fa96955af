@@ -208,10 +208,6 @@ public class HearingTest extends Activity {
 		// Handle menu item selection
 		Intent intent;
 		switch (item.getItemId()) {
-		case R.id.help:
-			intent = new Intent(ctx, About.class);
-			ctx.startActivity(intent);
-			return true;
 		case R.id.home:
 			intent = new Intent(ctx, Main.class);
 			ctx.startActivity(intent);
