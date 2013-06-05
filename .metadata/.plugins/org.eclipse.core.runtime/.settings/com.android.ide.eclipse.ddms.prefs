@@ -6,6 +6,6 @@ logcat.view.colsize.Level=18
 logcat.view.colsize.PID=46
 logcat.view.colsize.TID=46
 logcat.view.colsize.Tag=101
-logcat.view.colsize.Text=545
+logcat.view.colsize.Text=1047
 logcat.view.colsize.Time=140
 logcat.view.filters.list=name\: 'HearingTest', tag\: '', text\: '', pid\: '', app\: 'HearingTest', level\: 'verbose', name\: 'HearingTest', tag\: '', text\: '', pid\: '', app\: 'com.capstone.hearingtest', level\: 'verbose', name\: 'com.capstone.hearingtest (Session Filter)', tag\: '', text\: '', pid\: '', app\: 'com.capstone.hearingtest', level\: 'verbose', 

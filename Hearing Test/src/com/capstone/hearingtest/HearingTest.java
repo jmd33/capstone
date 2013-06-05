@@ -54,10 +54,9 @@ public class HearingTest extends Activity {
 	private Equalizer mEqualizer;
 	private LinearLayout mLinearLayout;
 	private VisualizerView mVisualizerView;
-	private TextView mStatusTextView;
-	private TextView mFrequencyTextView;
 	private TextView mLeftEarTextView;
 	private TextView mRightEarTextView;
+	private TextView progress_number;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,8 +69,10 @@ public class HearingTest extends Activity {
 		}
 		freqs = getResources().getIntArray(R.array.frequencies);
 		value = (TextView) findViewById(R.id.textview);
-		mFrequencyTextView = (TextView) findViewById(R.id.frequency);
-		mFrequencyTextView.setText("Current Frequency: " + freqs[pointer] + "hz");
+		
+		progress_number = (TextView) findViewById(R.id.progress_number);
+		progress_number.setText("Progress: 1/" + freqs.length);
+		
 		mLeftEarTextView = (TextView) findViewById(R.id.left_ear);
 		mLeftEarTextView.setText("");
 		mRightEarTextView = (TextView) findViewById(R.id.right_ear);
@@ -113,6 +114,7 @@ public class HearingTest extends Activity {
 			public void onClick(View arg0) {
 				int num_int = (int) (num * 100);
 				Log.d("HearingTest", "num = " + num + "  num_int = " + num_int);
+				
 				// TODO: Decide if we are still wanting to push results to the
 				// db
 				// new PushToDB().execute("testresult",
@@ -139,9 +141,9 @@ public class HearingTest extends Activity {
 					is_left_ear = false;
 				} else if (pointer < freqs.length - 1 && !is_left_ear) {
 					pointer++;
-					mFrequencyTextView.setText("Current Frequency: " + freqs[pointer] + "hz");
 					mRightEarTextView.setText("Right Ear");
 					mLeftEarTextView.setText("");
+					progress_number.setText("Progress: " + (pointer + 1) + "/" + freqs.length);
 					test_progress.setProgress(test_progress.getProgress() + (6));
 					is_left_ear = true;
 				} else if (pointer == freqs.length - 1) {
@@ -182,7 +184,6 @@ public class HearingTest extends Activity {
 					start_level = seekbar.getProgress() / (100 / max_volume);
 				}
 				num = (float) progress / 1000;
-				value.setText("Volume is at " + progress + "%");
 			}
 
 			public void onStartTrackingTouch(SeekBar seekBar) {
