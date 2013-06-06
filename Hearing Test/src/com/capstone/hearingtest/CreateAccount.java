@@ -56,16 +56,16 @@ public class CreateAccount extends Activity {
 				int age = Integer.parseInt(sp_age.getSelectedItem().toString());
 				
 				setAccountPref(account, gender, age);
-			    ConnectivityManager connMgr = (ConnectivityManager) 
-			            getSystemService(Context.CONNECTIVITY_SERVICE);
-			        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-			        if (networkInfo != null && networkInfo.isConnected()) {
+//			    ConnectivityManager connMgr = (ConnectivityManager)
+//			            getSystemService(Context.CONNECTIVITY_SERVICE);
+//			        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+//			        if (networkInfo != null && networkInfo.isConnected()) {
 			            // push data
 //						new PushToDB().execute("adduser", account, gender+"", age+"");//this pushed test result to the db.
-			        } else {
+//			        } else {
 			            // display error
-			        	Log.e("CreateAccount", "network connectivity error");
-			        }
+//			        	Log.e("CreateAccount", "network connectivity error");
+//			        }
 
 				Intent intent = new Intent(ctx, HearingTest.class);
 				ctx.startActivity(intent);
@@ -81,7 +81,26 @@ public class CreateAccount extends Activity {
 		Spinner spinner_age = (Spinner) findViewById(R.id.spinner_age);
 		spinner_age.setAdapter(adapter);
 
-
+        AccountManager am = AccountManager.get(this); // "this" references the
+                             // current Context
+       final Account[] accounts = am.getAccountsByType("com.google");
+        int len = accounts.length;
+        if(len > 1){//user needs to choose an account
+            tv_account.setOnClickListener(new OnClickListener(){
+                public void onClick(View arg0) {
+                    showAccountAlert(accounts);
+                }
+            });
+//            showAccountAlert(accounts);
+        }else{
+//            tv_account = (TextView) findViewById(R.id.tv_account);
+//            tv_account.setText(accounts[0].name);
+//            setAccountPref(accounts[0].name);
+        }
+        tv_account.setText(accounts[0].name);
+        for (int i = 0; i < len; i++)
+            Log.d("ACCOUNTS", accounts[i].toString());
+                    // }
 	}
 
 	protected void showAccountAlert(Account[] accounts) {
@@ -97,7 +116,11 @@ public class CreateAccount extends Activity {
 					TextView tv_account = (TextView) findViewById(R.id.tv_account);
 					tv_account.setText(accs[which].toString());
 					break;
-				}
+                default:
+                    tv_account = (TextView) findViewById(R.id.tv_account);
+                    tv_account.setText(accs[which].toString());
+                    break;
+                }
 				dialog.dismiss();
 			}
 		});
