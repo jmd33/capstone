@@ -86,7 +86,11 @@ public class HearingTest extends Activity {
 		// tv_freq.setText(freqs[pointer] + "");
 		user_info = getSharedPreferences("user_info", MODE_PRIVATE);
 		pf = new PlayFrequency(6);
-		setupVisualizerLayout();
+        try{
+            setupVisualizerLayout();
+        }catch(Exception e){
+            Log.e("HearingTest", "setupVis error: " + e.toString());
+        }
 		// setupVisualizer();
 		// Plays the sound every time the button is pressed.
 		Button b = (Button) findViewById(R.id.BTN_play);
@@ -215,7 +219,9 @@ public class HearingTest extends Activity {
 			return true;
 		case R.id.home:
 			intent = new Intent(ctx, Main.class);
-			ctx.startActivity(intent);
+            onDestroy();
+            ctx.startActivity(intent);
+
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -228,13 +234,42 @@ public class HearingTest extends Activity {
 				.getSystemService(Context.AUDIO_SERVICE);
 		seekbar.setProgress(100 * (am.getStreamVolume(am.STREAM_MUSIC))
 				/ max_volume);
-	}
+
+    }
 
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		pf.audioTrack.release();
+        Log.d("HearingTest","onDestroy called");
+		try{
+        pf.audioTrack.release();
+//        mVisualizer.release();
+        pf.audioTrack = null;
+        pf = null;
+
+//        mVisualizer = null;
+    }catch(Exception e){
+        Log.e("HearingTest", "onPuse error: "+e.toString());
+
+    }
+
 	}
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("HearingTest","onPause called");
+//        pf.audioTrack.flush();
+       try{
+            pf.audioTrack.release();
+    //        mVisualizer.release();
+            pf.audioTrack = null;
+            pf = null;
+       }catch(Exception e){
+           Log.e("HearingTest", "onPuse error: "+e.toString());
+
+       }
+//        mVisualizer = null;
+    }
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {

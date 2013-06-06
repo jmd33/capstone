@@ -8,7 +8,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="2" >
+        android:weightSum="4" >
 
         <TextView
             android:id="@+id/textView1"
@@ -16,9 +16,31 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:text="Adjust the volume slider to the lowest level you can hear the tone."
             android:textSize="24dp" />
+
+
+            <TextView
+                    android:id="@+id/left_ear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:height="30dp"
+                    android:layout_weight="1"
+
+                    android:textSize="30dp"
+                    android:width="40dp" />
+
+            <TextView
+                    android:id="@+id/right_ear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:height="30dp"
+                    android:textSize="30dp"
+                    android:width="40dp" />
 
         <LinearLayout
             android:id="@+id/LL_vis"
@@ -98,6 +120,15 @@
                 android:height="30dp"
                 android:textSize="20dp"
                 android:width="40dp" />
+            <TextView
+                    android:id="@+id/progress_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:text="Progress: "
+                    android:textSize="20dp" />
+
         </LinearLayout>
     </LinearLayout>
 

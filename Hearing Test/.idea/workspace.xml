@@ -13,9 +13,7 @@
   </component>
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
+      <GlobalState />
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -48,7 +46,7 @@
     <ignored path="Hearing Test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369114357176" ignored="false" />
-    <file path="/hearing_test.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369115611070" ignored="false" />
+    <file path="/hearing_test.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1370553447147" ignored="false" />
     <file path="/listen.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369335049168" ignored="false" />
     <file path="/AudioTrackTest.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369871279309" ignored="false" />
     <file path="/eq_presets.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369166277677" ignored="false" />
@@ -65,6 +63,8 @@
     <file path="/custom_notification.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369848663119" ignored="false" />
     <file path="/artwork.xml" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1369872409041" ignored="false" />
     <file path="/CreateAccount.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1370547934374" ignored="false" />
+    <file path="/HearingTest.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1370553003874" ignored="false" />
+    <file path="/PlayFrequency.java" changelist="4c18a382-179c-4c27-89d5-665a9319434c" time="1370551945334" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,25 +130,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateAccount.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/CreateAccount.java">
+      <file leaf-file-name="hearing_test.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/hearing_test.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="16" selection-start="5166" selection-end="5170" vertical-scroll-proportion="-0.10223642">
-              <folding>
-                <element signature="e#1478#2681#0" expanded="true" />
-                <element signature="e#1538#1569#0" expanded="false" />
-                <element signature="e#2676#2677#0" expanded="true" />
-                <element signature="e#3409#3560#0" expanded="true" />
-                <element signature="e#3545#3546#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_account.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/create_account.xml">
+      <file leaf-file-name="hearing_test.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout-land/hearing_test.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
+            <state line="130" column="0" selection-start="4929" selection-end="4929" vertical-scroll-proportion="-8.333333">
               <folding />
             </state>
           </provider>
@@ -167,10 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/help.xml" />
-        <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/About.java" />
-        <option value="$PROJECT_DIR$/res/layout/about.xml" />
-        <option value="$PROJECT_DIR$/res/layout/listen.xml" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/HeadsetStateReceiver.java" />
         <option value="$PROJECT_DIR$/res/layout/custom_notification.xml" />
@@ -183,6 +176,10 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java" />
         <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/CreateAccount.java" />
+        <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/PlayFrequency.java" />
+        <option value="$PROJECT_DIR$/src/com/capstone/hearingtest/HearingTest.java" />
+        <option value="$PROJECT_DIR$/res/layout-land/hearing_test.xml" />
+        <option value="$PROJECT_DIR$/res/layout/hearing_test.xml" />
       </list>
     </option>
   </component>
@@ -218,6 +215,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -371,7 +369,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,12 +555,12 @@
       <workItem from="1369870505485" duration="3421000" />
       <workItem from="1370482705615" duration="1735000" />
       <workItem from="1370545282517" duration="1630000" />
-      <workItem from="1370547488099" duration="569000" />
+      <workItem from="1370547488099" duration="6204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58856000" />
+    <option name="totallyTimeSpent" value="64491000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -589,8 +586,10 @@
     <frame x="4" y="22" width="1260" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2018122" sideWeight="0.640625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.640625" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.68125" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32920793" sideWeight="0.6859375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -598,16 +597,14 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.9390625" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4265625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.359375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24917492" sideWeight="0.9390625" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958813" sideWeight="0.684375" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3140625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.640625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3140625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2018122" sideWeight="0.684375" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.684375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -676,64 +673,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/About.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="36" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.6162047" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/listen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="50" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/HeadsetStateReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="39" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/custom_notification.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="48" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.7345133" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioTrackTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="48" selection-start="13107" selection-end="13107" vertical-scroll-proportion="0.47603834" />
+        <state line="393" column="48" selection-start="13107" selection-end="13107" vertical-scroll-proportion="0.47603834">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="665" selection-end="665" vertical-scroll-proportion="0.5514706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="46" selection-start="4016" selection-end="4027" vertical-scroll-proportion="0.024509804">
+        <state line="15" column="38" selection-start="665" selection-end="665" vertical-scroll-proportion="0.5514706">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/audiogram.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="23" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.025641026" />
+        <state line="42" column="23" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.025641026">
+          <folding />
+        </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -748,7 +708,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/artwork.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="53" selection-start="9468" selection-end="9468" vertical-scroll-proportion="0.025641026" />
+        <state line="216" column="53" selection-start="9468" selection-end="9468" vertical-scroll-proportion="0.025641026">
+          <folding />
+        </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -763,22 +725,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/AudioGram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="70" selection-start="7824" selection-end="7824" vertical-scroll-proportion="0.025041737" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/create_account.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="211" column="70" selection-start="7824" selection-end="7824" vertical-scroll-proportion="0.025041737">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/CreateAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="16" selection-start="5166" selection-end="5170" vertical-scroll-proportion="-0.10223642">
+        <state line="140" column="16" selection-start="5166" selection-end="5170" vertical-scroll-proportion="0.030898876">
           <folding>
             <element signature="e#1478#2681#0" expanded="true" />
             <element signature="e#1538#1569#0" expanded="false" />
@@ -787,6 +743,77 @@
             <element signature="e#3545#3546#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/create_account.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="33" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.04225352">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/HearingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="33" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.747191">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3424#3952#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#4049#5836#0" expanded="true" />
+            <element signature="e#5831#5832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/capstone/hearingtest/PlayFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="39" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.9816754">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.75609756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="968" selection-end="968" vertical-scroll-proportion="0.7643979">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="46" selection-start="4016" selection-end="4027" vertical-scroll-proportion="3.8481677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land/hearing_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="0" selection-start="4929" selection-end="4929" vertical-scroll-proportion="-8.333333">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/hearing_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

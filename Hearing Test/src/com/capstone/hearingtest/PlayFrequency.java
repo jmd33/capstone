@@ -23,11 +23,16 @@ public class PlayFrequency {
 
 	public PlayFrequency(int duration) {
 		setVars(duration, 0);
-		audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, sampleRate,
+        try{
+		    if(audioTrack != null)
+                audioTrack.flush();
+            audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, sampleRate,
 				AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT,
 				generatedSnd.length, AudioTrack.MODE_STREAM);
-	}
-
+	    }catch(Exception e){
+            Log.e("PlayFrequency", "audiotrack initializing error: "+ e.toString());
+        }
+    }
 	/**
 	 * Generates the necessary byte array in preparation to be played. Must call
 	 * {@link playSound()} to output the tone.
@@ -135,7 +140,11 @@ public class PlayFrequency {
 		audioTrack.setStereoVolume(leftVolume, rightVolume);
 
 		// audioTrack.setLoopPoints(0, 66150, -1);
-		audioTrack.play();
+		try{
+        audioTrack.play();
+        }catch(IllegalStateException ise){
+            Log.e("PlayFrequency", "play error: " + ise.toString());
+        }
 		Log.d("Main", "played");
 	}
 
