@@ -197,8 +197,8 @@ public class AudioGram extends Activity {
 			// Create a formatter to use for drawing a series using
 			// LineAndPointRenderer:
 			LineAndPointFormatter series1Format = new LineAndPointFormatter(
-					Color.rgb(58, 170, 207), // line color
-					Color.rgb(6, 121, 159), // point color
+                    getResources().getColor(R.color.dark_blue), // line color
+                    getResources().getColor(R.color.dark_blue), // point color
 					null); // fill color (none)
 			// add a new series' to the xyplot:
 
@@ -208,8 +208,9 @@ public class AudioGram extends Activity {
 			// same as above:
 			mySimpleXYPlot.addSeries(
 					series2,
-					new LineAndPointFormatter(Color.rgb(0, 0, 200), Color.rgb(
-							0, 0, 100), null));
+					new LineAndPointFormatter( getResources().getColor(R.color.light_blue),
+                            getResources().getColor(R.color.light_blue)
+                            , null));
         }
 		// reduce the number of range labels
 		mySimpleXYPlot.setTicksPerRangeLabel(3);
